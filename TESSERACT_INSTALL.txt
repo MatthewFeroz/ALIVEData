@@ -1,0 +1,38 @@
+TESSERACT OCR INSTALLATION INSTRUCTIONS
+========================================
+
+ALIVE Data requires Tesseract OCR to extract text from screenshots.
+
+INSTALLATION FOR WINDOWS:
+-------------------------
+
+1. Download Tesseract OCR installer from:
+   https://github.com/UB-Mannheim/tesseract/wiki
+
+2. Run the installer and install to the default location:
+   C:\Program Files\Tesseract-OCR\
+
+3. During installation, make sure to check:
+   ✓ "Add to PATH" (optional, but recommended)
+
+4. Restart ALIVE Data after installation.
+
+ALTERNATIVE INSTALLATION METHODS:
+---------------------------------
+
+Using Chocolatey (if installed):
+    choco install tesseract
+
+Using Scoop (if installed):
+    scoop install tesseract
+
+VERIFICATION:
+-------------
+
+After installation, ALIVE Data will automatically detect Tesseract.
+If you encounter issues, ensure Tesseract is installed in one of these locations:
+- C:\Program Files\Tesseract-OCR\tesseract.exe
+- C:\Program Files (x86)\Tesseract-OCR\tesseract.exe
+
+For support, visit: https://github.com/tesseract-ocr/tesseract
+
