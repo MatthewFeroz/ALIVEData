@@ -7,7 +7,7 @@ import threading
 import time
 from datetime import datetime
 from pathlib import Path
-from typing import List, Tuple, Optional
+from typing import List, Tuple, Optional, Dict
 
 if sys.platform == 'win32':
     try:
@@ -22,11 +22,12 @@ if sys.platform == 'win32':
         win32ui = None
     
     try:
-        from pynput import keyboard
+        from pynput import keyboard, mouse
         PYNPUT_AVAILABLE = True
     except ImportError:
         PYNPUT_AVAILABLE = False
         keyboard = None
+        mouse = None
 else:
     # Placeholder for non-Windows (not implemented)
     WIN32_AVAILABLE = False
@@ -35,6 +36,7 @@ else:
     win32con = None
     win32ui = None
     keyboard = None
+    mouse = None
 
 
 class CommandRecorder:
@@ -60,14 +62,24 @@ class CommandRecorder:
         """
         self.is_recording = False
         self.detected_terminal = None
-        self.command_history: List[Tuple[str, datetime, str]] = []  # (command, timestamp, screenshot_path)
+        # Extended command history: (command, timestamp, screenshot_path, region)
+        self.command_history: List[Tuple[str, datetime, str, Optional[Dict]]] = []
         self.on_command_captured = on_command_captured
         self.session_manager = session_manager
         
         # Monitoring threads
         self.window_monitor_thread = None
         self.keyboard_listener = None
+        self.mouse_listener = None
         self._stop_monitoring = False
+        
+        # Interaction tracking
+        from .interaction_tracker import InteractionTracker
+        self.interaction_tracker = InteractionTracker()
+        
+        # Event tracking
+        from .event_tracker import EventTracker
+        self.event_tracker = EventTracker()
         
         # Last capture time for debouncing
         self.last_capture_time = 0
@@ -95,6 +107,20 @@ class CommandRecorder:
             except Exception:
                 # Keyboard monitoring not available
                 pass
+        
+        # Start mouse tracking for interaction regions
+        try:
+            self.interaction_tracker.start_tracking()
+        except Exception:
+            # Mouse tracking not available
+            pass
+        
+        # Start event tracking
+        try:
+            self.event_tracker.start_tracking()
+        except Exception:
+            # Event tracking not available
+            pass
     
     def stop_recording(self):
         """
@@ -111,6 +137,18 @@ class CommandRecorder:
             except Exception:
                 pass
             self.keyboard_listener = None
+        
+        # Stop mouse tracking
+        try:
+            self.interaction_tracker.stop_tracking()
+        except Exception:
+            pass
+        
+        # Stop event tracking
+        try:
+            self.event_tracker.stop_tracking()
+        except Exception:
+            pass
         
         # Mark recording as stopped
         self.is_recording = False
@@ -216,14 +254,10 @@ class CommandRecorder:
                             if active_window != self.detected_terminal:
                                 self.detected_terminal = active_window
                             
-                            # Schedule capture with delay to allow command output to appear
-                            # Use a thread to delay without blocking the keyboard listener
-                            def delayed_capture():
-                                # Wait for command to execute and output to appear
-                                time.sleep(0.8)  # Wait 800ms for command output
-                                
+                            # Capture immediately to catch the command before it executes
+                            # Use a thread to avoid blocking the keyboard listener
+                            def immediate_capture():
                                 # CRITICAL: Double-check recording is still active
-                                # This ensures we don't capture after user stops recording
                                 if not self.is_recording or self._stop_monitoring:
                                     return
                                 
@@ -233,14 +267,13 @@ class CommandRecorder:
                                     if current_terminal:
                                         self.detected_terminal = current_terminal
                                     
-                                    # Capture the command (this will NOT stop recording)
+                                    # Capture the command immediately (before execution)
                                     self._capture_command()
                                 except Exception:
                                     # Don't let capture errors stop recording
-                                    # Recording continues even if one capture fails
                                     pass
                             
-                            capture_thread = threading.Thread(target=delayed_capture, daemon=True)
+                            capture_thread = threading.Thread(target=immediate_capture, daemon=True)
                             capture_thread.start()
                     except Exception:
                         pass
@@ -264,6 +297,18 @@ class CommandRecorder:
             # Update last capture time
             self.last_capture_time = time.time()
             
+            # Get focus region from interaction tracker
+            focus_region = None
+            try:
+                focus_region = self.interaction_tracker.get_focus_region(
+                    window_hwnd=self.detected_terminal,
+                    recent_seconds=5.0,
+                    min_clicks=1
+                )
+            except Exception:
+                # If region tracking fails, continue without it
+                pass
+            
             # Capture screenshot of terminal window (just save, don't process yet)
             screenshot_path = self._capture_window_screenshot(self.detected_terminal)
             
@@ -272,8 +317,15 @@ class CommandRecorder:
             command = ""
             
             # Store the capture in history (image saved, but not processed)
+            # Extended format: (command, timestamp, screenshot_path, region)
             timestamp = datetime.now()
-            self.command_history.append((command, timestamp, screenshot_path))
+            self.command_history.append((command, timestamp, screenshot_path, focus_region))
+            
+            # Record command event
+            try:
+                self.event_tracker.record_command_event(command, screenshot_path, focus_region)
+            except Exception:
+                pass
             
             # Call callback if provided (but don't do OCR processing here)
             # Just notify that an image was captured

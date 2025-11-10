@@ -26,7 +26,7 @@ based only on this OCR text:
     return summary
 
 
-def summarize_commands(command_history, include_screenshots=True, session_base_path=None):
+def summarize_commands(command_history, include_screenshots=True, session_base_path=None, events=None):
     """
     Generate documentation from a list of captured commands.
     
@@ -34,6 +34,7 @@ def summarize_commands(command_history, include_screenshots=True, session_base_p
         command_history: List of tuples (command, timestamp, screenshot_path)
         include_screenshots: Whether to reference screenshots in documentation
         session_base_path: Optional base path for session (used to create relative paths)
+        events: Optional list of event dictionaries (from EventTracker)
     
     Returns:
         Formatted markdown documentation
@@ -67,10 +68,23 @@ def summarize_commands(command_history, include_screenshots=True, session_base_p
             rel_path = get_relative_path(screenshot_path, session_base_path)
             commands_text += f"  Screenshot: {rel_path}\n"
     
+    # Add event context if available
+    events_context = ""
+    if events:
+        # Get applications used
+        applications_used = set()
+        for event in events:
+            event_data = event.get('event_data', {})
+            if 'process_name' in event_data and event_data['process_name']:
+                applications_used.add(event_data['process_name'])
+        
+        if applications_used:
+            events_context = f"\n\nApplications used during this session: {', '.join(sorted(applications_used))}\n"
+    
     prompt = f"""You are an assistant creating step-by-step workflow documentation from terminal commands.
 
 The user executed these commands in sequence:
-{commands_text}
+{commands_text}{events_context}
 
 Create clear, numbered step-by-step documentation that:
 1. Explains what each command does
@@ -90,9 +104,21 @@ Write the documentation in markdown format with proper formatting."""
         summary = response.choices[0].message.content.strip()
         
         # Add header and command list
-        header = f"# Command Session Documentation\n\n"
+        header = "# Command Session Documentation\n\n"
         header += f"**Session Date:** {command_history[0][1].strftime('%Y-%m-%d %H:%M:%S')}\n"
         header += f"**Total Commands:** {len(command_history)}\n\n"
+        
+        # Add event summary if available
+        if events:
+            applications_used = set()
+            for event in events:
+                event_data = event.get('event_data', {})
+                if 'process_name' in event_data and event_data['process_name']:
+                    applications_used.add(event_data['process_name'])
+            
+            if applications_used:
+                header += f"**Applications Used:** {', '.join(sorted(applications_used))}\n\n"
+        
         header += "## Commands Executed\n\n"
         
         for i, (command, timestamp, screenshot_path) in enumerate(command_history, 1):
@@ -105,7 +131,7 @@ Write the documentation in markdown format with proper formatting."""
         header += "\n---\n\n## Documentation\n\n"
         
         return header + summary
-    except Exception as e:
+    except Exception:
         # Fallback: simple markdown without LLM
         doc = "# Command Session Documentation\n\n"
         doc += f"**Session Date:** {command_history[0][1].strftime('%Y-%m-%d %H:%M:%S')}\n"

@@ -7,7 +7,7 @@ import os
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import Optional
+from typing import Optional, List, Dict
 import socket
 
 
@@ -121,6 +121,7 @@ class SessionManager:
         # Create subdirectories for organization
         (session_dir / "screenshots").mkdir(exist_ok=True)
         (session_dir / "metadata").mkdir(exist_ok=True)
+        (session_dir / "events").mkdir(exist_ok=True)
         
         self.current_session_dir = session_dir
         self.session_id = folder_name
@@ -158,6 +159,43 @@ class SessionManager:
                 f.write(f"Start Time: {self.session_start_time}\n")
                 f.write(f"PC Name: {socket.gethostname()}\n")
                 f.write(f"PC Abbreviation: {get_pc_name_abbreviation()}\n")
+    
+    def get_events_path(self) -> Path:
+        """
+        Get path for events.json file in the current session.
+        
+        Returns:
+            Path object for the events.json file
+        """
+        if not self.current_session_dir:
+            raise RuntimeError("No active session. Call create_session_folder() first.")
+        
+        return self.current_session_dir / "events" / "events.json"
+    
+    def save_events(self, events: List[Dict]) -> Path:
+        """
+        Save events to events.json file.
+        
+        Args:
+            events: List of event dictionaries (from Event.to_dict())
+        
+        Returns:
+            Path to the saved events file
+        """
+        events_path = self.get_events_path()
+        
+        try:
+            import json
+            with open(events_path, "w", encoding="utf-8") as f:
+                json.dump(events, f, indent=2)
+        except Exception:
+            # If JSON fails, create a simple text file
+            events_path = self.current_session_dir / "events" / "events.txt"
+            with open(events_path, "w", encoding="utf-8") as f:
+                for event in events:
+                    f.write(f"{event.get('timestamp', '')} - {event.get('event_type', '')}\n")
+        
+        return events_path
     
     def get_screenshot_path(self, filename: Optional[str] = None) -> Path:
         """
@@ -217,6 +255,46 @@ class SessionManager:
         # Count files
         screenshot_count = len(list((self.current_session_dir / "screenshots").glob("*.png")))
         
+        # Load events if available
+        events_summary = {}
+        events_path = self.current_session_dir / "events" / "events.json"
+        if events_path.exists():
+            try:
+                import json
+                with open(events_path, "r", encoding="utf-8") as f:
+                    events = json.load(f)
+                    # Calculate summary
+                    event_types = {}
+                    applications_used = set()
+                    processes_launched = set()
+                    window_focus_changes = 0
+                    
+                    for event in events:
+                        event_type = event.get('event_type', '')
+                        event_types[event_type] = event_types.get(event_type, 0) + 1
+                        
+                        event_data = event.get('event_data', {})
+                        if 'process_name' in event_data:
+                            process_name = event_data['process_name']
+                            if process_name:
+                                applications_used.add(process_name)
+                        
+                        if event_type == 'process_launch' and 'process_name' in event_data:
+                            processes_launched.add(event_data['process_name'])
+                        
+                        if event_type == 'window_focus':
+                            window_focus_changes += 1
+                    
+                    events_summary = {
+                        'event_count': len(events),
+                        'event_types': event_types,
+                        'applications_used': sorted(list(applications_used)),
+                        'processes_launched': sorted(list(processes_launched)),
+                        'window_focus_changes': window_focus_changes
+                    }
+            except Exception:
+                pass
+        
         summary = {
             "session_id": self.session_id,
             "session_dir": str(self.current_session_dir),
@@ -225,6 +303,10 @@ class SessionManager:
             "duration_seconds": duration,
             "screenshot_count": screenshot_count
         }
+        
+        # Add event summary if available
+        if events_summary:
+            summary.update(events_summary)
         
         # Update metadata file with end time
         metadata_file = self.current_session_dir / "metadata" / "session_info.json"
@@ -236,6 +318,11 @@ class SessionManager:
                 metadata["end_time"] = end_time.isoformat()
                 metadata["duration_seconds"] = duration
                 metadata["screenshot_count"] = screenshot_count
+                
+                # Add event summary if available
+                if events_summary:
+                    metadata.update(events_summary)
+                
                 with open(metadata_file, "w", encoding="utf-8") as f:
                     json.dump(metadata, f, indent=2)
             except Exception:
