@@ -21,8 +21,10 @@ import sys
 if sys.platform == 'win32':
     import ctypes
 
-from .capture import capture_and_ocr
-from .summarize import summarize_text
+from .capture import capture_and_ocr, extract_terminal_text
+from .summarize import summarize_text, summarize_commands
+from .command_recorder import CommandRecorder
+from .session_manager import SessionManager
 
 
 class ToolTip:
@@ -38,9 +40,10 @@ class ToolTip:
     
     def on_enter(self, event=None):
         """Show tooltip on hover."""
-        # Don't show if tooltip already exists
+        # If tooltip already exists, destroy it first to refresh with new text
         if self.tooltip_window:
-            return
+            self.tooltip_window.destroy()
+            self.tooltip_window = None
         
         try:
             # Get widget position
@@ -54,7 +57,7 @@ class ToolTip:
             
             label = tk.Label(
                 self.tooltip_window,
-                text=self.text,
+                text=self.text,  # Read current text value
                 background='#2D2D2D',
                 foreground='white',
                 font=('Segoe UI', 9),
@@ -70,6 +73,14 @@ class ToolTip:
     
     def on_leave(self, event=None):
         """Hide tooltip when mouse leaves."""
+        if self.tooltip_window:
+            self.tooltip_window.destroy()
+            self.tooltip_window = None
+    
+    def update_text(self, new_text):
+        """Update the tooltip text and refresh if currently showing."""
+        self.text = new_text
+        # If tooltip is currently showing, destroy it so it will refresh on next hover
         if self.tooltip_window:
             self.tooltip_window.destroy()
             self.tooltip_window = None
@@ -96,9 +107,16 @@ class FloatingToolbar:
         
         # State
         self.is_processing = False
+        self.is_recording = False  # Command recording mode
         self.step_count = 0
         self.is_hidden = False
         self.is_dragging = False
+        
+        # Command recorder
+        self.command_recorder = None
+        
+        # Session manager for organizing recordings
+        self.session_manager = None
         
         # Auto-hide settings
         self.hide_delay = 3000  # Hide after 3 seconds of inactivity
@@ -223,12 +241,13 @@ class FloatingToolbar:
         separator2.pack(side=tk.LEFT, padx=8, fill=tk.Y, pady=4)
         
         # Center - Capture button (icon style)
+        # This button toggles between start/stop recording
         self.capture_btn = self.create_icon_button(
             button_container,
             "🔴",  # Record icon
             self.button_active,
-            self.start_capture_process,
-            "Start Capture"
+            self.toggle_recording,
+            "Start Recording"
         )
         self.capture_btn.pack(side=tk.LEFT, padx=4)
         
@@ -350,7 +369,7 @@ class FloatingToolbar:
         }
         tooltips = {
             'idle': 'Status: Idle',
-            'processing': 'Status: Processing',
+            'processing': 'Status: Processing...',
             'success': 'Status: Success',
             'error': 'Status: Error'
         }
@@ -359,7 +378,9 @@ class FloatingToolbar:
             self.status_indicator.config(fg=colors.get(status, '#666666'))
         
         if hasattr(self, 'status_tooltip'):
-            self.status_tooltip.text = tooltips.get(status, 'Status: Unknown')
+            # Use update_text method to properly refresh tooltip
+            new_tooltip_text = tooltips.get(status, 'Status: Unknown')
+            self.status_tooltip.update_text(new_tooltip_text)
     
     def draw_status_indicator(self, status):
         """Draw status indicator (legacy method for compatibility)."""
@@ -669,8 +690,190 @@ class FloatingToolbar:
         self.toolbar_frame.bind('<B1-Motion>', on_drag)
         self.toolbar_frame.bind('<ButtonRelease-1>', end_drag)
         
+    def toggle_recording(self):
+        """Toggle recording on/off - ONLY way to stop recording."""
+        if self.is_recording:
+            # Stop recording (ONLY called via button press)
+            self.stop_recording()
+        else:
+            # Start recording mode
+            self.start_recording()
+    
+    def toggle_capture_or_record(self):
+        """Toggle between manual capture and command recording mode."""
+        if self.is_recording:
+            # Stop recording
+            self.stop_recording()
+        else:
+            # Check if we should start recording or do manual capture
+            # For now, start recording mode
+            self.start_recording()
+    
+    def start_recording(self):
+        """Start command recording mode."""
+        if self.is_processing or self.is_recording:
+            return
+        
+        if not self.api_key or self.api_key.strip() == "":
+            self.show_settings()
+            messagebox.showwarning(
+                "API Key Required",
+                "Please set your OpenAI API key in settings."
+            )
+            return
+        
+        # Create session folder for this recording
+        self.session_manager = SessionManager()
+        self.session_manager.create_session_folder()
+        
+        # Initialize command recorder with session manager
+        self.is_recording = True
+        self.command_recorder = CommandRecorder(
+            on_command_captured=self.on_command_captured,
+            session_manager=self.session_manager
+        )
+        self.command_recorder.start_recording()
+        
+        # Update UI
+        self.capture_btn.config(text="⏹", bg='#CC0000')  # Stop icon, darker red
+        self.update_status_indicator('processing')
+        self.logo_label.config(fg='#FF4444')  # Red logo when recording
+        self.step_label.config(text="Recording...")
+        
+        # Update tooltip
+        ToolTip(self.capture_btn, "Stop Recording")
+    
+    def stop_recording(self):
+        """Stop command recording and generate documentation."""
+        if not self.is_recording or not self.command_recorder:
+            return
+        
+        # Stop recording
+        command_history = self.command_recorder.stop_recording()
+        self.is_recording = False
+        
+        # Update UI
+        self.capture_btn.config(text="🔴", bg=self.button_active, activebackground='#CC0000')  # Back to record icon
+        self.update_status_indicator('processing')
+        self.step_label.config(text="Processing...")
+        
+        # Remove old tooltip and add new one
+        for widget in [self.capture_btn]:
+            try:
+                widget.unbind('<Enter>')
+                widget.unbind('<Leave>')
+            except Exception:
+                pass
+        ToolTip(self.capture_btn, "Start Recording")
+        
+        # Generate documentation from commands
+        if command_history:
+            thread = threading.Thread(target=self.process_command_session, args=(command_history,), daemon=True)
+            thread.start()
+        else:
+            self.root.after(0, lambda: messagebox.showinfo("Recording", "No commands were captured."))
+            self.root.after(0, lambda: self.capture_btn.config(state=tk.NORMAL))
+            self.root.after(0, lambda: self.update_status_indicator('idle'))
+            self.root.after(0, lambda: self.logo_label.config(fg='#FFFFFF'))
+            self.root.after(0, lambda: self.step_label.config(text=f"{self.step_count}"))
+    
+    def on_command_captured(self, command, screenshot_path, timestamp):
+        """Callback when a command is captured."""
+        # Don't process OCR here - just update UI
+        # Images will be processed later when stop_recording is called
+        try:
+            # Update step count (just count captures, don't process images)
+            self.step_count += 1
+            self.root.after(0, lambda: self.step_label.config(text=f"{self.step_count} commands"))
+        except Exception:
+            # Don't let UI updates stop recording
+            pass
+    
+    def process_command_session(self, command_history):
+        """Process recorded commands and generate documentation."""
+        try:
+            Path("docs/generated").mkdir(parents=True, exist_ok=True)
+            
+            # Update API key if needed
+            if self.api_key:
+                os.environ["OPENAI_API_KEY"] = self.api_key
+            
+            # NOW process all screenshots - extract commands using OCR
+            # This is where we do the image processing, not during capture
+            processed_history = []
+            for command, timestamp, screenshot_path in command_history:
+                # Process each screenshot to extract command text
+                if not command or command.strip() == "":
+                    # Extract from screenshot using OCR
+                    try:
+                        extracted = extract_terminal_text(screenshot_path)
+                        if extracted and extracted.strip():
+                            command = extracted
+                        else:
+                            command = "Command captured"
+                    except Exception:
+                        # If OCR fails, just mark as captured
+                        command = "Command captured"
+                
+                processed_history.append((command, timestamp, screenshot_path))
+            
+            # Generate documentation from processed commands
+            # Pass session base path to use relative paths for screenshots
+            session_base_path = None
+            if self.session_manager and self.session_manager.current_session_dir:
+                session_base_path = str(self.session_manager.current_session_dir)
+            
+            summary = summarize_commands(
+                processed_history, 
+                include_screenshots=True,
+                session_base_path=session_base_path
+            )
+            
+            # Save to file in session folder
+            if self.session_manager:
+                output_path = self.session_manager.get_documentation_path("documentation.md")
+            else:
+                # Fallback to old location if no session manager
+                output_path = Path("docs/generated") / f"command_session_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
+            
+            with open(output_path, "w", encoding="utf-8") as f:
+                f.write(summary)
+            
+            # Finalize session and add session info to documentation
+            if self.session_manager:
+                session_summary = self.session_manager.finalize_session()
+                # Append session info to documentation
+                session_info = "\n\n---\n\n## Session Information\n\n"
+                session_info += f"- **Session ID:** `{session_summary.get('session_id', 'N/A')}`\n"
+                session_info += f"- **Duration:** {session_summary.get('duration_seconds', 0):.1f} seconds\n"
+                session_info += f"- **Screenshots:** {session_summary.get('screenshot_count', 0)}\n"
+                session_info += f"- **Session Folder:** `{session_summary.get('session_dir', 'N/A')}`\n"
+                
+                with open(output_path, "a", encoding="utf-8") as f:
+                    f.write(session_info)
+            
+            # Update UI
+            self.root.after(0, lambda: self.capture_btn.config(state=tk.NORMAL))
+            self.root.after(0, lambda: self.update_status_indicator('success'))
+            self.root.after(0, lambda: self.show_notification(f"Documentation saved!\n{output_path.name}"))
+            self.root.after(0, lambda: self.step_label.config(text=f"{len(processed_history)}"))
+            
+            # Reset status after 2 seconds
+            self.root.after(2000, lambda: self.draw_status_indicator('idle'))
+            
+        except Exception as e:
+            error_msg = str(e)
+            self.root.after(0, lambda: self.capture_btn.config(state=tk.NORMAL))
+            self.root.after(0, lambda: self.update_status_indicator('error'))
+            self.root.after(0, lambda: messagebox.showerror("Error", f"An error occurred:\n{error_msg}"))
+            self.root.after(2000, lambda: self.update_status_indicator('idle'))
+        finally:
+            self.is_processing = False
+            # Change logo back to white when done
+            self.root.after(0, lambda: self.logo_label.config(fg='#FFFFFF'))
+    
     def start_capture_process(self):
-        """Start the capture and documentation generation."""
+        """Start manual capture and documentation generation (legacy method)."""
         if self.is_processing:
             return
         
