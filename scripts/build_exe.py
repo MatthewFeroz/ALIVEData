@@ -15,12 +15,12 @@ def build_exe(toolbar=False):
         toolbar: If True, build the floating toolbar. If False, build the full GUI.
     """
     
-    # Ensure we're in the right directory
-    script_dir = Path(__file__).parent
+    # Ensure we're in the project root directory
+    script_dir = Path(__file__).parent.parent  # Go up to project root
     os.chdir(script_dir)
     
     # Choose which script to build
-    script_name = 'toolbar.py' if toolbar else 'gui.py'
+    script_name = 'src/toolbar.py' if toolbar else 'src/gui.py'
     exe_name = 'ALIVE_Data_Toolbar' if toolbar else 'ALIVE_Data'
     
     # PyInstaller arguments

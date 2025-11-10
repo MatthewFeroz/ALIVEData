@@ -1,5 +1,10 @@
 import os
+import sys
 from pathlib import Path
+
+# Add src to path
+sys.path.insert(0, str(Path(__file__).parent / 'src'))
+
 from capture import capture_and_ocr
 from summarize import summarize_text
 from dotenv import load_dotenv
@@ -22,7 +27,7 @@ def main():
     print("Generated Documentation:\n")
     print(summary)
 
-    output_path = Path("docs") / "generated_doc.md"
+    output_path = Path("docs") / "generated" / "generated_doc.md"
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(summary)
 

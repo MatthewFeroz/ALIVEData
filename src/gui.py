@@ -12,8 +12,8 @@ import sys
 from datetime import datetime
 from dotenv import load_dotenv
 
-from capture import capture_and_ocr
-from summarize import summarize_text
+from .capture import capture_and_ocr
+from .summarize import summarize_text
 
 
 class ALIVEGUI:
@@ -59,8 +59,23 @@ class ALIVEGUI:
         api_frame.columnconfigure(1, weight=1)
         
         ttk.Label(api_frame, text="API Key:").grid(row=0, column=0, sticky=tk.W, padx=(0, 5))
-        api_entry = ttk.Entry(api_frame, textvariable=self.api_key, width=50, show="*")
+        api_entry = ttk.Entry(api_frame, textvariable=self.api_key, width=50, show="*", font=("Consolas", 9))
         api_entry.grid(row=0, column=1, sticky=(tk.W, tk.E), padx=(0, 5))
+        
+        # Format display label
+        self.api_key_display = ttk.Label(api_frame, text="", font=("Consolas", 8), foreground="gray")
+        self.api_key_display.grid(row=1, column=1, sticky=tk.W, padx=(0, 5))
+        
+        # Update display when key changes
+        def update_display(*args):
+            key = self.api_key.get()
+            if key:
+                formatted = self.format_api_key_display(key)
+                self.api_key_display.config(text=f"Preview: {formatted}")
+            else:
+                self.api_key_display.config(text="")
+        self.api_key.trace_add("write", update_display)
+        update_display()
         
         save_key_btn = ttk.Button(api_frame, text="Save Key", command=self.save_api_key)
         save_key_btn.grid(row=0, column=2)
@@ -120,12 +135,35 @@ class ALIVEGUI:
             command=self.clear_output
         ).pack(side=tk.LEFT)
         
+    def format_api_key_display(self, key):
+        """Format API key for display (show first 7 chars + ...)."""
+        if not key or len(key) < 7:
+            return ""
+        return f"{key[:7]}...{key[-4:]}" if len(key) > 11 else f"{key[:7]}..."
+    
+    def validate_api_key_format(self, key):
+        """Validate OpenAI API key format."""
+        if not key:
+            return False, "API key cannot be empty"
+        key = key.strip()
+        if len(key) < 20:
+            return False, "API key appears too short (minimum 20 characters)"
+        if not (key.startswith("sk-") or key.startswith("sk-proj-")):
+            return False, "API key should start with 'sk-' or 'sk-proj-'"
+        return True, "Valid format"
+    
     def check_api_key(self):
         """Check if API key is set."""
-        if not self.api_key.get() or self.api_key.get() == "":
+        key = self.api_key.get()
+        if not key or key.strip() == "":
             self.status_var.set("⚠️ Warning: API key not set. Please enter your OpenAI API key.")
         else:
-            self.status_var.set("Ready - API key configured")
+            is_valid, message = self.validate_api_key_format(key)
+            if is_valid:
+                formatted = self.format_api_key_display(key)
+                self.status_var.set(f"Ready - API key configured ({formatted})")
+            else:
+                self.status_var.set(f"⚠️ Warning: {message}")
             
     def save_api_key(self):
         """Save API key to .env file."""
@@ -133,6 +171,16 @@ class ALIVEGUI:
         if not key:
             messagebox.showwarning("Warning", "Please enter an API key.")
             return
+        
+        # Validate format
+        is_valid, message = self.validate_api_key_format(key)
+        if not is_valid:
+            result = messagebox.askyesno(
+                "Invalid API Key Format",
+                f"{message}\n\nDo you want to save it anyway?"
+            )
+            if not result:
+                return
         
         try:
             env_path = Path(".env")
@@ -142,8 +190,10 @@ class ALIVEGUI:
             # Update environment variable
             os.environ["OPENAI_API_KEY"] = key
             
-            messagebox.showinfo("Success", "API key saved successfully!")
-            self.status_var.set("Ready - API key saved")
+            formatted = self.format_api_key_display(key)
+            messagebox.showinfo("Success", f"API key saved successfully!\n({formatted})")
+            self.status_var.set(f"Ready - API key saved ({formatted})")
+            self.check_api_key()
         except Exception as e:
             messagebox.showerror("Error", f"Failed to save API key: {e}")
             
@@ -171,7 +221,7 @@ class ALIVEGUI:
         """Perform the capture and documentation generation."""
         try:
             # Ensure docs directory exists
-            Path("docs").mkdir(exist_ok=True)
+            Path("docs/generated").mkdir(parents=True, exist_ok=True)
             
             # Update status
             self.root.after(0, lambda: self.status_var.set("Capturing screenshot..."))
@@ -194,7 +244,7 @@ class ALIVEGUI:
             summary = summarize_text(ocr_result)
             
             # Save to file
-            output_path = Path("docs") / f"generated_doc_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
+            output_path = Path("docs/generated") / f"generated_doc_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
             with open(output_path, "w", encoding="utf-8") as f:
                 f.write(summary)
             
@@ -224,7 +274,7 @@ class ALIVEGUI:
         file_path = filedialog.asksaveasfilename(
             defaultextension=".md",
             filetypes=[("Markdown files", "*.md"), ("Text files", "*.txt"), ("All files", "*.*")],
-            initialdir=Path("docs").absolute()
+            initialdir=Path("docs/generated").absolute()
         )
         
         if file_path:
@@ -242,7 +292,7 @@ class ALIVEGUI:
         
     def open_docs_folder(self):
         """Open the docs folder in file explorer."""
-        docs_path = Path("docs").absolute()
+        docs_path = Path("docs/generated").absolute()
         docs_path.mkdir(exist_ok=True)
         
         if os.name == 'nt':  # Windows
