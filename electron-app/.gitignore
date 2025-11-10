@@ -1,0 +1,17 @@
+node_modules/
+dist/
+build/
+*.log
+.DS_Store
+.env
+.env.local
+*.pem
+.vite/
+*.exe
+*.dmg
+*.AppImage
+*.deb
+*.rpm
+*.snap
+out/
+

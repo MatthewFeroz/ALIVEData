@@ -1,0 +1,46 @@
+# Electron Builder Configuration
+# This file provides additional configuration for electron-builder
+
+appId: com.alivedata.app
+productName: ALIVE Data
+
+directories:
+  output: dist
+  buildResources: build
+
+files:
+  - src/main/**/*
+  - src/preload/**/*
+  - dist/renderer/**/*
+  - package.json
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.ico
+
+mac:
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+  icon: build/icon.icns
+  category: public.app-category.utilities
+
+linux:
+  target:
+    - target: AppImage
+      arch:
+        - x64
+  icon: build/icon.png
+  category: Utility
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+
