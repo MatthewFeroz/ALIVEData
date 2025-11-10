@@ -273,3 +273,4 @@ def create_session_folder(custom_prefix: Optional[str] = None) -> Path:
     manager = SessionManager()
     return manager.create_session_folder(custom_prefix=custom_prefix)
 
+

@@ -94,3 +94,4 @@ The markdown documentation uses relative paths for screenshots:
 
 This ensures documentation remains portable and works when the session folder is moved.
 
+
