@@ -7,4 +7,8 @@ pyinstaller>=6.0.0
 watchdog>=3.0.0
 pynput>=1.7.6
 pywin32>=306
+fastapi>=0.104.1
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+pydantic>=2.5.0
 

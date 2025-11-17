@@ -1,75 +1,106 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
-import { sessionsAPI } from '../services/api'
+import { useQuery, useMutation, useAction } from 'convex/react'
+import { api } from '../../convex/_generated/api'
+import { createWorker } from 'tesseract.js'
 import FileUpload from '../components/FileUpload'
 import LoadingSpinner from '../components/LoadingSpinner'
 
 export default function SessionDetail() {
   const { sessionId } = useParams()
-  const [session, setSession] = useState(null)
-  const [screenshots, setScreenshots] = useState([])
-  const [documentation, setDocumentation] = useState(null)
   const [ocrText, setOcrText] = useState('')
-  const [loading, setLoading] = useState(true)
   const [uploading, setUploading] = useState(false)
   const [processingOCR, setProcessingOCR] = useState(false)
   const [generating, setGenerating] = useState(false)
   const [error, setError] = useState(null)
   const [activeTab, setActiveTab] = useState('upload')
 
-  useEffect(() => {
-    loadSession()
-    loadScreenshots()
-  }, [sessionId])
+  // Use Convex queries
+  const session = useQuery(api.sessions.getSession, { sessionId })
+  const screenshots = useQuery(api.files.listScreenshots, { sessionId })
+  const documentation = useQuery(api.documentation.getDocumentation, { sessionId })
 
-  const loadSession = async () => {
-    try {
-      setLoading(true)
-      const data = await sessionsAPI.get(sessionId)
-      setSession(data)
-    } catch (err) {
-      setError('Failed to load session: ' + err.message)
-    } finally {
-      setLoading(false)
-    }
-  }
+  // Use Convex mutations and actions
+  const generateUploadUrl = useMutation(api.files.generateUploadUrl)
+  const uploadScreenshot = useMutation(api.files.uploadScreenshot)
+  const summarizeTextAction = useAction(api.ai.summarizeText)
+  const saveDocumentation = useMutation(api.documentation.saveDocumentation)
 
-  const loadScreenshots = async () => {
-    try {
-      const data = await sessionsAPI.listScreenshots(sessionId)
-      setScreenshots(data.screenshots || [])
-    } catch (err) {
-      console.error('Failed to load screenshots:', err)
-    }
-  }
+  const loading = session === undefined
 
   const handleUpload = async (file) => {
     try {
       setUploading(true)
       setError(null)
-      await sessionsAPI.uploadScreenshot(sessionId, file, (progress) => {
-        console.log('Upload progress:', progress)
+      
+      // Get upload URL from Convex
+      const uploadUrl = await generateUploadUrl({})
+      
+      // Upload file to Convex storage
+      const result = await fetch(uploadUrl, {
+        method: "POST",
+        headers: { "Content-Type": file.type },
+        body: file,
       })
-      await loadScreenshots()
+      
+      if (!result.ok) {
+        const errorText = await result.text()
+        throw new Error(`Upload failed: ${result.statusText} - ${errorText}`)
+      }
+      
+      // Convex storage returns the storageId as a string directly
+      // But sometimes it might be wrapped in an object, so handle both cases
+      const responseData = await result.json()
+      // If it's an object with storageId, extract it; otherwise use the value directly
+      const storageId = typeof responseData === 'string' 
+        ? responseData 
+        : (responseData.storageId || responseData.id || responseData)
+      
+      if (!storageId || typeof storageId !== 'string') {
+        throw new Error(`Invalid storage ID received: ${JSON.stringify(responseData)}`)
+      }
+
+      // Create screenshot record
+      await uploadScreenshot({
+        sessionId,
+        filename: file.name,
+        fileId: storageId,
+        size: file.size,
+      })
+
+      // Screenshots will automatically update via Convex query!
     } catch (err) {
-      setError('Failed to upload screenshot: ' + err.message)
+      setError('Failed to upload screenshot: ' + (err.message || String(err)))
+      console.error('Upload error:', err)
     } finally {
       setUploading(false)
     }
   }
 
-  const handleProcessOCR = async (filename) => {
+  const handleProcessOCR = async (screenshot) => {
     try {
       setProcessingOCR(true)
       setError(null)
-      const data = await sessionsAPI.processOCR(sessionId, {
-        screenshot_id: filename,
-      })
-      setOcrText(data.text)
-      setActiveTab('ocr')
+      
+      if (!screenshot || !screenshot.url) {
+        throw new Error('Screenshot URL is required for OCR processing')
+      }
+      
+      console.log('Processing OCR for screenshot:', screenshot.url)
+      
+      // Process OCR in the browser using Tesseract.js
+      const worker = await createWorker('eng')
+      try {
+        const { data } = await worker.recognize(screenshot.url)
+        setOcrText(data.text.trim())
+        setActiveTab('ocr')
+      } finally {
+        await worker.terminate()
+      }
     } catch (err) {
-      setError('Failed to process OCR: ' + err.message)
+      setError('Failed to process OCR: ' + (err.message || String(err)))
+      console.error('OCR error:', err)
     } finally {
       setProcessingOCR(false)
     }
@@ -79,13 +110,32 @@ export default function SessionDetail() {
     try {
       setGenerating(true)
       setError(null)
-      const data = await sessionsAPI.generateDocumentation(sessionId, {
-        ocr_text: ocrText,
+      
+      if (!ocrText || !ocrText.trim()) {
+        throw new Error('Please process OCR first to extract text from the image')
+      }
+      
+      console.log('Generating documentation from OCR text...')
+      
+      // Call the action to generate documentation
+      const documentation = await summarizeTextAction({
+        ocrText,
       })
-      setDocumentation(data.documentation)
+      
+      console.log('Documentation generated, saving...')
+      
+      // Save the documentation
+      await saveDocumentation({
+        sessionId,
+        ocrText,
+        documentation,
+      })
+      
       setActiveTab('documentation')
+      // Documentation will automatically update via Convex query!
     } catch (err) {
-      setError('Failed to generate documentation: ' + err.message)
+      setError('Failed to generate documentation: ' + (err.message || String(err)))
+      console.error('Documentation error:', err)
     } finally {
       setGenerating(false)
     }
@@ -99,10 +149,18 @@ export default function SessionDetail() {
     )
   }
 
+  if (!session) {
+    return (
+      <div className="text-center py-12 text-gray-400">
+        <p className="text-xl mb-4">Session not found</p>
+      </div>
+    )
+  }
+
   return (
     <div>
       <h1 className="text-3xl font-bold mb-6">
-        Session: {session?.session_id}
+        Session: {session.sessionId}
       </h1>
 
       {error && (
@@ -132,7 +190,7 @@ export default function SessionDetail() {
                 : 'border-transparent text-gray-400 hover:text-gray-300'
             }`}
           >
-            Screenshots ({screenshots.length})
+            Screenshots ({screenshots?.length || 0})
           </button>
           <button
             onClick={() => setActiveTab('ocr')}
@@ -176,30 +234,31 @@ export default function SessionDetail() {
       {/* Screenshots Tab */}
       {activeTab === 'screenshots' && (
         <div>
-          {screenshots.length === 0 ? (
+          {!screenshots || screenshots.length === 0 ? (
             <p className="text-gray-400">No screenshots uploaded yet</p>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {screenshots.map((screenshot, index) => (
+              {screenshots.map((screenshot) => (
                 <div
-                  key={index}
+                  key={screenshot._id}
                   className="bg-alive-button border border-gray-700 rounded-lg overflow-hidden"
                 >
-                  <img
-                    src={`http://localhost:8000${screenshot.path}`}
-                    alt={`Screenshot ${index + 1}`}
-                    className="w-full h-48 object-cover"
-                    onError={(e) => {
-                      // Fallback if image fails to load
-                      e.target.style.display = 'none'
-                    }}
-                  />
+                  {screenshot.url && (
+                    <img
+                      src={screenshot.url}
+                      alt={screenshot.filename}
+                      className="w-full h-48 object-cover"
+                      onError={(e) => {
+                        e.target.style.display = 'none'
+                      }}
+                    />
+                  )}
                   <div className="p-4">
                     <p className="text-sm text-gray-400 mb-2">
                       {screenshot.filename}
                     </p>
                     <button
-                      onClick={() => handleProcessOCR(screenshot.filename)}
+                      onClick={() => handleProcessOCR(screenshot)}
                       disabled={processingOCR}
                       className="w-full bg-alive-active hover:bg-red-600 text-white text-sm py-2 px-4 rounded transition-colors disabled:opacity-50"
                     >
@@ -243,10 +302,29 @@ export default function SessionDetail() {
       {/* Documentation Tab */}
       {activeTab === 'documentation' && (
         <div>
-          {documentation ? (
-            <div className="bg-alive-button border border-gray-700 rounded-lg p-6">
-              <div className="prose prose-invert max-w-none">
-                <ReactMarkdown>{documentation}</ReactMarkdown>
+          {documentation?.content ? (
+            <div className="bg-alive-button border border-gray-700 rounded-lg p-6 overflow-auto">
+              <div className="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-headings:font-bold prose-p:text-gray-300 prose-p:leading-relaxed prose-a:text-alive-active prose-a:no-underline hover:prose-a:underline prose-strong:text-white prose-strong:font-semibold prose-code:text-alive-active prose-code:bg-gray-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-700 prose-blockquote:border-l-alive-active prose-blockquote:text-gray-300 prose-ul:text-gray-300 prose-ol:text-gray-300 prose-li:marker:text-gray-500 prose-hr:border-gray-700">
+                <ReactMarkdown
+                  components={{
+                    code: ({ node, inline, className, children, ...props }) => {
+                      const match = /language-(\w+)/.exec(className || '')
+                      return !inline && match ? (
+                        <pre className="bg-gray-900 border border-gray-700 rounded-lg p-4 overflow-x-auto">
+                          <code className={className} {...props}>
+                            {children}
+                          </code>
+                        </pre>
+                      ) : (
+                        <code className="bg-gray-800 text-alive-active px-1.5 py-0.5 rounded text-sm font-mono" {...props}>
+                          {children}
+                        </code>
+                      )
+                    },
+                  }}
+                >
+                  {documentation.content}
+                </ReactMarkdown>
               </div>
             </div>
           ) : (
@@ -259,4 +337,3 @@ export default function SessionDetail() {
     </div>
   )
 }
-

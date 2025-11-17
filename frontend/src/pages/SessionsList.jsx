@@ -1,39 +1,44 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { sessionsAPI } from '../services/api'
+import { Link, useNavigate } from 'react-router-dom'
+import { useQuery, useMutation } from 'convex/react'
+import { api } from '../../convex/_generated/api'
 import LoadingSpinner from '../components/LoadingSpinner'
 
 export default function SessionsList() {
-  const [sessions, setSessions] = useState([])
-  const [loading, setLoading] = useState(true)
+  const navigate = useNavigate()
   const [error, setError] = useState(null)
   const [creating, setCreating] = useState(false)
 
-  useEffect(() => {
-    loadSessions()
-  }, [])
+  // Use Convex query hook - automatically updates in real-time!
+  const sessions = useQuery(api.sessions.listSessions)
+  const createSessionMutation = useMutation(api.sessions.createSession)
 
-  const loadSessions = async () => {
-    try {
-      setLoading(true)
-      const data = await sessionsAPI.list()
-      setSessions(data.sessions || [])
-      setError(null)
-    } catch (err) {
-      setError('Failed to load sessions: ' + err.message)
-    } finally {
-      setLoading(false)
-    }
-  }
+  const loading = sessions === undefined
+
+  // Debug: Log Convex connection status
+  useEffect(() => {
+    console.log('Convex URL:', import.meta.env.VITE_CONVEX_URL)
+    console.log('Sessions query result:', sessions)
+    console.log('Create mutation available:', !!createSessionMutation)
+  }, [sessions, createSessionMutation])
 
   const createSession = async () => {
     try {
       setCreating(true)
-      const session = await sessionsAPI.create()
+      setError(null)
+      console.log('Creating session...')
+      const sessionId = await createSessionMutation({})
+      console.log('Session created:', sessionId)
       // Redirect to new session
-      window.location.href = `/sessions/${session.session_id}`
+      if (sessionId) {
+        navigate(`/sessions/${sessionId}`)
+      } else {
+        setError('Session created but no ID returned')
+        setCreating(false)
+      }
     } catch (err) {
-      setError('Failed to create session: ' + err.message)
+      console.error('Error creating session:', err)
+      setError('Failed to create session: ' + (err.message || String(err)))
       setCreating(false)
     }
   }
@@ -75,7 +80,7 @@ export default function SessionsList() {
         </div>
       )}
 
-      {sessions.length === 0 ? (
+      {!sessions || sessions.length === 0 ? (
         <div className="text-center py-12 text-gray-400">
           <p className="text-xl mb-4">No sessions yet</p>
           <p>Create a new session to get started</p>
@@ -84,18 +89,18 @@ export default function SessionsList() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {sessions.map((session) => (
             <Link
-              key={session.session_id}
-              to={`/sessions/${session.session_id}`}
+              key={session._id}
+              to={`/sessions/${session.sessionId}`}
               className="bg-alive-button hover:bg-alive-hover border border-gray-700 rounded-lg p-6 transition-colors"
             >
               <h3 className="text-lg font-semibold mb-2">
-                {session.session_id}
+                {session.sessionId}
               </h3>
               <p className="text-sm text-gray-400 mb-1">
-                Started: {formatDate(session.start_time)}
+                Started: {formatDate(new Date(session.startTime).toISOString())}
               </p>
-              {session.pc_name && (
-                <p className="text-sm text-gray-400">PC: {session.pc_name}</p>
+              {session.pcName && (
+                <p className="text-sm text-gray-400">PC: {session.pcName}</p>
               )}
             </Link>
           ))}

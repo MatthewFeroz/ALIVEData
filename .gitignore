@@ -1,45 +1,42 @@
-# SECURITY: Never commit API keys, secrets, or credentials!
-# This .gitignore protects sensitive files from being accidentally committed.
-
-# Virtual environment
-.venv/
-venv/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
 env/
+venv/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
 
-# Environment variables and secrets
+# Environment variables
 .env
 .env.local
-.env.*.local
-*.env
-*.key
-*.pem
-secrets.json
-config.json
-credentials.json
-
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-
-# Screenshots and generated docs
-docs/**/*.png
-docs/**/*.jpg
-docs/**/*.jpeg
-docs/**/*.gif
-docs/**/*.bmp
-docs/generated/**/*.md
-docs/generated/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
 # OS
 .DS_Store
 Thumbs.db
 
+# Application specific
+docs/generated/
+docs/sessions/
+uploads/
+static/uploads/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Logs
+*.log
