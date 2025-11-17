@@ -1,2 +1,0 @@
-# ALIVE Data Web Application
-

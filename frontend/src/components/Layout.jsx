@@ -19,8 +19,14 @@ export default function Layout({ children }) {
               <div className="flex space-x-4 ml-8">
                 <Link
                   to="/"
+                  className="flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-alive-hover hover:text-white transition-colors"
+                >
+                  Home
+                </Link>
+                <Link
+                  to="/sessions"
                   className={`flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                    location.pathname === '/'
+                    location.pathname.startsWith('/sessions')
                       ? 'bg-alive-hover text-white'
                       : 'text-gray-300 hover:bg-alive-hover hover:text-white'
                   }`}

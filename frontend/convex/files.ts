@@ -80,6 +80,13 @@ export const listScreenshots = query({
   },
 });
 
+export const getFileUrl = query({
+  args: { fileId: v.id("_storage") },
+  handler: async (ctx, args) => {
+    return await ctx.storage.getUrl(args.fileId);
+  },
+});
+
 export const generateUploadUrl = mutation({
   args: {},
   handler: async (ctx) => {

@@ -1,34 +1,38 @@
 # ALIVE Data
 
-ALIVE Data is a modern web application for automatically generating documentation from screenshots and terminal commands using OCR and AI.
+ALIVE Data is a modern web application for automatically generating documentation from screenshots using OCR and AI. Built with React, Convex, and OpenAI.
 
 ## Quick Links
 
 - **[📚 Documentation Index](docs/README.md)** - Browse all organized documentation
-- **[Main Documentation](docs/readmes/README_MAIN.md)** - Complete project documentation, setup instructions, and usage guide
 - **[Convex Documentation](docs/readmes/README_CONVEX.md)** - Convex functions and backend setup guide
 - **[Quick Start Guide](docs/quick-start/START_HERE.md)** - Get started quickly
+- **[Architecture Overview](ARCHITECTURE.md)** - Application architecture and structure
 
 ## Quick Start
 
-1. **Backend Setup:**
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate  # Windows
-   pip install -r requirements.txt
-   ```
-
-2. **Frontend Setup:**
+1. **Frontend Setup:**
    ```bash
    cd frontend
    npm install
    ```
 
-3. **Run:**
-   - Backend: `python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000`
-   - Frontend: `cd frontend && npm run dev`
+2. **Configure Environment:**
+   - Create `.env.local` in `frontend/` directory
+   - Add: `VITE_CONVEX_URL=your_convex_url`
+   - Set `OPENAI_API_KEY` in Convex dashboard
 
-For detailed setup instructions, see [Main Documentation](docs/readmes/README_MAIN.md).
+3. **Run:**
+   ```bash
+   cd frontend
+   npm run dev
+   ```
+
+4. **Convex Backend:**
+   - Run `npx convex dev` in the `frontend/convex/` directory
+   - Set `OPENAI_API_KEY` in Convex dashboard environment variables
+
+For detailed setup instructions, see [Convex Documentation](docs/readmes/README_CONVEX.md).
 
 ## Documentation
 

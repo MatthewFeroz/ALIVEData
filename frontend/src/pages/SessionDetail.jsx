@@ -49,16 +49,11 @@ export default function SessionDetail() {
         throw new Error(`Upload failed: ${result.statusText} - ${errorText}`)
       }
       
-      // Convex storage returns the storageId as a string directly
-      // But sometimes it might be wrapped in an object, so handle both cases
-      const responseData = await result.json()
-      // If it's an object with storageId, extract it; otherwise use the value directly
-      const storageId = typeof responseData === 'string' 
-        ? responseData 
-        : (responseData.storageId || responseData.id || responseData)
+      // Convex storage returns the storageId as a string
+      const storageId = await result.text()
       
-      if (!storageId || typeof storageId !== 'string') {
-        throw new Error(`Invalid storage ID received: ${JSON.stringify(responseData)}`)
+      if (!storageId || storageId.trim() === '') {
+        throw new Error(`Invalid storage ID received: empty response`)
       }
 
       // Create screenshot record

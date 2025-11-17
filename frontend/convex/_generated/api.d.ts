@@ -11,7 +11,6 @@
 import type * as ai from "../ai.js";
 import type * as documentation from "../documentation.js";
 import type * as files from "../files.js";
-import type * as ocr from "../ocr.js";
 import type * as sessions from "../sessions.js";
 
 import type {
@@ -24,7 +23,6 @@ declare const fullApi: ApiFromModules<{
   ai: typeof ai;
   documentation: typeof documentation;
   files: typeof files;
-  ocr: typeof ocr;
   sessions: typeof sessions;
 }>;
 

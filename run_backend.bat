@@ -1,5 +1,0 @@
-@echo off
-echo Starting ALIVE Data Backend...
-python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-pause
-
