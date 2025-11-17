@@ -19,6 +19,12 @@ export const generateDocumentation = mutation({
     includeScreenshots: v.optional(v.boolean()),
   },
   handler: async (ctx, args) => {
+    // Require authentication
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) {
+      throw new Error("Not authenticated. Please sign in to generate documentation.");
+    }
+
     const session = await ctx.db
       .query("sessions")
       .withIndex("by_sessionId", (q) => q.eq("sessionId", args.sessionId))
@@ -26,6 +32,12 @@ export const generateDocumentation = mutation({
 
     if (!session) {
       throw new Error("Session not found");
+    }
+
+    // Verify user owns this session
+    // Sessions without userId (old sessions) cannot be modified
+    if (!session.userId || session.userId !== identity.tokenIdentifier) {
+      throw new Error("You don't have permission to generate documentation for this session");
     }
 
     let documentation: string;
@@ -79,6 +91,12 @@ export const saveDocumentation = mutation({
     documentation: v.string(),
   },
   handler: async (ctx, args) => {
+    // Require authentication
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) {
+      throw new Error("Not authenticated. Please sign in to generate documentation.");
+    }
+
     const session = await ctx.db
       .query("sessions")
       .withIndex("by_sessionId", (q) => q.eq("sessionId", args.sessionId))
@@ -86,6 +104,12 @@ export const saveDocumentation = mutation({
 
     if (!session) {
       throw new Error("Session not found");
+    }
+
+    // Verify user owns this session
+    // Sessions without userId (old sessions) cannot be modified
+    if (!session.userId || session.userId !== identity.tokenIdentifier) {
+      throw new Error("You don't have permission to generate documentation for this session");
     }
 
     // Check if documentation already exists
@@ -126,12 +150,24 @@ export const saveDocumentation = mutation({
 export const getDocumentation = query({
   args: { sessionId: v.string() },
   handler: async (ctx, args) => {
+    // Require authentication
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) {
+      return null;
+    }
+
     const session = await ctx.db
       .query("sessions")
       .withIndex("by_sessionId", (q) => q.eq("sessionId", args.sessionId))
       .first();
 
     if (!session) {
+      return null;
+    }
+
+    // Verify user owns this session
+    // Sessions without userId (old sessions) are not accessible
+    if (!session.userId || session.userId !== identity.tokenIdentifier) {
       return null;
     }
 

@@ -1,19 +1,110 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { useAuth } from '@workos-inc/authkit-react'
 import Layout from './components/Layout'
+import Auth from './components/Auth'
 import Landing from './pages/Landing'
 import SessionsList from './pages/SessionsList'
 import SessionDetail from './pages/SessionDetail'
 import Settings from './pages/Settings'
+import Callback from './pages/Callback'
+import Login from './pages/Login'
+import LoadingSpinner from './components/LoadingSpinner'
+
+function ProtectedRoute({ children }) {
+  const { user, isLoading } = useAuth()
+  
+  // Check both AuthKit and Convex auth
+  const convexAuthUserId = typeof window !== 'undefined' ? sessionStorage.getItem('convex_auth_userId') : null
+  const convexAuthAuthenticated = typeof window !== 'undefined' ? sessionStorage.getItem('convex_auth_authenticated') === 'true' : false
+  const isAuthenticated = !!user || (convexAuthAuthenticated && convexAuthUserId)
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-alive-dark">
+        <LoadingSpinner size="lg" />
+      </div>
+    )
+  }
+
+  if (!isAuthenticated) {
+    return <Auth />
+  }
+
+  return children
+}
 
 function App() {
+  const { user, isLoading } = useAuth()
+  
+  // Check both AuthKit user and Convex auth fallback (stored in sessionStorage)
+  const convexAuthUserId = typeof window !== 'undefined' ? sessionStorage.getItem('convex_auth_userId') : null
+  const convexAuthAuthenticated = typeof window !== 'undefined' ? sessionStorage.getItem('convex_auth_authenticated') === 'true' : false
+  
+  // User is authenticated if AuthKit has user OR Convex has authenticated
+  const isAuthenticated = !!user || (convexAuthAuthenticated && convexAuthUserId)
+
+  // Debug logging
+  React.useEffect(() => {
+    console.log('App - Auth state:', { 
+      authKitUser: user ? { id: user.id, email: user.email } : null,
+      convexAuthUserId,
+      convexAuthAuthenticated,
+      isLoading, 
+      isAuthenticated,
+      pathname: window.location.pathname
+    })
+  }, [user, isLoading, isAuthenticated, convexAuthUserId, convexAuthAuthenticated])
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-alive-dark">
+        <LoadingSpinner size="lg" />
+      </div>
+    )
+  }
+
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/sessions" element={<Layout><SessionsList /></Layout>} />
-        <Route path="/sessions/:sessionId" element={<Layout><SessionDetail /></Layout>} />
-        <Route path="/settings" element={<Layout><Settings /></Layout>} />
+        <Route 
+          path="/" 
+          element={
+            isAuthenticated ? <Landing /> : <Auth />
+          } 
+        />
+        <Route 
+          path="/callback" 
+          element={<Callback />}
+        />
+        <Route 
+          path="/login" 
+          element={<Login />}
+        />
+        <Route 
+          path="/sessions" 
+          element={
+            <ProtectedRoute>
+              <Layout><SessionsList /></Layout>
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/sessions/:sessionId" 
+          element={
+            <ProtectedRoute>
+              <Layout><SessionDetail /></Layout>
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/settings" 
+          element={
+            <ProtectedRoute>
+              <Layout><Settings /></Layout>
+            </ProtectedRoute>
+          } 
+        />
       </Routes>
     </Router>
   )

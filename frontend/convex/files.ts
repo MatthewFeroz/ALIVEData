@@ -11,6 +11,12 @@ export const uploadScreenshot = mutation({
     size: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
+    // Require authentication
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) {
+      throw new Error("Not authenticated. Please sign in to upload screenshots.");
+    }
+
     // Get session
     const session = await ctx.db
       .query("sessions")
@@ -19,6 +25,12 @@ export const uploadScreenshot = mutation({
 
     if (!session) {
       throw new Error("Session not found");
+    }
+
+    // Verify user owns this session
+    // Sessions without userId (old sessions) cannot be modified
+    if (!session.userId || session.userId !== identity.tokenIdentifier) {
+      throw new Error("You don't have permission to upload to this session");
     }
 
     // Create screenshot record
@@ -47,12 +59,24 @@ export const uploadScreenshot = mutation({
 export const listScreenshots = query({
   args: { sessionId: v.string() },
   handler: async (ctx, args) => {
+    // Require authentication
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) {
+      return [];
+    }
+
     const session = await ctx.db
       .query("sessions")
       .withIndex("by_sessionId", (q) => q.eq("sessionId", args.sessionId))
       .first();
 
     if (!session) {
+      return [];
+    }
+
+    // Verify user owns this session
+    // Sessions without userId (old sessions) are not accessible
+    if (!session.userId || session.userId !== identity.tokenIdentifier) {
       return [];
     }
 
@@ -90,6 +114,12 @@ export const getFileUrl = query({
 export const generateUploadUrl = mutation({
   args: {},
   handler: async (ctx) => {
+    // Require authentication
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) {
+      throw new Error("Not authenticated. Please sign in to upload files.");
+    }
+
     // Generate upload URL for Convex file storage
     return await ctx.storage.generateUploadUrl();
   },

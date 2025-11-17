@@ -2,12 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Favicon removed to prevent 404 error -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ALIVE Data - Automatic Documentation Generator</title>
   </head>
-  <body>
+  <body data-convex-url="https://content-oriole-437.convex.cloud">
     <div id="root"></div>
+    <!-- Redirect OAuth code to Convex endpoint before React/AuthKit loads -->
+    <script>
+      (function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        const success = urlParams.get('success');
+        const path = window.location.pathname;
+        
+        // If we're on /callback with a code but no success, redirect to Convex immediately
+        // This prevents AuthKit from trying to process the code
+        if (path === '/callback' && code && !success) {
+          // Get Convex URL from body data attribute
+          const convexUrl = document.body.getAttribute('data-convex-url');
+          
+          if (convexUrl) {
+            // Convert .convex.cloud to .convex.site for HTTP endpoint
+            const convexSite = convexUrl.replace('.convex.cloud', '.convex.site');
+            const convexCallbackUrl = convexSite + '/workos/callback?code=' + encodeURIComponent(code);
+            window.location.href = convexCallbackUrl;
+          }
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

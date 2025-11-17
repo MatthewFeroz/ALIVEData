@@ -7,6 +7,7 @@ import { v } from "convex/values";
 export default defineSchema({
   sessions: defineTable({
     sessionId: v.string(),
+    userId: v.optional(v.string()), // User identity token identifier (optional for backward compatibility)
     startTime: v.number(),
     endTime: v.optional(v.number()),
     pcName: v.optional(v.string()),
@@ -19,7 +20,9 @@ export default defineSchema({
     ),
     screenshotCount: v.optional(v.number()),
     durationSeconds: v.optional(v.number()),
-  }).index("by_sessionId", ["sessionId"]),
+  })
+    .index("by_sessionId", ["sessionId"])
+    .index("by_userId", ["userId"]),
 
   screenshots: defineTable({
     sessionId: v.id("sessions"),

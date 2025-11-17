@@ -11,6 +11,7 @@
 import type * as ai from "../ai.js";
 import type * as documentation from "../documentation.js";
 import type * as files from "../files.js";
+import type * as http from "../http.js";
 import type * as sessions from "../sessions.js";
 
 import type {
@@ -23,6 +24,7 @@ declare const fullApi: ApiFromModules<{
   ai: typeof ai;
   documentation: typeof documentation;
   files: typeof files;
+  http: typeof http;
   sessions: typeof sessions;
 }>;
 

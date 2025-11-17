@@ -1,10 +1,18 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useMutation } from 'convex/react'
+import { useAuth } from '@workos-inc/authkit-react'
 import { api } from '../../convex/_generated/api'
 
 export default function Landing() {
   const navigate = useNavigate()
+  const { user, isLoading: authLoading, signOut } = useAuth()
+
+  // Check both AuthKit and Convex auth (sessionStorage fallback)
+  const convexAuthUserId = typeof window !== 'undefined' ? sessionStorage.getItem('convex_auth_userId') : null
+  const convexAuthAuthenticated = typeof window !== 'undefined' ? sessionStorage.getItem('convex_auth_authenticated') === 'true' : false
+  const isAuthenticated = !!user || (convexAuthAuthenticated && convexAuthUserId)
+
   const createSessionMutation = useMutation(api.sessions.createSession)
   const [creating, setCreating] = React.useState(false)
 
@@ -39,18 +47,57 @@ export default function Landing() {
               </Link>
             </div>
             <div className="flex items-center space-x-4">
-              <Link
-                to="/sessions"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                Sessions
-              </Link>
-              <Link
-                to="/settings"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                Settings
-              </Link>
+              {isAuthenticated ? (
+                <>
+                  <Link
+                    to="/sessions"
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    Sessions
+                  </Link>
+                  <Link
+                    to="/settings"
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    Settings
+                  </Link>
+                  <button
+                    onClick={async () => {
+                      try {
+                        // Clear Convex auth from sessionStorage
+                        if (typeof window !== 'undefined') {
+                          sessionStorage.removeItem('convex_auth_userId')
+                          sessionStorage.removeItem('convex_auth_authenticated')
+                        }
+                        // Sign out from AuthKit if available
+                        if (signOut) {
+                          await signOut()
+                        }
+                        // Redirect to home (will show Auth component)
+                        window.location.href = '/'
+                      } catch (error) {
+                        console.error('Sign out error:', error)
+                        // Still clear sessionStorage and redirect
+                        if (typeof window !== 'undefined') {
+                          sessionStorage.removeItem('convex_auth_userId')
+                          sessionStorage.removeItem('convex_auth_authenticated')
+                        }
+                        window.location.href = '/'
+                      }
+                    }}
+                    className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-alive-hover rounded-md transition-colors"
+                  >
+                    Sign Out
+                  </button>
+                </>
+              ) : (
+                <button
+                  onClick={() => navigate('/login')}
+                  className="px-4 py-2 bg-alive-active hover:bg-red-600 text-white font-semibold rounded-md transition-colors shadow-lg shadow-red-500/50"
+                >
+                  Sign In
+                </button>
+              )}
             </div>
           </div>
         </div>
