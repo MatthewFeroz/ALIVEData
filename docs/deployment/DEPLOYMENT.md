@@ -3,259 +3,385 @@
 ## Overview
 
 Your application has two parts:
-1. **Backend**: FastAPI (Python) - needs to run continuously
-2. **Frontend**: React/Vite - static files that can be served
+1. **Backend**: Convex (serverless) - automatically deployed
+2. **Frontend**: React/Vite - deploy to Vercel
 
-## Deployment Options
+## Architecture
 
-### Option 1: All-in-One Platforms (Easiest)
-- **Render** (Recommended) - Free tier, easy setup
-- **Railway** - Simple deployment
-- **Fly.io** - Good for Docker
-- **Heroku** - Popular but requires credit card
-
-### Option 2: Separate Hosting
-- **Backend**: Render/Railway/Fly.io
-- **Frontend**: Vercel/Netlify (Free, excellent for React)
-
-### Option 3: VPS/Server
-- **DigitalOcean**, **Linode**, **AWS EC2**
-- More control, requires server management
-
-## Recommended: Render (Backend) + Vercel (Frontend)
-
-This is the easiest and free option for most use cases.
+- **Convex Backend**: Serverless backend that handles database, file storage, and server functions
+- **Vercel Frontend**: React/Vite frontend that connects to Convex
+- **WorkOS**: Authentication provider (configured in both Convex and frontend)
 
 ---
 
-## Deployment Option 1: Render (Backend) + Vercel (Frontend)
+## Deployment Steps
 
-### Part A: Deploy Backend to Render
+### Step 1: Deploy Convex Backend to Production
 
-#### Step 1: Prepare for Production
+Convex automatically deploys when you run `npx convex deploy`. The dev deployment (`npx convex dev`) is for development only.
 
-1. **Create `render.yaml`** (already created below)
-2. **Create `Procfile`** for Render
-3. **Update CORS settings** for production
+#### 1.1: Deploy Convex Functions
 
-#### Step 2: Push to GitHub
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin <your-github-repo-url>
-git push -u origin main
-```
-
-#### Step 3: Deploy on Render
-
-1. Go to https://render.com
-2. Sign up/login with GitHub
-3. Click **"New +"** → **"Web Service"**
-4. Connect your GitHub repository
-5. Configure:
-   - **Name**: `alive-data-backend`
-   - **Environment**: `Python 3`
-   - **Build Command**: `pip install -r requirements.txt`
-   - **Start Command**: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
-   - **Environment Variables**:
-     ```
-     OPENAI_API_KEY=your-actual-api-key
-     ```
-6. Click **"Create Web Service"**
-
-#### Step 4: Get Backend URL
-
-After deployment, Render gives you a URL like:
-`https://alive-data-backend.onrender.com`
-
-### Part B: Deploy Frontend to Vercel
-
-#### Step 1: Update Frontend API URL
-
-Edit `frontend/src/services/api.js`:
-```javascript
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://your-backend-url.onrender.com/api'
-```
-
-#### Step 2: Create `vercel.json` (already created below)
-
-#### Step 3: Deploy to Vercel
-
-**Option A: Via Vercel CLI**
 ```bash
 cd frontend
-npm install -g vercel
-vercel
+npx convex deploy
 ```
 
-**Option B: Via GitHub (Recommended)**
-1. Push frontend to GitHub
-2. Go to https://vercel.com
-3. Import your repository
-4. Configure:
-   - **Framework Preset**: Vite
-   - **Root Directory**: `frontend`
-   - **Environment Variables**:
-     ```
-     VITE_API_URL=https://your-backend-url.onrender.com/api
-     ```
-5. Click **"Deploy"**
+**Note:** `npx convex deploy` deploys to production by default. There is no `--prod` flag needed.
+
+**First time:**
+- This will prompt you to create a production deployment
+- You'll get a production deployment URL (different from dev URL)
+- Example: `https://your-project-prod.convex.cloud`
+
+#### 1.2: Set Production Environment Variables in Convex
+
+1. Go to https://dashboard.convex.dev
+2. Select your project
+3. Go to **Settings** → **Environment Variables**
+4. Make sure these are set for **Production**:
+   - `OPENAI_API_KEY` = `sk-your-openai-api-key`
+   - `WORKOS_CLIENT_ID` = `your-workos-client-id`
+   - `WORKOS_API_KEY` = `your-workos-api-key`
+
+**Note**: Convex has separate environment variables for dev and production. Make sure to set them for the production deployment.
+
+#### 1.3: Get Production Convex URL
+
+After deploying, you'll see:
+```
+Deployment URL: https://your-project-prod.convex.cloud
+```
+
+**Save this URL** - you'll need it for the frontend deployment.
 
 ---
 
-## Deployment Option 2: Railway (All-in-One)
+### Step 2: Configure WorkOS for Production
 
-### Step 1: Prepare Files
+#### 2.1: Update Redirect URI in WorkOS Dashboard
 
-Create `railway.json` and `Procfile` (see below)
+1. Go to https://dashboard.workos.com
+2. Navigate to **Authentication** → **AuthKit** → **Configuration**
+3. Add your production redirect URI:
+   - `https://your-app.vercel.app/callback`
+   - (You'll get the exact URL after deploying to Vercel)
 
-### Step 2: Deploy
-
-1. Go to https://railway.app
-2. Sign up with GitHub
-3. Click **"New Project"** → **"Deploy from GitHub repo"**
-4. Select your repository
-5. Railway auto-detects Python and deploys backend
-6. Add environment variable: `OPENAI_API_KEY`
-
-### Step 3: Deploy Frontend
-
-1. In Railway, add another service
-2. Select frontend directory
-3. Build command: `cd frontend && npm install && npm run build`
-4. Start command: Serve static files (Railway handles this)
+**Important**: You can add multiple redirect URIs, so keep your dev URI (`http://localhost:5173/callback`) and add the production one.
 
 ---
 
-## Deployment Option 3: Docker (Any Platform)
+### Step 3: Deploy Frontend to Vercel
 
-### Step 1: Create Dockerfile
+#### Option A: Deploy via Vercel CLI (Recommended for first deployment)
 
-See `Dockerfile` below
+1. **Install Vercel CLI**:
+   ```bash
+   npm install -g vercel
+   ```
 
-### Step 2: Build and Deploy
+2. **Login to Vercel**:
+   ```bash
+   cd frontend
+   vercel login
+   ```
 
-```bash
-# Build
-docker build -t alive-data .
+3. **Deploy**:
+   ```bash
+   cd frontend
+   vercel
+   ```
 
-# Run locally
-docker run -p 8000:8000 -e OPENAI_API_KEY=your-key alive-data
+   Follow the prompts:
+   - **Set up and deploy?** → Yes
+   - **Which scope?** → Your account
+   - **Link to existing project?** → No (first time)
+   - **What's your project's name?** → `alive-data` (or your choice)
+   - **In which directory is your code located?** → `./` (current directory)
+   - **Want to override settings?** → No (first time)
 
-# Push to Docker Hub
-docker tag alive-data yourusername/alive-data
-docker push yourusername/alive-data
-```
+4. **Set Environment Variables**:
+   After the first deployment, you'll be asked to set environment variables, or you can set them in the Vercel dashboard:
+   
+   ```bash
+   vercel env add VITE_CONVEX_URL
+   # Enter: https://your-project-prod.convex.cloud
+   
+   vercel env add VITE_WORKOS_CLIENT_ID
+   # Enter: your-workos-client-id
+   
+   vercel env add VITE_WORKOS_REDIRECT_URI
+   # Enter: https://your-app.vercel.app/callback
+   ```
 
-Deploy to:
-- **Fly.io**: `flyctl launch`
-- **DigitalOcean App Platform**: Use Dockerfile
-- **AWS ECS**: Use Docker image
+5. **Redeploy with environment variables**:
+   ```bash
+   vercel --prod
+   ```
+
+#### Option B: Deploy via GitHub (Recommended for CI/CD)
+
+1. **Push your code to GitHub** (if not already):
+   ```bash
+   git add .
+   git commit -m "Ready for deployment"
+   git push origin main
+   ```
+
+2. **Import to Vercel**:
+   - Go to https://vercel.com
+   - Click **"Add New..."** → **"Project"**
+   - Import your GitHub repository
+   - Configure:
+     - **Framework Preset**: Vite
+     - **Root Directory**: `frontend`
+     - **Build Command**: `npm run build`
+     - **Output Directory**: `dist`
+     - **Install Command**: `npm install`
+
+3. **Set Environment Variables** in Vercel Dashboard:
+   - Go to **Settings** → **Environment Variables**
+   - Add:
+     - `VITE_CONVEX_URL` = `https://your-project-prod.convex.cloud`
+     - `VITE_WORKOS_CLIENT_ID` = `your-workos-client-id`
+     - `VITE_WORKOS_REDIRECT_URI` = `https://your-app.vercel.app/callback`
+   
+   **Important**: Make sure to set these for **Production**, **Preview**, and **Development** environments.
+
+4. **Deploy**:
+   - Click **"Deploy"**
+   - Vercel will automatically deploy on every push to your main branch
 
 ---
 
-## Production Configuration
+### Step 4: Update WorkOS Redirect URI
 
-### Environment Variables Needed
+After you get your Vercel deployment URL:
 
-```bash
-# Required
-OPENAI_API_KEY=sk-your-key-here
-
-# Optional
-OPENAI_MODEL=gpt-4o-mini
-CORS_ORIGINS=https://your-frontend-domain.com
-PORT=8000  # Usually set by platform
-```
-
-### CORS Configuration
-
-Update `app/core/config.py` to include your frontend domain:
-
-```python
-CORS_ORIGINS: List[str] = [
-    "http://localhost:3000",
-    "https://your-frontend-domain.vercel.app",  # Add your frontend URL
-]
-```
+1. Go to WorkOS Dashboard
+2. Add the production redirect URI: `https://your-app.vercel.app/callback`
+3. Save changes
 
 ---
 
 ## Post-Deployment Checklist
 
-- [ ] Backend is accessible (test API endpoint)
-- [ ] Frontend can connect to backend
-- [ ] CORS is configured correctly
-- [ ] Environment variables are set
-- [ ] File uploads work (check upload directory permissions)
-- [ ] Static files are served correctly
-- [ ] API documentation is accessible at `/docs`
+- [ ] Convex backend deployed to production (`npx convex deploy`)
+- [ ] Production environment variables set in Convex dashboard
+- [ ] Frontend deployed to Vercel
+- [ ] Environment variables set in Vercel dashboard
+- [ ] WorkOS redirect URI updated with production URL
+- [ ] Test authentication flow in production
+- [ ] Test file uploads
+- [ ] Test session creation
+- [ ] Test documentation generation
+
+---
+
+## Environment Variables Summary
+
+### Convex Dashboard (Production)
+```
+OPENAI_API_KEY=sk-your-key
+WORKOS_CLIENT_ID=your-client-id
+WORKOS_API_KEY=your-api-key
+```
+
+### Vercel Dashboard (Production)
+```
+VITE_CONVEX_URL=https://your-project-prod.convex.cloud
+VITE_WORKOS_CLIENT_ID=your-client-id
+VITE_WORKOS_REDIRECT_URI=https://your-app.vercel.app/callback
+```
 
 ---
 
 ## Troubleshooting
 
-### Backend Issues
+### Frontend can't connect to Convex
 
-**502 Bad Gateway**
-- Check if backend is running
-- Verify start command is correct
-- Check logs in Render/Railway dashboard
+**Symptoms**: "Missing VITE_CONVEX_URL" error or connection failures
 
-**CORS Errors**
-- Add frontend URL to `CORS_ORIGINS` in config
-- Restart backend after config change
+**Solutions**:
+- Verify `VITE_CONVEX_URL` is set in Vercel environment variables
+- Make sure you're using the **production** Convex URL (not dev URL)
+- Check that the environment variable is set for the correct environment (Production)
+- Redeploy after setting environment variables: `vercel --prod`
 
-**File Upload Fails**
-- Check write permissions for `uploads/` directory
-- Some platforms need persistent storage (Render requires paid plan)
+### Authentication not working
 
-### Frontend Issues
+**Symptoms**: Sign in button doesn't work, redirect errors
 
-**API Connection Failed**
-- Verify `VITE_API_URL` environment variable
-- Check backend URL is correct
-- Ensure backend is running
+**Solutions**:
+- Verify `VITE_WORKOS_CLIENT_ID` is set in Vercel
+- Check that redirect URI in WorkOS matches your Vercel URL exactly
+- Make sure `WORKOS_CLIENT_ID` and `WORKOS_API_KEY` are set in Convex production environment
+- Check browser console for specific error messages
 
-**Build Fails**
-- Check Node.js version (should be 16+)
-- Run `npm install` locally first
-- Check for TypeScript/ESLint errors
+### Build fails on Vercel
+
+**Symptoms**: Deployment fails during build step
+
+**Solutions**:
+- Check build logs in Vercel dashboard
+- Ensure `package.json` has correct build script: `"build": "vite build"`
+- Verify Node.js version (Vercel auto-detects, but you can set it in `package.json`)
+- Make sure all dependencies are in `package.json` (not just `package-lock.json`)
+
+### Convex functions not working
+
+**Symptoms**: API calls fail, "function not found" errors
+
+**Solutions**:
+- Verify Convex is deployed: `npx convex deploy`
+- Check Convex dashboard logs for errors
+- Ensure environment variables are set for **production** deployment (not just dev)
+- Check that your functions are in the `convex/` directory
+
+### Environment variables not updating
+
+**Symptoms**: Changes to env vars don't take effect
+
+**Solutions**:
+- **Vercel**: After adding/updating env vars, you must redeploy: `vercel --prod` or trigger a new deployment
+- **Convex**: Environment variables are updated immediately, but you may need to redeploy functions: `npx convex deploy`
+
+---
+
+## Updating Your Deployment
+
+### Update Frontend
+
+1. Make your changes
+2. Commit and push to GitHub (if using GitHub integration)
+3. Vercel will automatically redeploy
+4. Or manually deploy: `vercel --prod`
+
+### Update Convex Backend
+
+1. Make changes to files in `frontend/convex/`
+2. Deploy: `npx convex deploy`
+3. Changes are live immediately
+
+### Update Environment Variables
+
+**Vercel**:
+- Update in Vercel dashboard → Settings → Environment Variables
+- Redeploy: `vercel --prod`
+
+**Convex**:
+- Update in Convex dashboard → Settings → Environment Variables
+- Make sure to update **Production** environment
+- No redeploy needed, but you may want to: `npx convex deploy`
+
+---
+
+## Custom Domain Setup
+
+### Vercel Custom Domain
+
+1. Go to Vercel dashboard → Your project → Settings → Domains
+2. Add your custom domain
+3. Follow DNS configuration instructions
+4. Update `VITE_WORKOS_REDIRECT_URI` to use your custom domain
+5. Update WorkOS redirect URI to match
+
+### Convex Custom Domain
+
+Convex deployments use `.convex.cloud` domains by default. Custom domains are available on paid plans.
 
 ---
 
 ## Cost Estimates
 
-### Free Tier Options:
-- **Render**: Free tier (spins down after 15min inactivity)
-- **Vercel**: Free tier (excellent for frontend)
-- **Railway**: $5/month minimum
-- **Fly.io**: Free tier available
+### Free Tier (Sufficient for development/small projects)
 
-### Paid Options:
-- **Render**: $7/month (always-on)
-- **DigitalOcean**: $6/month (Droplet)
-- **AWS**: Pay-as-you-go
+- **Convex**: 
+  - Free tier: 1M function calls/month, 1GB storage, 1GB bandwidth
+  - Perfect for development and small projects
+- **Vercel**: 
+  - Free tier: Unlimited deployments, 100GB bandwidth
+  - Perfect for frontend hosting
+- **WorkOS**: 
+  - Free tier: 1,000 MAU (Monthly Active Users)
+  - Perfect for small applications
+
+### Paid Plans (When you need more)
+
+- **Convex**: Starts at $25/month (more function calls, storage, bandwidth)
+- **Vercel**: Starts at $20/month (more bandwidth, team features)
+- **WorkOS**: Starts at $99/month (more MAU, advanced features)
 
 ---
 
-## Security Considerations
+## Security Best Practices
 
-1. **Never commit `.env` file** (already in .gitignore ✓)
-2. **Use environment variables** for API keys
-3. **Enable HTTPS** (most platforms do this automatically)
-4. **Set up rate limiting** (consider adding to FastAPI)
-5. **Validate file uploads** (already implemented ✓)
+1. ✅ **Never commit `.env.local`** - Already in `.gitignore`
+2. ✅ **Use environment variables** - All secrets are in environment variables
+3. ✅ **HTTPS enabled** - Vercel and Convex use HTTPS by default
+4. ✅ **Authentication required** - All Convex functions check authentication
+5. ✅ **User isolation** - Users can only access their own data
+
+---
+
+## Monitoring and Logs
+
+### Convex Logs
+
+- View in Convex Dashboard → Logs
+- See function calls, errors, and performance metrics
+- Filter by function, time range, etc.
+
+### Vercel Logs
+
+- View in Vercel Dashboard → Your project → Deployments → Click deployment → Logs
+- See build logs, runtime errors, and function logs
+
+### WorkOS Logs
+
+- View in WorkOS Dashboard → Logs
+- See authentication events, errors, and user activity
 
 ---
 
 ## Next Steps
 
-1. Choose your deployment platform
-2. Follow the specific guide above
-3. Test thoroughly after deployment
-4. Set up monitoring (optional)
-5. Configure custom domain (optional)
+1. ✅ Deploy Convex backend: `npx convex deploy`
+2. ✅ Deploy frontend to Vercel
+3. ✅ Set all environment variables
+4. ✅ Test everything in production
+5. ✅ Set up custom domain (optional)
+6. ✅ Configure monitoring/alerts (optional)
 
+---
+
+## Quick Reference Commands
+
+```bash
+# Deploy Convex to production
+cd frontend
+npx convex deploy
+
+# Deploy frontend to Vercel (first time)
+cd frontend
+vercel
+
+# Deploy frontend to Vercel (production)
+cd frontend
+vercel --prod
+
+# View Convex dashboard
+npx convex dashboard
+
+# View Vercel dashboard
+vercel
+```
+
+---
+
+## Need Help?
+
+- **Convex Docs**: https://docs.convex.dev
+- **Vercel Docs**: https://vercel.com/docs
+- **WorkOS Docs**: https://workos.com/docs
+- **Project Docs**: See `docs/` directory for detailed setup guides

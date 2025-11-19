@@ -121,3 +121,6 @@ After setting up `.env.local`:
 2. You should see the auth screen (not a blank screen)
 3. Click "Sign In with WorkOS" to test authentication
 
+
+
+
