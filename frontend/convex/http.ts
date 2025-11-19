@@ -31,8 +31,8 @@ http.route({
       });
 
       // Get the frontend URL from environment
-      // Default to localhost:5000 for development
-      const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:5000';
+      // Default to production URL if not set
+      const frontendUrl = process.env.FRONTEND_URL || 'https://alivedata.vercel.app';
       
       // Redirect to frontend callback with success - code already exchanged server-side
       // Don't pass code back - it would cause CSRF error if AuthKit tries to exchange it again
@@ -43,7 +43,7 @@ http.route({
       return Response.redirect(redirectUrl.toString());
     } catch (error) {
       console.error("WorkOS authentication error:", error);
-      const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:5000';
+      const frontendUrl = process.env.FRONTEND_URL || 'https://alivedata.vercel.app';
       const redirectUrl = new URL("/callback", frontendUrl);
       redirectUrl.searchParams.set("error", "authentication_failed");
       return Response.redirect(redirectUrl.toString());

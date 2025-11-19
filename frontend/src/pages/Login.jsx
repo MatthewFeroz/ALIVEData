@@ -23,8 +23,9 @@ export default function Login() {
     // Redirect to WorkOS - use frontend callback URL so login originates from app
     // This satisfies WorkOS's CSRF protection requirement
     if (!isLoading && !user && workosClientId) {
-      // Use frontend callback URL - WorkOS requires login to originate from the app
-      const redirectUri = `${window.location.origin}/callback`
+      // Use environment variable if set, otherwise use current origin
+      // This allows forcing production URL even on preview deployments
+      const redirectUri = import.meta.env.VITE_WORKOS_REDIRECT_URI || `${window.location.origin}/callback`
       const authorizationUrl = `https://api.workos.com/user_management/authorize?client_id=${workosClientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code&provider=authkit`
       
       console.log('Redirecting to WorkOS (login initiated from app):', authorizationUrl)

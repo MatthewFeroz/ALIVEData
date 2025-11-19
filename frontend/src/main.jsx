@@ -97,7 +97,8 @@ const getRedirectUri = () => {
   if (typeof window !== 'undefined') {
     return import.meta.env.VITE_WORKOS_REDIRECT_URI || `${window.location.origin}/callback`
   }
-  return import.meta.env.VITE_WORKOS_REDIRECT_URI || 'http://localhost:5000/callback'
+  // Server-side: use environment variable or default to production
+  return import.meta.env.VITE_WORKOS_REDIRECT_URI || 'https://alivedata.vercel.app/callback'
 }
 
 function Root() {
