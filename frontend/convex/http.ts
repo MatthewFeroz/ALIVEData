@@ -18,6 +18,7 @@ http.route({
   handler: httpAction(async (ctx, request) => {
     const url = new URL(request.url);
     const code = url.searchParams.get("code");
+    const state = url.searchParams.get("state");
     
     if (!code) {
       return new Response("Missing authorization code", { status: 400 });
@@ -30,9 +31,20 @@ http.route({
         clientId: process.env.WORKOS_CLIENT_ID!,
       });
 
-      // Get the frontend URL from environment
-      // Default to production URL if not set
-      const frontendUrl = process.env.FRONTEND_URL || 'https://alivedata.vercel.app';
+      // Get the frontend URL from state param (passed from client) or environment
+      // This ensures we redirect back to the correct environment (local or prod)
+      let frontendUrl = state;
+      
+      // Validate frontendUrl - simple check to ensure it's a valid URL
+      try {
+        if (frontendUrl) new URL(frontendUrl);
+      } catch (e) {
+        frontendUrl = null; // Invalid URL in state, fall back to env
+      }
+
+      if (!frontendUrl) {
+        frontendUrl = process.env.FRONTEND_URL || 'https://alivedata.vercel.app';
+      }
       
       // Redirect to frontend callback with success - code already exchanged server-side
       // Don't pass code back - it would cause CSRF error if AuthKit tries to exchange it again
@@ -43,7 +55,19 @@ http.route({
       return Response.redirect(redirectUrl.toString());
     } catch (error) {
       console.error("WorkOS authentication error:", error);
-      const frontendUrl = process.env.FRONTEND_URL || 'https://alivedata.vercel.app';
+      
+      // Get the frontend URL from state param (passed from client) or environment
+      let frontendUrl = state;
+      try {
+        if (frontendUrl) new URL(frontendUrl);
+      } catch (e) {
+        frontendUrl = null;
+      }
+
+      if (!frontendUrl) {
+        frontendUrl = process.env.FRONTEND_URL || 'https://alivedata.vercel.app';
+      }
+
       const redirectUrl = new URL("/callback", frontendUrl);
       redirectUrl.searchParams.set("error", "authentication_failed");
       return Response.redirect(redirectUrl.toString());

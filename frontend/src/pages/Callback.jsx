@@ -20,7 +20,9 @@ export default function Callback() {
     const convexUrl = import.meta.env.VITE_CONVEX_URL
     if (convexUrl) {
       const convexSite = convexUrl.replace('.convex.cloud', '.convex.site')
-      const convexCallbackUrl = `${convexSite}/workos/callback?code=${encodeURIComponent(code)}`
+      // Pass current origin as state so server knows where to redirect back to
+      const origin = window.location.origin
+      const convexCallbackUrl = `${convexSite}/workos/callback?code=${encodeURIComponent(code)}&state=${encodeURIComponent(origin)}`
       // Redirect immediately - this prevents AuthKit from processing the code
       window.location.href = convexCallbackUrl
       // Return early to prevent component from rendering
