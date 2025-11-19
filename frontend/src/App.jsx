@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useAuth } from '@workos-inc/authkit-react'
+import { useConvexAuth } from "convex/react"
 import Layout from './components/Layout'
 import Auth from './components/Auth'
 import Landing from './pages/Landing'
@@ -12,13 +13,8 @@ import Login from './pages/Login'
 import LoadingSpinner from './components/LoadingSpinner'
 
 function ProtectedRoute({ children }) {
-  const { user, isLoading } = useAuth()
+  const { isAuthenticated, isLoading } = useConvexAuth()
   
-  // Check both AuthKit and Convex auth
-  const convexAuthUserId = typeof window !== 'undefined' ? sessionStorage.getItem('convex_auth_userId') : null
-  const convexAuthAuthenticated = typeof window !== 'undefined' ? sessionStorage.getItem('convex_auth_authenticated') === 'true' : false
-  const isAuthenticated = !!user || (convexAuthAuthenticated && convexAuthUserId)
-
   if (isLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-alive-dark">
@@ -35,26 +31,18 @@ function ProtectedRoute({ children }) {
 }
 
 function App() {
-  const { user, isLoading } = useAuth()
-  
-  // Check both AuthKit user and Convex auth fallback (stored in sessionStorage)
-  const convexAuthUserId = typeof window !== 'undefined' ? sessionStorage.getItem('convex_auth_userId') : null
-  const convexAuthAuthenticated = typeof window !== 'undefined' ? sessionStorage.getItem('convex_auth_authenticated') === 'true' : false
-  
-  // User is authenticated if AuthKit has user OR Convex has authenticated
-  const isAuthenticated = !!user || (convexAuthAuthenticated && convexAuthUserId)
+  const { isAuthenticated, isLoading } = useConvexAuth()
+  const { user } = useAuth()
 
   // Debug logging
   React.useEffect(() => {
     console.log('App - Auth state:', { 
       authKitUser: user ? { id: user.id, email: user.email } : null,
-      convexAuthUserId,
-      convexAuthAuthenticated,
       isLoading, 
       isAuthenticated,
       pathname: window.location.pathname
     })
-  }, [user, isLoading, isAuthenticated, convexAuthUserId, convexAuthAuthenticated])
+  }, [user, isLoading, isAuthenticated])
 
   if (isLoading) {
     return (
@@ -111,4 +99,3 @@ function App() {
 }
 
 export default App
-

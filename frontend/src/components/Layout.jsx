@@ -1,15 +1,12 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useAuth } from '@workos-inc/authkit-react'
+import { useConvexAuth } from "convex/react"
 
 export default function Layout({ children }) {
   const location = useLocation()
-  const { user, signOut } = useAuth()
-  
-  // Check both AuthKit and Convex auth
-  const convexAuthUserId = typeof window !== 'undefined' ? sessionStorage.getItem('convex_auth_userId') : null
-  const convexAuthAuthenticated = typeof window !== 'undefined' ? sessionStorage.getItem('convex_auth_authenticated') === 'true' : false
-  const isAuthenticated = !!user || (convexAuthAuthenticated && convexAuthUserId)
+  const { signOut } = useAuth()
+  const { isAuthenticated } = useConvexAuth()
 
   return (
     <div className="min-h-screen bg-alive-dark text-white">
@@ -57,23 +54,10 @@ export default function Layout({ children }) {
                 <button
                   onClick={async () => {
                     try {
-                      // Clear Convex auth from sessionStorage
-                      sessionStorage.removeItem('convex_auth_userId')
-                      sessionStorage.removeItem('convex_auth_authenticated')
-                      
-                      // Sign out from AuthKit if available
-                      if (signOut) {
-                        await signOut()
-                      }
-                      
-                      // Redirect to home (will show Auth component)
-                      window.location.href = '/'
+                      await signOut()
+                      // Redirect is usually handled by state change
                     } catch (error) {
                       console.error('Sign out error:', error)
-                      // Still clear sessionStorage and redirect
-                      sessionStorage.removeItem('convex_auth_userId')
-                      sessionStorage.removeItem('convex_auth_authenticated')
-                      window.location.href = '/'
                     }
                   }}
                   className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-alive-hover rounded-md transition-colors"
@@ -92,4 +76,3 @@ export default function Layout({ children }) {
     </div>
   )
 }
-
