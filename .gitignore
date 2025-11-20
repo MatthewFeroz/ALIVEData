@@ -40,3 +40,4 @@ frontend/.vite/
 
 # Logs
 *.log
+.vercel
