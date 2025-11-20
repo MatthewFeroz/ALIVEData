@@ -8,5 +8,10 @@ export const { auth, signIn, signOut, store } = convexAuth({
       clientSecret: process.env.WORKOS_API_KEY,
     }),
   ],
+  callbacks: {
+    async redirect({ redirectTo }) {
+      return "https://alivedata.vercel.app";
+    },
+  },
 });
 
