@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { useAuth } from '@workos-inc/authkit-react'
-import { useConvexAuth } from "convex/react"
+import { useAuth, useConvexAuth } from '../utils/authHooks'
 
 export default function Layout({ children }) {
   const location = useLocation()

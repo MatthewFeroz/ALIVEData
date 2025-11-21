@@ -10,8 +10,8 @@ This guide explains how to configure WorkOS AuthKit authentication for your ALIV
 ## Step 1: Install Packages
 
 The required packages are already installed:
-- `@convex-dev/auth` - Convex Auth integration
-- `@convex-dev/workos` - WorkOS AuthKit provider
+- `@workos-inc/authkit-react` - WorkOS AuthKit React SDK
+- `@convex-dev/workos` - Convex helper that bridges AuthKit to Convex queries
 
 ## Step 2: Configure WorkOS
 
@@ -36,29 +36,41 @@ The required packages are already installed:
 
 After setting up AuthKit, you'll need:
 - **WORKOS_CLIENT_ID** - Found in WorkOS Dashboard → Configuration
-- **WORKOS_API_KEY** - Found in WorkOS Dashboard → API Keys
 
 ## Step 4: Configure Convex Environment Variables
 
 1. Go to your Convex Dashboard: https://dashboard.convex.dev
 2. Select your project
 3. Go to **Settings** → **Environment Variables**
-4. Add the following variables:
+4. Add the following variable:
    - `WORKOS_CLIENT_ID` = `your_client_id_here`
-   - `WORKOS_API_KEY` = `your_api_key_here`
 
 ## Step 5: Update Convex Auth Configuration
 
-The auth configuration file is already created at `frontend/convex/auth.ts`:
+Convex validates AuthKit-issued JWTs through `frontend/convex/auth.config.ts`:
 
 ```typescript
-import { convexAuth } from "@convex-dev/auth/server";
-import { WorkOS } from "@convex-dev/auth/providers/WorkOS";
+import type { AuthConfig } from "convex/server";
 
-export const { auth, signIn, signOut, store } = convexAuth({
-  providers: [WorkOS],
-});
+const workosClientId = process.env.WORKOS_CLIENT_ID;
+if (!workosClientId) {
+  throw new Error("Missing WORKOS_CLIENT_ID");
+}
+
+export default {
+  providers: [
+    {
+      type: "customJwt",
+      issuer: "https://api.workos.com/",
+      jwks: `https://api.workos.com/sso/jwks/${workosClientId}`,
+      algorithm: "RS256",
+      applicationID: workosClientId,
+    },
+  ],
+} satisfies AuthConfig;
 ```
+
+No additional Convex auth routes are required—Convex simply trusts JWTs signed by WorkOS.
 
 ## Step 6: Frontend is Already Configured
 
@@ -91,7 +103,7 @@ The frontend has been updated to use WorkOS AuthKit:
 ### Authentication Flow
 
 1. User clicks "Sign In with WorkOS"
-2. Frontend calls `signIn('workos')` from `@convex-dev/auth/react`
+2. Frontend calls `signIn()` from `@workos-inc/authkit-react`
 3. User is redirected to WorkOS AuthKit
 4. User authenticates (email/password, SSO, etc.)
 5. WorkOS redirects back to `/callback` with authorization code
@@ -116,7 +128,7 @@ All Convex functions already check authentication:
 
 ### "Sign In" button doesn't redirect
 
-- Check that `WORKOS_CLIENT_ID` and `WORKOS_API_KEY` are set in Convex dashboard
+- Check that `WORKOS_CLIENT_ID` is set in Convex dashboard
 - Verify the redirect URI matches in WorkOS Dashboard
 - Check browser console for errors
 

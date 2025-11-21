@@ -1,7 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { useAuth } from '@workos-inc/authkit-react'
-import { useConvexAuth } from "convex/react"
+import { useAuth, useConvexAuth } from './utils/authHooks'
 import Layout from './components/Layout'
 import Auth from './components/Auth'
 import Landing from './pages/Landing'
@@ -11,6 +10,7 @@ import Settings from './pages/Settings'
 import Callback from './pages/Callback'
 import Login from './pages/Login'
 import LoadingSpinner from './components/LoadingSpinner'
+import DemoBanner from './components/DemoBanner'
 
 function ProtectedRoute({ children }) {
   const { isAuthenticated, isLoading } = useConvexAuth()
@@ -54,6 +54,7 @@ function App() {
 
   return (
     <Router>
+      <DemoBanner />
       <Routes>
         <Route 
           path="/" 

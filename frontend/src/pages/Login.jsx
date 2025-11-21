@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useAuth } from '@workos-inc/authkit-react'
+import { useAuth } from '../utils/authHooks'
 import { useNavigate } from 'react-router-dom'
 import LoadingSpinner from '../components/LoadingSpinner'
 

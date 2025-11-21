@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useMutation } from 'convex/react'
-import { useAuth } from '@workos-inc/authkit-react'
+import { useAuth } from '../utils/authHooks'
 import { api } from '../../convex/_generated/api'
 
 export default function Landing() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useAuth } from '@workos-inc/authkit-react'
+import { useAuth } from '../utils/authHooks'
 import { useNavigate } from 'react-router-dom'
 
 export default function Auth() {

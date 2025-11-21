@@ -42,7 +42,6 @@ npx convex deploy
 4. Make sure these are set for **Production**:
    - `OPENAI_API_KEY` = `sk-your-openai-api-key`
    - `WORKOS_CLIENT_ID` = `your-workos-client-id`
-   - `WORKOS_API_KEY` = `your-workos-api-key`
 
 **Note**: Convex has separate environment variables for dev and production. Make sure to set them for the production deployment.
 
@@ -184,7 +183,6 @@ After you get your Vercel deployment URL:
 ```
 OPENAI_API_KEY=sk-your-key
 WORKOS_CLIENT_ID=your-client-id
-WORKOS_API_KEY=your-api-key
 ```
 
 ### Vercel Dashboard (Production)
@@ -215,7 +213,7 @@ VITE_WORKOS_REDIRECT_URI=https://your-app.vercel.app/callback
 **Solutions**:
 - Verify `VITE_WORKOS_CLIENT_ID` is set in Vercel
 - Check that redirect URI in WorkOS matches your Vercel URL exactly
-- Make sure `WORKOS_CLIENT_ID` and `WORKOS_API_KEY` are set in Convex production environment
+- Make sure `WORKOS_CLIENT_ID` is set in the Convex production environment
 - Check browser console for specific error messages
 
 ### Build fails on Vercel

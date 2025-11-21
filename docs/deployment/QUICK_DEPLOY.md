@@ -10,7 +10,7 @@ Follow these steps to deploy your ALIVE Data application to production.
 - ✅ You have a WorkOS account (sign up at https://workos.com)
 - ✅ You have your API keys ready:
   - OpenAI API key
-  - WorkOS Client ID and API Key
+  - WorkOS Client ID
 
 ---
 
@@ -37,7 +37,6 @@ npx convex deploy
 4. Add:
    - `OPENAI_API_KEY` = `sk-your-key`
    - `WORKOS_CLIENT_ID` = `your-client-id`
-   - `WORKOS_API_KEY` = `your-api-key`
 
 **Save your Convex production URL:**
 ```

@@ -2,11 +2,9 @@
 // Run: npx convex dev to generate types
 
 import { defineSchema, defineTable } from "convex/server";
-import { authTables } from "@convex-dev/auth/server";
 import { v } from "convex/values";
 
 export default defineSchema({
-  ...authTables,
   sessions: defineTable({
     sessionId: v.string(),
     userId: v.optional(v.string()), // User identity token identifier (optional for backward compatibility)

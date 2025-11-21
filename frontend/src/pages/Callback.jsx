@@ -4,19 +4,30 @@ import { useNavigate } from 'react-router-dom'
 import LoadingSpinner from '../components/LoadingSpinner'
 
 export default function Callback() {
-  const { isLoading, user } = useAuth()
+  const { isLoading, user, signIn } = useAuth()
   const navigate = useNavigate()
 
   React.useEffect(() => {
+    console.log("Callback State:", { isLoading, user, hasCode: window.location.search.includes("code") });
     if (!isLoading && user) {
       navigate('/')
-    } else if (!isLoading && !user) {
-      // If loading finished but no user, something went wrong or we are just visiting /callback without code
-      // But AuthKit should handle the code exchange before isLoading becomes false?
-      // We'll give it a moment or redirect to login
-      // navigate('/login')
     }
   }, [isLoading, user, navigate])
+
+  if (!isLoading && !user) {
+     return (
+        <div className="min-h-screen flex flex-col items-center justify-center bg-alive-dark text-white">
+           <p className="text-xl mb-4">Sign in incomplete.</p>
+           <div className="flex gap-4">
+              <button onClick={() => signIn()} className="bg-alive-active px-4 py-2 rounded">Try Again</button>
+              <button onClick={() => navigate('/')} className="bg-gray-600 px-4 py-2 rounded">Go Home</button>
+           </div>
+           <pre className="mt-8 text-xs text-gray-500 bg-black p-4 rounded">
+             Debug: User is null, Loading is false. Check console for details.
+           </pre>
+        </div>
+     )
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-alive-dark">

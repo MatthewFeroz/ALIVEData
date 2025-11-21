@@ -1,13 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { ConvexReactClient } from 'convex/react'
+import { ConvexReactClient, ConvexProvider } from 'convex/react'
 import { AuthKitProvider, useAuth } from '@workos-inc/authkit-react'
 import { ConvexProviderWithAuthKit } from '@convex-dev/workos'
+import { DemoAuthProvider } from './utils/demoAuth'
 import App from './App'
 import './index.css'
 
 const convexUrl = import.meta.env.VITE_CONVEX_URL
 const workosClientId = import.meta.env.VITE_WORKOS_CLIENT_ID
+const isDemoMode = import.meta.env.VITE_DEMO_MODE === 'true'
 
 if (!convexUrl) {
   console.error('Missing VITE_CONVEX_URL environment variable')
@@ -22,8 +24,39 @@ if (!workosClientId) {
 
 // Only create Convex client if URL is available
 const convex = convexUrl ? new ConvexReactClient(convexUrl) : null
+const workosDevMode =
+  import.meta.env.VITE_WORKOS_DEV_MODE === 'true' ||
+  (!import.meta.env.VITE_WORKOS_DEV_MODE && import.meta.env.DEV)
 
 function AppWithAuth() {
+  // Demo mode: bypass WorkOS and use simple Convex provider
+  if (isDemoMode) {
+    if (!convex) {
+      return (
+        <div className="min-h-screen flex items-center justify-center bg-alive-dark p-4">
+          <div className="max-w-md w-full bg-yellow-900 bg-opacity-50 border border-yellow-700 rounded-lg p-8">
+            <h2 className="text-2xl font-bold text-white mb-4">Configuration Required</h2>
+            <p className="text-yellow-200 mb-4">
+              Demo mode still requires <code className="bg-black bg-opacity-50 px-2 py-1 rounded">VITE_CONVEX_URL</code> for backend functionality.
+            </p>
+            <p className="text-yellow-300 text-sm">
+              Location: <code className="bg-black bg-opacity-50 px-2 py-1 rounded">frontend/.env.local</code>
+            </p>
+          </div>
+        </div>
+      )
+    }
+    
+    return (
+      <DemoAuthProvider>
+        <ConvexProvider client={convex}>
+          <App />
+        </ConvexProvider>
+      </DemoAuthProvider>
+    )
+  }
+
+  // Production mode: use WorkOS auth
   // If no Convex URL, show error
   if (!convex) {
     return (
@@ -104,6 +137,12 @@ const getRedirectUri = () => {
 function Root() {
   const redirectUri = getRedirectUri()
   
+  // In demo mode, skip WorkOS entirely
+  if (isDemoMode) {
+    return <AppWithAuth />
+  }
+  
+  // Production mode: require WorkOS client ID
   if (!workosClientId) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-alive-dark p-4">
@@ -120,17 +159,19 @@ function Root() {
             <br />
             Expected redirect URI: {redirectUri}
           </p>
+          <p className="text-yellow-300 text-xs mt-4 pt-4 border-t border-yellow-800">
+            💡 <strong>Tip:</strong> Set <code className="bg-black bg-opacity-50 px-2 py-1 rounded">VITE_DEMO_MODE=true</code> to bypass authentication for demos
+          </p>
         </div>
       </div>
     )
   }
 
   return (
-    <AuthKitProvider 
+    <AuthKitProvider
       clientId={workosClientId}
       redirectUri={redirectUri}
-      // Configure to work with Convex backend
-      // The ConvexProviderWithAuthKit will handle backend authentication
+      devMode={workosDevMode}
     >
       <AppWithAuth />
     </AuthKitProvider>
