@@ -99,3 +99,4 @@ This makes it clear to anyone viewing the app that it's running in demo mode.
 - Some backend functions may still check authentication
 - Check Convex function code - you may need to temporarily disable auth checks there too
 
+

@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { ConvexReactClient, ConvexProvider } from 'convex/react'
-import { AuthKitProvider, useAuth } from '@workos-inc/authkit-react'
-import { ConvexProviderWithAuthKit } from '@convex-dev/workos'
+import { ConvexProviderWithAuth } from 'convex/react'
+import { ServerAuthProvider, useServerAuth } from './utils/serverAuth'
 import { DemoAuthProvider } from './utils/demoAuth'
 import App from './App'
 import './index.css'
@@ -11,40 +11,59 @@ const convexUrl = import.meta.env.VITE_CONVEX_URL
 const workosClientId = import.meta.env.VITE_WORKOS_CLIENT_ID
 const isDemoMode = import.meta.env.VITE_DEMO_MODE === 'true'
 
+// Debug: log environment on load
+console.log('Environment:', {
+  convexUrl: convexUrl ? 'set' : 'missing',
+  workosClientId: workosClientId ? 'set' : 'missing',
+  isDemoMode,
+  origin: typeof window !== 'undefined' ? window.location.origin : 'N/A',
+})
+
 if (!convexUrl) {
   console.error('Missing VITE_CONVEX_URL environment variable')
-  console.error('Please set VITE_CONVEX_URL in .env.local file')
-  // Don't throw - let it fail gracefully so user can see the error
 }
 
-if (!workosClientId) {
+if (!workosClientId && !isDemoMode) {
   console.error('Missing VITE_WORKOS_CLIENT_ID environment variable')
-  console.error('Please set VITE_WORKOS_CLIENT_ID in .env.local file')
 }
 
 // Only create Convex client if URL is available
 const convex = convexUrl ? new ConvexReactClient(convexUrl) : null
-const workosDevMode =
-  import.meta.env.VITE_WORKOS_DEV_MODE === 'true' ||
-  (!import.meta.env.VITE_WORKOS_DEV_MODE && import.meta.env.DEV)
+
+// Custom auth hook for Convex that uses our server auth
+function useConvexServerAuth() {
+  const { isLoading, isAuthenticated, accessToken } = useServerAuth()
+  
+  const fetchAccessToken = React.useCallback(async ({ forceRefreshToken }) => {
+    return accessToken || null
+  }, [accessToken])
+
+  return {
+    isLoading,
+    isAuthenticated,
+    fetchAccessToken,
+  }
+}
+
+function ConfigurationError({ message }) {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-alive-dark p-4">
+      <div className="max-w-md w-full bg-yellow-900 bg-opacity-50 border border-yellow-700 rounded-lg p-8">
+        <h2 className="text-2xl font-bold text-white mb-4">Configuration Required</h2>
+        <p className="text-yellow-200 mb-4">{message}</p>
+        <p className="text-yellow-300 text-sm">
+          Location: <code className="bg-black bg-opacity-50 px-2 py-1 rounded">frontend/.env.local</code>
+        </p>
+      </div>
+    </div>
+  )
+}
 
 function AppWithAuth() {
-  // Demo mode: bypass WorkOS and use simple Convex provider
+  // Demo mode: bypass auth entirely
   if (isDemoMode) {
     if (!convex) {
-      return (
-        <div className="min-h-screen flex items-center justify-center bg-alive-dark p-4">
-          <div className="max-w-md w-full bg-yellow-900 bg-opacity-50 border border-yellow-700 rounded-lg p-8">
-            <h2 className="text-2xl font-bold text-white mb-4">Configuration Required</h2>
-            <p className="text-yellow-200 mb-4">
-              Demo mode still requires <code className="bg-black bg-opacity-50 px-2 py-1 rounded">VITE_CONVEX_URL</code> for backend functionality.
-            </p>
-            <p className="text-yellow-300 text-sm">
-              Location: <code className="bg-black bg-opacity-50 px-2 py-1 rounded">frontend/.env.local</code>
-            </p>
-          </div>
-        </div>
-      )
+      return <ConfigurationError message="Demo mode still requires VITE_CONVEX_URL" />
     }
     
     return (
@@ -56,33 +75,19 @@ function AppWithAuth() {
     )
   }
 
-  // Production mode: use WorkOS auth
-  // If no Convex URL, show error
+  // Production mode: use server-side auth
   if (!convex) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-alive-dark p-4">
-        <div className="max-w-md w-full bg-yellow-900 bg-opacity-50 border border-yellow-700 rounded-lg p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">Configuration Required</h2>
-          <p className="text-yellow-200 mb-4">
-            Please set <code className="bg-black bg-opacity-50 px-2 py-1 rounded">VITE_CONVEX_URL</code> in your <code className="bg-black bg-opacity-50 px-2 py-1 rounded">.env.local</code> file
-          </p>
-          <p className="text-yellow-300 text-sm">
-            Location: <code className="bg-black bg-opacity-50 px-2 py-1 rounded">frontend/.env.local</code>
-          </p>
-        </div>
-      </div>
-    )
+    return <ConfigurationError message="Please set VITE_CONVEX_URL in your .env.local file" />
   }
 
-  // Pass the useAuth hook function itself, not the result of calling it
   return (
-    <ConvexProviderWithAuthKit client={convex} useAuth={useAuth}>
+    <ConvexProviderWithAuth client={convex} useAuth={useConvexServerAuth}>
       <App />
-    </ConvexProviderWithAuthKit>
+    </ConvexProviderWithAuth>
   )
 }
 
-// Error boundary to catch and display React errors
+// Error boundary
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props)
@@ -104,12 +109,6 @@ class ErrorBoundary extends React.Component {
           <div className="max-w-2xl w-full bg-red-900 bg-opacity-50 border border-red-700 rounded-lg p-8">
             <h2 className="text-2xl font-bold text-white mb-4">Application Error</h2>
             <p className="text-red-200 mb-4">{this.state.error?.message || String(this.state.error)}</p>
-            <details className="text-red-300 text-sm">
-              <summary className="cursor-pointer mb-2">Stack trace</summary>
-              <pre className="bg-black bg-opacity-50 p-4 rounded overflow-auto text-xs">
-                {this.state.error?.stack}
-              </pre>
-            </details>
             <button
               onClick={() => window.location.reload()}
               className="mt-4 px-4 py-2 bg-alive-active hover:bg-red-600 text-white rounded"
@@ -120,47 +119,25 @@ class ErrorBoundary extends React.Component {
         </div>
       )
     }
-
     return this.props.children
   }
 }
 
-// Get redirect URI from environment or use default
-const getRedirectUri = () => {
-  if (typeof window !== 'undefined') {
-    return import.meta.env.VITE_WORKOS_REDIRECT_URI || `${window.location.origin}/callback`
-  }
-  // Server-side: use environment variable or default to production
-  return import.meta.env.VITE_WORKOS_REDIRECT_URI || 'https://alivedata.vercel.app/callback'
-}
-
 function Root() {
-  const redirectUri = getRedirectUri()
-  
-  // In demo mode, skip WorkOS entirely
   if (isDemoMode) {
     return <AppWithAuth />
   }
   
-  // Production mode: require WorkOS client ID
   if (!workosClientId) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-alive-dark p-4">
         <div className="max-w-md w-full bg-yellow-900 bg-opacity-50 border border-yellow-700 rounded-lg p-8">
           <h2 className="text-2xl font-bold text-white mb-4">Configuration Required</h2>
           <p className="text-yellow-200 mb-4">
-            Please set <code className="bg-black bg-opacity-50 px-2 py-1 rounded">VITE_WORKOS_CLIENT_ID</code> in your <code className="bg-black bg-opacity-50 px-2 py-1 rounded">.env.local</code> file
-          </p>
-          <p className="text-yellow-300 text-sm mb-2">
-            Get your Client ID from WorkOS Dashboard → Configuration
-          </p>
-          <p className="text-yellow-300 text-xs mt-4">
-            Current URL: {typeof window !== 'undefined' ? window.location.origin : 'N/A'}
-            <br />
-            Expected redirect URI: {redirectUri}
+            Please set <code className="bg-black bg-opacity-50 px-2 py-1 rounded">VITE_WORKOS_CLIENT_ID</code>
           </p>
           <p className="text-yellow-300 text-xs mt-4 pt-4 border-t border-yellow-800">
-            💡 <strong>Tip:</strong> Set <code className="bg-black bg-opacity-50 px-2 py-1 rounded">VITE_DEMO_MODE=true</code> to bypass authentication for demos
+            💡 Set <code className="bg-black bg-opacity-50 px-2 py-1 rounded">VITE_DEMO_MODE=true</code> to bypass auth
           </p>
         </div>
       </div>
@@ -168,13 +145,9 @@ function Root() {
   }
 
   return (
-    <AuthKitProvider
-      clientId={workosClientId}
-      redirectUri={redirectUri}
-      devMode={workosDevMode}
-    >
+    <ServerAuthProvider convexUrl={convexUrl}>
       <AppWithAuth />
-    </AuthKitProvider>
+    </ServerAuthProvider>
   )
 }
 
@@ -185,4 +158,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </ErrorBoundary>
   </React.StrictMode>,
 )
-

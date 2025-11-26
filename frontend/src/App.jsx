@@ -56,11 +56,10 @@ function App() {
     <Router>
       <DemoBanner />
       <Routes>
+        {/* Landing page is visible to everyone - like Cursor's homepage */}
         <Route 
           path="/" 
-          element={
-            isAuthenticated ? <Landing /> : <Auth />
-          } 
+          element={<Landing />}
         />
         <Route 
           path="/callback" 

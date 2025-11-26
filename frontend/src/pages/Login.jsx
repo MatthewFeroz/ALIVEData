@@ -9,42 +9,23 @@ export default function Login() {
 
   useEffect(() => {
     if (!isLoading) {
-        if (user) {
-            navigate('/', { replace: true })
-        } else {
-            // Auto-redirect to WorkOS login
-            signIn().catch(err => console.error("Auto-login failed:", err))
-        }
+      if (user) {
+        // Already logged in, redirect home
+        navigate('/', { replace: true })
+      } else {
+        // Not logged in, initiate sign in
+        console.log('Initiating sign in...')
+        signIn()
+      }
     }
   }, [user, isLoading, navigate, signIn])
 
-  const handleLogin = async () => {
-    try {
-      await signIn()
-    } catch (err) {
-      console.error("Login failed:", err)
-    }
-  }
-
-  if (isLoading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-alive-dark">
-        <LoadingSpinner />
-      </div>
-    )
-  }
-
   return (
     <div className="min-h-screen flex items-center justify-center bg-alive-dark">
-       <div className="text-center">
-          <p className="text-white mb-4">Redirecting to sign in...</p>
-          <button 
-            onClick={handleLogin}
-            className="bg-alive-active text-white px-6 py-2 rounded"
-          >
-            Sign In
-          </button>
-       </div>
+      <div className="text-center">
+        <LoadingSpinner size="lg" />
+        <p className="text-white mt-4">Redirecting to sign in...</p>
+      </div>
     </div>
   )
 }
