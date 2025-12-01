@@ -1,0 +1,8132 @@
+workflow,image_num,quality,model,file_size_kb,response_time_s,word_count,char_count,phrase_accuracy,extracted_text,error
+EXCEL,1,PNG,claude-opus-4.5,190.48,18.84,298,1281,100.0,"AutoSave Off
+
+Etsy_Statements_2024.xlsx
+
+Non-Public • Last Modified: March 21
+
+Search
+
+Comments Share
+
+File Home Insert Draw Page Layout Formulas Data Review View Automate Help ChemOffice21 Analytic Solver
+
+Cut
+Copy
+Format Painter
+Clipboard
+
+Calibri 11
+
+B I U
+
+Font
+
+Wrap Text
+Merge & Center
+
+Alignment
+
+Accounting
+
+$ % 
+
+Number
+
+Conditional Format as
+Formatting Table
+
+60% - Accent6 Accent1 Accent2 Accent3 Accent4
+Accent5 Accent6 Comma Comma [0] Currency
+
+Styles
+
+AutoSum
+Fill
+Clear
+
+Insert Delete Format
+
+Cells
+
+Sort & Find &
+Filter Select
+
+Editing
+
+Sensitivity
+
+Add-ins Copilot Show Risk
+Add-ins ToolPak Solver Solver
+
+Commands Group
+
+F23 fx
+
+A B C D E F G H I J K L M N O P Q R S T U V W
+
+1 Month Sales Fees Shipping Marketing Net Profit
+2 January $ 129.05 $ (16.73) $ (31.99) $ 80.33
+3 February $ 111.20 $ (13.03) $ (19.54) $ 78.63
+4 March $ 98.85 $ (12.46) $ (11.76) $ (19.30) $ 55.33
+5 April $ 165.76 $ (19.90) $ (41.52) $ (41.11) $ 63.23
+6 May $ 238.42 $ (28.32) $ (36.37) $ (37.42) $ 136.31
+7 June $ 186.42 $ (22.62) $ (62.19) $ (20.89) $ 80.72
+8 July $ 167.22 $ (21.37) $ (40.16) $ (3.34) $ 102.35
+9 August $ 160.46 $ (19.84) $ (32.38) $ (13.36) $ 94.88
+10 September $ 88.58 $ (10.43) $ (16.20) $ (3.28) $ 58.67
+11 October $ 376.38 $ (42.49) $ (77.99) $ (6.68) $ 249.22
+12 November $ 262.94 $ (31.40) $ (59.67) $ (3.79) $ 168.08
+13 December $ 590.81 $ (68.12) $ (96.70) $ (11.37) $ 414.62
+14 Summary $ 1,582.37
+15 Expenses $ 736.27
+16 Profit $ 846.10
+
+Summary Business Expenses January February March April May June July August September October November December +
+
+Ready Accessibility: Good to go",
+EXCEL,1,PNG,gemini-3-pro,190.48,47.41,558,1779,100.0,"AutoSave Off | Save | Undo | Redo | Etsy_Statements_2024.xlsx | Non-Public • Last Modified: March 21 | Search | MF | Comments Share
+File Home Insert Draw Page Layout Formulas Data Review View Automate Help ChemOffice21 Analytic Solver
+
+[Ribbon Area]
+Paste | Cut | Copy | Format Painter | Clipboard
+Calibri | 11 | A^ A`v` | B I U | 田 | Fill Color | A (Font Color) | Font
+Top Align | Middle Align | Bottom Align | Orientation | Wrap Text
+Align Left | Center | Align Right | Indent Left | Indent Right | Merge & Center | Alignment
+Accounting | $ % , .00->.0 .0->.00 | Number
+Conditional Formatting | Format as Table | Cell Styles
+Styles Box:
+60% - Accent6 | Accent1 | Accent2 | Accent3 | Accent4
+Accent5 | Accent6 | Comma | Comma [0] | Currency
+Styles
+Insert | Delete | Format | Cells
+Sum | Fill | Clear | Sort & Filter | Find & Select | Editing
+Sensitivity | Add-ins | Copilot | Show ToolPak | Risk Solver
+
+[Formula Bar]
+F23 | X | check | fx
+
+[Spreadsheet Grid]
+    | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W
+1 | Month | Sales | Fees | Shipping | Marketing | Net Profit
+2 | January | $ 129.05 | $ (16.73) | $ (31.99) | | $ 80.33
+3 | February | $ 111.20 | $ (13.03) | $ (19.54) | | $ 78.63
+4 | March | $ 98.85 | $ (12.46) | $ (11.76) | $ (19.30) | $ 55.33
+5 | April | $ 165.76 | $ (19.90) | $ (41.52) | $ (41.11) | $ 63.23
+6 | May | $ 238.42 | $ (28.32) | $ (36.37) | $ (37.42) | $ 136.31
+7 | June | $ 186.42 | $ (22.62) | $ (62.19) | $ (20.89) | $ 80.72
+8 | July | $ 167.22 | $ (21.37) | $ (40.16) | $ (3.34) | $ 102.35
+9 | August | $ 160.46 | $ (19.84) | $ (32.38) | $ (13.36) | $ 94.88
+10| September| $ 88.58 | $ (10.43) | $ (16.20) | $ (3.28) | $ 58.67
+11| October | $ 376.38 | $ (42.49) | $ (77.99) | $ (6.68) | $ 249.22
+12| November | $ 262.94 | $ (31.40) | $ (59.67) | $ (3.79) | $ 168.08
+13| December | $ 590.81 | $ (68.12) | $ (96.70) | $ (11.37) | $ 414.62
+14| Summary | | | | | $ 1,582.37
+15| Expenses | | | | | $ 736.27
+16| Profit | | | | | $ 846.10
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+
+[Bottom Sheet Selectors]
+< > | Summary | Business Expenses | January | February | March | April | May | June | July | August | September | October | November | December | +
+
+[Status Bar]
+Ready | Accessibility: Good to go | Normal/Page Layout/Page Break Preview Icons | - + | 160%",
+EXCEL,1,PNG,gpt-5.1,190.48,88.69,0,0,0.0,,
+EXCEL,1,25,claude-opus-4.5,208.66,19.49,425,1470,100.0,"AutoSave Off Etsy_Statements_2024.xlsx Non-Public • Last Modified: March 21
+
+File Home Insert Draw Page Layout Formulas Data Review View Automate Help ChemOffice21 Analytic Solver
+
+Search
+
+Comments Share
+
+Cut
+Copy
+Paste
+Format Painter
+Clipboard
+
+Calibri 11
+
+B I U
+
+Font
+
+Wrap Text
+Merge & Center
+
+Alignment
+
+Accounting
+
+Number
+
+60% - Accent6 Accent1 Accent2 Accent3 Accent4
+Accent5 Accent6 Comma Comma [0] Currency
+
+Conditional Format as
+Formatting Table
+
+Styles
+
+Insert Delete Format
+
+Cells
+
+AutoSum
+Fill
+Clear
+
+Sort & Find &
+Filter Select
+
+Editing
+
+Sensitivity
+
+Add-ins
+
+Copilot Show Risk
+ToolPak Solver
+
+Commands Group Risk Solver
+
+A B C D E F G H I J K L M N O P Q R S T U V W
+
+F23 fx
+
+| | Month | Sales | Fees | Shipping | Marketing | Net Profit |
+|---|---|---|---|---|---|---|
+1 | Month | Sales | Fees | Shipping | Marketing | Net Profit |
+2 | January | $ 129.05 | $ (16.73) | $ (31.99) | | $ 80.33 |
+3 | February | $ 111.20 | $ (13.03) | $ (19.54) | | $ 78.63 |
+4 | March | $ 98.85 | $ (12.46) | $ (11.76) | $ (19.30) | $ 55.33 |
+5 | April | $ 165.76 | $ (19.90) | $ (41.52) | $ (41.11) | $ 63.23 |
+6 | May | $ 238.42 | $ (28.32) | $ (36.37) | $ (37.42) | $ 136.31 |
+7 | June | $ 186.42 | $ (22.62) | $ (62.19) | $ (20.89) | $ 80.72 |
+8 | July | $ 167.22 | $ (21.37) | $ (40.16) | $ (3.34) | $ 102.35 |
+9 | August | $ 160.46 | $ (19.84) | $ (32.38) | $ (13.36) | $ 94.88 |
+10 | September | $ 88.58 | $ (10.43) | $ (16.20) | $ (3.28) | $ 58.67 |
+11 | October | $ 376.38 | $ (42.49) | $ (77.99) | $ (6.68) | $ 249.22 |
+12 | November | $ 262.94 | $ (31.40) | $ (59.67) | $ (3.79) | $ 168.08 |
+13 | December | $ 590.81 | $ (68.12) | $ (96.70) | $ (11.37) | $ 414.62 |
+14 | Summary | | | | | $ 1,582.37 |
+15 | Expenses | | | | | $ 736.27 |
+16 | Profit | | | | | $ 846.10 |
+
+Summary Business Expenses January February March April May June July August September October November December +
+
+Ready Accessibility: Good to go",
+EXCEL,1,25,gemini-3-pro,208.66,37.67,319,1406,100.0,"AutoSave Off Etsy_Statements_2024.xlsx Non-Public • Last Modified: March 21 Search MF Comments Share
+File Home Insert Draw Page Layout Formulas Data Review View Automate Help ChemOffice21 Analytic Solver
+
+[Ribbon Menu]
+Paste Cut Copy Format Painter (Clipboard)
+Calibri 11 A A B I U (Font)
+Wrap Text Merge & Center (Alignment)
+Accounting % , (Number)
+Conditional Formatting Format as Table Cell Styles (Styles)
+60% - Accent6 Accent1 Accent2 Accent3 Accent4 Accents Accent6 Comma Comma [0] Currency
+Insert Delete Format (Cells)
+AutoSum Fill Clear Sort & Filter Find & Select (Editing)
+Sensitivity (Sensitivity)
+Add-ins (Add-ins) Copilot
+Show ToolPak Risk Solver (Commands Group Risk Solver)
+
+F23 fx
+
+[Spreadsheet Grid]
+    A          B                        C                        D                        E                        F                    G ... W
+1   Month      Sales                    Fees                     Shipping                 Marketing                Net Profit
+2   January    $ 129.05                 $ (16.73)                $ (31.99)                                         $      80.33
+3   February   $ 111.20                 $ (13.03)                $ (19.54)                                         $      78.63
+4   March      $  98.85                 $ (12.46)                $ (11.76)                $ (19.30)                $      55.33
+5   April      $ 165.76                 $ (19.90)                $ (41.52)                $ (41.11)                $      63.23
+6   May        $ 238.42                 $ (28.32)                $ (36.37)                $ (37.42)                $     136.31
+7   June       $ 186.42                 $ (22.62)                $ (62.19)                $ (20.89)                $      80.72
+8   July       $ 167.22                 $ (21.37)                $ (40.16)                $  (3.34)                $     102.35
+9   August     $ 160.46                 $ (19.84)                $ (32.38)                $ (13.36)                $      94.88
+10  September  $  88.58                 $ (10.43)                $ (16.20)                $  (3.28)                $      58.67
+11  October    $ 376.38                 $ (42.49)                $ (77.99)                $  (6.68)                $     249.22
+12  November   $ 262.94                 $ (31.40)                $ (59.67)                $  (3.79)                $     168.08
+13  December   $ 590.81                 $ (68.12)                $ (96.70)                $ (11.37)                $     414.62
+14  Summary                                                                                                        $   1,582.37
+15  Expenses                                                                                                       $     736.27
+16  Profit                                                                                                         $     846.10
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+
+[Bottom Bar]
+Ready Accessibility: Good to go
+Summary Business Expenses January February March April May June July August September October November December +
++ 160%",
+EXCEL,1,25,claude-opus-4.5,208.66,17.68,296,1282,100.0,"AutoSave Off Etsy_Statements_2024.xlsx Non-Public • Last Modified: March 21
+
+File Home Insert Draw Page Layout Formulas Data Review View Automate Help ChemOffice21 Analytic Solver
+
+Cut Copy Format Painter Clipboard
+
+Calibri 11 B I U Font
+
+Wrap Text Merge & Center Alignment
+
+Accounting Number
+
+60% - Accent6 Accent1 Accent2 Accent3 Accent4
+Accent5 Accent6 Comma Comma [0] Currency
+Conditional Format as
+Formatting Table Styles
+
+AutoSum Fill Clear
+Insert Delete Format
+Sort & Find & Sensitivity
+Filter Select
+Editing Sensitivity Add-ins
+Copilot Show ToolPak Risk Solver
+Commands Group Risk Solver
+
+Comments Share
+
+Search
+
+F23 fx
+
+A B C D E F G H I J K L M N O P Q R S T U V W
+
+1 Month Sales Fees Shipping Marketing Net Profit
+2 January $ 129.05 $ (16.73) $ (31.99) $ 80.33
+3 February $ 111.20 $ (13.03) $ (19.54) $ 78.63
+4 March $ 98.85 $ (12.46) $ (11.76) $ (19.30) $ 55.33
+5 April $ 165.76 $ (19.90) $ (41.52) $ (41.11) $ 63.23
+6 May $ 238.42 $ (28.32) $ (36.37) $ (37.42) $ 136.31
+7 June $ 186.42 $ (22.62) $ (62.19) $ (20.89) $ 80.72
+8 July $ 167.22 $ (21.37) $ (40.16) $ (3.34) $ 102.35
+9 August $ 160.46 $ (19.84) $ (32.38) $ (13.36) $ 94.88
+10 September $ 88.58 $ (10.43) $ (16.20) $ (3.28) $ 58.67
+11 October $ 376.38 $ (42.49) $ (77.99) $ (6.68) $ 249.22
+12 November $ 262.94 $ (31.40) $ (59.67) $ (3.79) $ 168.08
+13 December $ 590.81 $ (68.12) $ (96.70) $ (11.37) $ 414.62
+14 Summary $ 1,582.37
+15 Expenses $ 736.27
+16 Profit $ 846.10
+
+Summary Business Expenses January February March April May June July August September October November December +
+
+Ready Accessibility: Good to go",
+EXCEL,1,25,gemini-3-pro,208.66,19.88,0,0,0.0,,
+EXCEL,1,25,gpt-5.1,208.66,34.63,0,0,0.0,,
+EXCEL,1,5,claude-opus-4.5,94.1,19.18,303,1288,100.0,"AutoSave Off Etsy_Statements_2024.xls Non-Public - Last Modified: March 21
+
+File Home Insert Page Layout Formulas Data Review View Automate ChemOffice21 Analytic Solver
+
+Comments Share
+
+Cut Copy Format Painter
+Clipboard
+
+Calibri 11 A A
+B I U - A - 
+
+Wrap Text
+Merge & Center
+
+Font Alignment
+
+Accounting
+$ % , .0 .00
+Number
+
+Conditional Format as
+Formatting Table
+
+60% - Accent6 Accent1 Accent2 Accent4
+Accent6 Accent2
+Comma Comma [0] Currency
+
+Styles
+
+AutoSum
+Fill
+Clear
+
+Insert Delete Format
+
+Sort & Find &
+Filter Select
+
+Sensitivity Add-ins Copilot Show Analyze Risk
+ToolPak Add-ins Data Solver
+
+Cells Editing Sensitivity Add-ins Comments Group
+
+A B C D E F G H I J K L M N O P Q R S T U V W
+
+1 Month Sales Fees Shipping Marketing Net Profit
+2 January $ 129.05 $ (16.73) $ (31.99) $ 80.33
+3 February $ 111.20 $ (13.03) $ (19.54) $ 78.63
+4 March $ 98.85 $ (12.46) $ (11.76) $ (19.30) $ 55.33
+5 April $ 165.76 $ (19.90) $ (41.52) $ (41.11) $ 63.23
+6 May $ 238.42 $ (28.32) $ (36.37) $ (37.42) $ 136.31
+7 June $ 186.42 $ (22.62) $ (62.19) $ (20.89) $ 80.72
+8 July $ 167.22 $ (21.37) $ (40.16) $ (3.34) $ 102.35
+9 August $ 160.46 $ (19.84) $ (32.38) $ (13.36) $ 94.88
+10 September $ 88.58 $ (10.43) $ (16.20) $ (3.28) $ 58.67
+11 October $ 376.38 $ (42.49) $ (77.99) $ (6.68) $ 249.22
+12 November $ 262.94 $ (31.40) $ (59.67) $ (3.79) $ 168.08
+13 December $ 590.81 $ (68.12) $ (96.70) $ (11.37) $ 414.62
+14 Summary $ 1,582.37
+15 Expenses $ 736.27
+16 Profit $ 846.10
+
+Summary Business Expenses January February March April May June July August September October November December +
+
+Ready Accessibility: Good to go",
+EXCEL,1,5,gemini-3-pro,94.1,20.02,0,0,0.0,,
+EXCEL,1,PNG,gemini-2.5-flash,190.48,0.0,0,0,0.0,,"Error code: 400 - {'error': {'message': 'google/gemini-2.5-flash-preview is not a valid model ID', 'code': 400}, 'user_id': 'user_34CyBY2XgjLOVYTqC6oBOz6V4ER'}"
+EXCEL,1,PNG,sonnet-4.5,190.48,17.27,239,1123,100.0,"AutoSave On  Trey_Statements_2024.xlsx  Non Public - Last Modified March 21
+
+File  Home  Insert  Draw  Page Layout  Formulas  Data  Review  View  Automate  Help  ChemOffice21  Analytic Solver
+
+Cut  Calibri  11  A  A  Wrap Text  Accounting  90% - Accents  Accent1  Accent2  60%  Account3  Account4  AutoSum  Sort & Filter  Find & Select  Sensitivity  Add-ins
+Copy  B I U  Merge & Center  Conditional Formatting  Tables  Currency  Fill  Clear  Sensitivity  Add-ins
+Paste  Format Painter  Font  Alignment  Number  Styles  Cells  Editing
+
+F23  Month  Sales  Fees  Shipping  Marketing  Net Profit
+
+January  $ 129.05  $ (16.73)  $ (31.99)   $ 80.33
+February  $ 111.20  $ (13.03)  $ (19.54)   $ 78.63
+March  $ 98.85  $ (12.46)  $ (11.76)  $ (19.30)  $ 55.33
+April  $ 165.76  $ (19.90)  $ (41.52)  $ (41.11)  $ 63.23
+May  $ 238.42  $ (28.32)  $ (36.37)  $ (37.42)  $ 136.31
+June  $ 186.42  $ (22.62)  $ (62.19)  $ (20.89)  $ 80.72
+July  $ 167.22  $ (21.37)  $ (40.16)  $ (3.34)  $ 102.35
+August  $ 160.46  $ (19.84)  $ (32.38)  $ (13.36)  $ 94.88
+September  $ 88.58  $ (10.43)  $ (16.20)  $ (3.28)  $ 58.67
+October  $ 376.38  $ (42.49)  $ (77.99)  $ (6.68)  $ 249.22
+November  $ 262.94  $ (31.40)  $ (59.67)  $ (3.79)  $ 168.08
+December  $ 590.81  $ (68.12)  $ (96.70)  $ (11.37)  $ 414.62
+Summary   $ 1,582.37
+Expenses   $ 736.27
+Profit   $ 846.10
+
+Summary  Business Expenses  January  February  March  April  May  June  July  August  September  October  November  December
+
+Ready  Accessibility: Good to go",
+EXCEL,1,PNG,gpt-4o-mini,190.48,10.68,163,699,0.0,"```
+Month      | Sales     | Fees      | Shipping  | Marketing | Net Profit
+------------------------------------------------------------------------
+January    | $ 129.05  | $(16.73)  | $(19.54)  |           | $ 80.83
+February   | $ 111.20  | $(13.00)  | $(19.94)  |           | $ 78.63
+March      | $ 98.85   | $(11.64)  | $(41.15)  |           | $ 46.06
+April      | $ 74.45   | $(9.87)   | $(10.11)  |           | $ 54.47
+May        | $ 238.42  | $(32.41)  | $(18.18)  |           | $ 136.31
+June       | $ 167.22  | $(21.37)  | $(40.16)  | $(3.34)   | $ 102.35
+July       | $ 160.46  | $(16.93)  | $(32.38)  | $(13.36)  | $ 94.88
+August     | $ 88.58   | $(12.69)  | $(2.36)   |           | $ 58.67
+September  | $ 42.49   | $(4.29)   | $(16.79)  |           | $ 21.41
+October    | $ 262.94  | $(9.67)   | $(5.67)   |           | $ 146.60
+November   | $ 590.81  | $(68.12)  | $(9.71)   | $(11.37)  | $ 414.62
+------------------------------------------------------------------------
+Summary    | $ 1,582.37
+Expenses   | $ 736.27
+Profit     | $ 846.10
+```",
+EXCEL,1,25,gemini-2.5-flash,208.66,0.0,0,0,0.0,,"Error code: 400 - {'error': {'message': 'google/gemini-2.5-flash-preview is not a valid model ID', 'code': 400}, 'user_id': 'user_34CyBY2XgjLOVYTqC6oBOz6V4ER'}"
+EXCEL,1,25,sonnet-4.5,208.66,15.66,319,1268,100.0,"File Home Insert Draw Page Layout Formulas Data Review View Automate Help ChemOffice1 Analytic Solver
+
+AutoSum 100% Cut Copy Paste Format Painter Clipboard Font
+
+Cell Accounting Accounting 60% - Accents 90% - Accents Accent1 Accent2 Accent3 Accent4 Conditional Format as Table Styles Number Merge & Center Wrap Text Dollar Sign Percent Sign Comma Decrease Decimal Increase Decimal Accounting Format Table Clear Filter Find & Select Go To Sort & Filter Sum Average Count Min Max AutoSum Sensitivity Add Ins Solver ToolPak Conditional Formatting Query & Table Sparklines
+
+F23 Month Sales Fees Shipping Marketing Net Profit
+1 January $ 129.05 $ (16.73) $ (31.99) $ 80.33
+2 February $ 111.10 $ (13.03) $ (19.54) $ 78.63
+3 March $ 98.85 $ (12.46) $ (11.76) $ (19.30) $ 55.33
+4 April $ 165.76 $ (19.90) $ (41.52) $ (41.11) $ 63.23
+5 May $ 238.42 $ (28.32) $ (36.37) $ (37.42) $ 136.31
+6 June $ 186.42 $ (22.62) $ (62.19) $ (20.89) $ 80.72
+7 July $ 167.22 $ (21.37) $ (40.16) $ (3.34) $ 102.35
+8 August $ 160.46 $ (19.84) $ (32.38) $ (13.36) $ 94.88
+9 September $ 88.58 $ (10.43) $ (16.20) $ (3.28) $ 58.67
+10 October $ 376.38 $ (42.49) $ (77.99) $ (6.68) $ 249.22
+11 November $ 262.94 $ (31.40) $ (59.67) $ (3.79) $ 168.08
+12 December $ 590.81 $ (68.12) $ (96.70) $ (11.37) $ 414.62
+13 Summary $ 1,582.37
+14 Expenses $ 736.27
+15 Profit $ 846.10
+
+A B C D E F G H I J K L M N O P Q R S T U V W
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34
+
+Summary Business Expenses January February March April May June July August September October November December",
+EXCEL,1,25,gpt-4o-mini,208.66,9.5,150,581,0.0,"```
+Month           Sales        Fees         Shipping    Marketing      Net Profit
+January       $ 129.05   ($ 16.73)   ($ 19.94)   $ 0.00          $ 80.38
+February      $ 111.20   ($ 13.00)   ($ 19.54)   $ 0.00          $ 78.63
+March         $ 98.85    ($ 11.76)   ($ 6.55)    $ 0.00          $ 80.54
+April         $ 107.50   ($ 13.65)   ($ 5.77)    ($ 0.12)        $ 88.96
+May           $ 238.42   ($ 32.81)   ($ 41.13)   $ 0.00          $ 164.49
+June          $ 167.42   ($ 21.37)   ($ 5.56)    ($ 0.34)        $ 102.35
+July          $ 160.46   ($ 19.42)   ($ 32.38)   ($ 13.36)       $ 94.88
+August        $ 88.58    ($ 10.43)   ($ 2.77)    $ 0.00          $ 75.38
+September     $ 56.48    ($ 6.80)    ($ 0.18)    ($ 1.46)        $ 49.04
+October       $ 176.88   ($ 22.59)   ($ 6.93)    ($ 0.00)        $ 147.36
+November      $ 262.94   ($ 9.67)    ($ 4.64)    ($ 0.08)        $ 248.55
+December      $ 590.81   ($ 68.12)   ($ 176.26)  ($ 7.81)        $ 414.62
+Summary       $ 1,582.37
+Expenses      $ 736.27
+Profit        $ 846.10
+```",
+EXCEL,1,5,gemini-2.5-flash,94.1,0.0,0,0,0.0,,"Error code: 400 - {'error': {'message': 'google/gemini-2.5-flash-preview is not a valid model ID', 'code': 400}, 'user_id': 'user_34CyBY2XgjLOVYTqC6oBOz6V4ER'}"
+EXCEL,1,PNG,gemini-flash-1.5,190.48,0.0,0,0,0.0,,"Error code: 404 - {'error': {'message': 'No endpoints found for google/gemini-flash-1.5.', 'code': 404}, 'user_id': 'user_34CyBY2XgjLOVYTqC6oBOz6V4ER'}"
+EXCEL,1,PNG,claude-3.5-sonnet,190.48,10.71,161,694,0.0,"Month Sales Fees Shipping Marketing Net Profit
+
+January $ 129.05 $ (16.73) $ (31.99) $ 80.33
+February $ 111.20 $ (13.03) $ (19.54) $ 78.63
+March $ 98.85 $ (12.46) $ (11.76) $ (19.30) $ 55.33
+April $ 165.76 $ (19.90) $ (41.52) $ (41.11) $ 63.23
+May $ 238.42 $ (28.32) $ (36.37) $ (37.42) $ 136.31
+June $ 186.42 $ (22.62) $ (62.19) $ (20.89) $ 80.72
+July $ 167.22 $ (21.37) $ (40.16) $ (3.34) $ 102.35
+August $ 160.46 $ (19.84) $ (32.38) $ (13.36) $ 94.88
+September $ 88.58 $ (10.43) $ (16.20) $ (3.28) $ 58.67
+October $ 376.35 $ (42.49) $ (77.95) $ (6.68) $ 249.22
+November $ 262.94 $ (31.40) $ (59.67) $ (3.79) $ 168.08
+December $ 590.81 $ (68.12) $ (96.70) $ (11.37) $ 414.62
+
+Summary $ 1,582.37
+Expenses $ 736.27
+Profit $ 846.10
+
+[Bottom tabs]
+Summary Business Expenses January February March April May June July August September October November December",
+EXCEL,1,25,gemini-flash-1.5,208.66,0.0,0,0,0.0,,"Error code: 404 - {'error': {'message': 'No endpoints found for google/gemini-flash-1.5.', 'code': 404}, 'user_id': 'user_34CyBY2XgjLOVYTqC6oBOz6V4ER'}"
+EXCEL,1,25,claude-3.5-sonnet,208.66,12.44,144,585,0.0,"Month   Sales    Fees     Shipping   Marketing   Net Profit
+
+January   $ 129.05  $ (16.73)  $ (31.99)              $ 80.33
+February  $ 111.20  $ (13.03)  $ (19.54)              $ 78.63
+March     $ 98.85   $ (12.46)  $ (11.76)  $ (19.30)   $ 55.33
+April     $ 165.76  $ (19.90)  $ (41.52)  $ (41.11)   $ 63.23
+May       $ 238.42  $ (28.32)  $ (36.37)  $ (37.42)   $ 136.31
+June      $ 186.42  $ (22.62)  $ (62.19)  $ (20.89)   $ 80.72
+July      $ 167.22  $ (21.37)  $ (40.16)  $ (3.34)    $ 102.35
+August    $ 160.46  $ (19.84)  $ (32.38)  $ (13.36)   $ 94.88
+September $ 88.58   $ (10.43)  $ (16.20)  $ (3.28)    $ 58.67
+October   $ 376.35  $ (42.49)  $ (77.99)  $ (6.65)    $ 249.22
+November  $ 262.94  $ (31.40)  $ (59.67)  $ (3.79)    $ 168.08
+December  $ 590.81  $ (68.12)  $ (96.70)  $ (11.37)   $ 414.62
+
+Summary                                               $ 1,582.37
+Expenses                                             $ 736.27
+Profit                                               $ 846.10",
+EXCEL,1,25,gpt-4o-mini,208.66,9.23,141,534,0.0,"```
+Month        Sales         Fees         Shipping       Marketing     Net Profit
+January      $ 129.05     $ (16.73)    $ (19.94)      $                $ 80.83
+February     $ 111.20     $ (13.00)    $ (14.92)      $                $ 78.13
+March        $ 98.85      $ (8.55)     $ (11.50)      $                $ 55.83
+April        $ 96.90      $ (12.43)    $ (5.68)       $                $ 78.79
+May          $ 238.42     $ (21.11)    $ (25.41)      $                $ 191.90
+June         $ 167.22     $ (21.37)    $ (4.16)       $ (3.34)        $ 102.35
+July         $ 160.46     $ (5.79)     $ (32.38)      $ (13.36)       $ 94.88
+August       $ 88.58      $ (10.43)    $ (15.27)      $                $ 58.67
+September    $ 76.38      $ (12.49)    $ (5.88)       $                $ 58.01
+October      $ 83.42      $ (4.29)     $ (2.63)       $                $ 76.50
+November     $ 262.94     $ (7.57)     $ (12.36)      $ (10.49)       $ 108.82
+December     $ 590.81     $ (68.12)    $ (1.79)       $                $ 414.62
+Summary      $ 1,582.37
+Expenses     $ 736.27
+Profit       $ 846.10
+```",
+EXCEL,1,5,gemini-flash-1.5,94.1,0.0,0,0,0.0,,"Error code: 404 - {'error': {'message': 'No endpoints found for google/gemini-flash-1.5.', 'code': 404}, 'user_id': 'user_34CyBY2XgjLOVYTqC6oBOz6V4ER'}"
+EXCEL,1,5,claude-3.5-sonnet,94.1,11.07,149,694,0.0,"Month   Sales    Fees    Shipping   Marketing   Net Profit
+
+January   $ 129.05  $(16.73) $ (31.99)           $ 80.33
+February  $ 111.20  $(13.03) $ (19.54)           $ 78.63
+March     $ 98.85   $(12.46) $ (11.76) $ (19.30) $ 55.33
+April     $ 165.76  $(19.90) $ (41.52) $ (41.11) $ 63.23
+May       $ 238.42  $(28.32) $ (36.37) $ (37.42) $ 136.31
+June      $ 186.42  $(22.62) $ (62.19) $ (20.89) $ 80.72
+July      $ 167.22  $(21.37) $ (40.16) $ (3.34)  $ 102.35
+August    $ 160.46  $(19.84) $ (32.38) $ (13.36) $ 94.88
+September $ 88.58   $(10.43) $ (16.20) $ (3.28)  $ 58.67
+October   $ 376.38  $(42.49) $ (77.59) $ (6.68)  $ 249.22
+December  $ 590.81  $(68.12) $ (96.70) $ (11.37) $ 414.62
+November  $ 262.94  $(31.40) $ (59.67) $ (3.79)  $ 168.08
+
+Summary                                          $ 1,582.37
+Expenses                                         $ 736.27
+Profit                                          $ 846.10
+
+[Bottom tabs]
+Summary   Business Expenses   January   February   March   April   May   June   July   August   September   October   November   December",
+EXCEL,1,25,gemini-2.5-flash,208.66,4.42,284,1283,100.0,"AutoSave
+Off
+Etsy_Statements_2024.xlsx Non-Public Last Modified: March 21
+Search
+Comments Share
+File Home Insert Draw Page Layout Formulas Data Review View Automate Help ChemOffice21 Analytic Solver
+Cut
+Copy
+Paste
+Format Painter
+Clipboard
+Calibri
+11
+A A
+BIU
+Font
+Alignment
+Wrap Text
+Merge & Center
+Conditional Format as
+Formatting
+Table
+Accounting
+%
+Accent1
+Accent2
+Accent3
+Accent4
+60%-Accent6
+Accent5
+Accent6
+Comma
+Comma [0]
+Currency
+Styles
+Number
+Insert Delete Format
+Cells
+F23
+A
+B
+C
+Month
+Sales
+Fees
+January
+$ 129.05 $ (16.73) $
+February $ 111.20 $ (13.03) $
+March
+$ 98.85 $ (12.46) $
+April
+$ 165.76 $ (19.90) $
+May
+$ 238.42 $ (28.32) $
+June
+$ 186.42 $ (22.62) $
+July
+$ 167.22 $ (21.37) $
+August $ 160.46 $ (19.84) $
+September $ 88.58 $ (10.43) $
+October $ 376.38 $ (42.49) $
+November $ 262.94 $ (31.40) $
+December $ 590.81 $ (68.12) $
+Summary
+Expenses
+Profit
+
+D
+Shipping Marketing Net Profit
+(31.99)
+$
+(19.54)
+$
+(11.76) $
+(19.30) $
+(41.52) $
+(41.11) $
+(36.37) $
+(37.42) $
+(62.19) $
+(20.89) $
+(40.16) $
+(3.34) $
+(32.38) $
+(13.36) $
+(16.20) $
+(3.28) $
+(77.99) $
+(6.68) $
+(59.67) $
+(3.79) $
+(96.70) $
+(11.37) $
+
+$ 1,582.37
+$
+736.27
+$
+846.10
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+∑ AutoSum
+Fill
+Clear
+Sort & Find &
+Filter Select
+Editing
+Sensitivity
+Add-ins
+Copilot
+Show
+ToolPak
+Risk
+Solver
+Sensitivity Add-ins
+Commands Group Risk Solver
+80.33
+78.63
+55.33
+63.23
+136.31
+80.72
+102.35
+94.88
+58.67
+249.22
+168.08
+414.62
+Ready Accessibility: Good to go
+<
+Summary
+Business Expenses
+January
+February March April
+May
+June
+July
+August September October November December
++
+>
+160%",
+EXCEL,1,25,claude-3.5-sonnet,208.66,16.34,129,701,0.0,"Month     Sales    Fees     Shipping   Marketing   Net Profit
+
+January   $ 129.05  $(16.73)  $(31.99)              $ 80.33
+February  $ 111.20  $(13.03)  $(19.54)              $ 78.63
+March     $ 98.85   $(12.46)  $(11.76)  $(19.30)    $ 55.33
+April     $ 165.76  $(19.90)  $(41.52)  $(41.11)    $ 63.23
+May       $ 238.42  $(28.32)  $(36.37)  $(37.42)    $ 136.31
+June      $ 186.42  $(22.62)  $(62.19)  $(20.89)    $ 80.72
+July      $ 167.22  $(21.37)  $(40.16)  $(3.34)     $ 102.35
+August    $ 160.46  $(19.84)  $(32.38)  $(13.36)    $ 94.88
+September $ 88.58   $(10.43)  $(16.20)  $(3.28)     $ 58.67
+October   $ 376.35  $(42.49)  $(77.99)  $(6.65)     $ 249.22
+December  $ 590.81  $(68.12)  $(96.70)  $(11.37)    $ 414.62
+November  $ 262.94  $(31.40)  $(59.67)  $(3.79)     $ 168.08
+
+Summary                                             $ 1,582.37
+Expenses                                            $ 736.27
+Profit                                             $ 846.10
+
+[Sheet tabs at bottom]
+Summary Business Expenses January February March April May June July August September October November December",
+EXCEL,1,25,gpt-4o-mini,208.66,12.14,150,570,0.0,"```
+Month        Sales       Fees         Shipping    Marketing    Net Profit
+January      $ 129.05    $ (16.73)    $ (19.94)   $ 0.00       $ 80.38
+February     $ 111.20    $ (13.00)    $ (15.94)   $ 0.00       $ 78.36
+March        $ 98.85     $ (8.51)     $ (5.52)    $ 0.00       $ 84.82
+April        $ 129.88    $ (20.84)    $ (25.09)   $ 0.00       $ 83.95
+May          $ 238.42    $ (26.77)    $ (23.34)   $ 0.00       $ 188.31
+June         $ 126.96    $ (9.82)     $ (11.12)   $ 0.00       $ 106.02
+July         $ 167.22    $ (21.37)    $ (4.16)    $ (3.34)     $ 102.35
+August       $ 160.46    $ (19.62)    $ (32.38)   $ (13.36)    $ 94.88
+September    $ 88.58     $ (9.38)     $ (5.67)    $ 0.00       $ 58.67
+October      $ 76.36     $ (8.49)     $ (3.42)    $ 0.00       $ 64.45
+November     $ 262.94    $ (28.77)    $ (7.31)    $ 0.00       $ 226.86
+December     $ 590.81    $ (68.12)    $ (16.74)   $ 0.00       $ 414.62
+Summary      $ 1,582.37
+Expenses     $ 736.27
+Profit       $ 846.10
+```",
+EXCEL,1,5,gemini-2.5-flash,94.1,5.48,318,1325,100.0,"AutoSave
+Etsy_Statements_2024.xlsx Non-Public - Last Modified: March 21 v
+Comments Share
+File Home Insert Draw Page Layout Formulas Data Review View Automate Help ChemOffice21 Analytic Solver
+X Cut
+Copy
+Paste
+Format Painter
+Clipboard
+F23
+Calibri
+Wrap Text
+11 A A
+BI U
+Merge & Center
+Font
+Alignment
+A
+B
+C
+D
+E
+F
+1 Month Sales Fees Shipping Marketing Net Profit
+2 January $ 129.05 $ (16.73) $ (31.99)
+3 February $ 111.20 $ (13.03) $ (19.54)
+4 March $ 98.85 $ (12.46) $ (11.76) $ (19.30) $
+5 April $ 165.76 $ (19.90) $ (41.52) $ (41.11) $
+6 May $ 238.42 $ (28.32) $ (36.37) $ (37.42) $
+7 June $ 185.42 $ (22.62) $ (62.19) $ (20.89) $
+8 July $ 167.22 $ (21.37) $ (40.16) $ (3.34) $
+9 August $ 160.46 $ (19.84) $ (32.38) $ (13.36) $
+10 September $ 88.58 $ (10.43) $ (16.20) $ (3.28) $
+11 October $ 376.38 $ (42.49) $ (77.99) $ (6.68) $
+12 November $ 262.94 $ (31.40) $ (59.67) $ (3.79) $
+13 December $ 590.81 $ (68.12) $ (96.70) $ (11.37) $
+14 Summary
+15 Expenses
+16 Profit
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+Search
+Accounting
+60% - Accent6 Accent1 Accent2
+Conditional Format as
+Formatting Table▾
+G
+H
+Accent3
+Comma
+Style
+$
+Cells
+AutoSum
+B
+Fill▾
+Clear▾
+Sort & Find & Sensitivity Add-ins Copilot
+Filter▾ Select▾
+Editing
+$ 80.33
+$ 78.63
+55.33
+63.23
+136.31
+80.72
+102.35
+94.88
+58.67
+249.22
+168.08
+414.62
+$ 1,582.37
+$ 736.27
+$ 846.10
+Accent4 Accent5
+Currency
+J
+K
+L
+M
+N
+Insert Delete Format
+O
+P
+Q
+R
+S
+Show
+ToolPak
+Sensitivity add-ins Commands Group Risk Solver
+T
+U
+V
+W
+Risk
+Solver
+Ready Accessibility: Good to go
+Summary
+Business Expenses January February March April May June July
+August September October November December
++
++ 160%",
+EXCEL,1,5,claude-3.5-sonnet,94.1,22.47,134,587,0.0,"Month      Sales      Fees      Shipping      Marketing      Net Profit
+January    $ 129.05   $(16.73)   $   (31.99)   $         $   80.33
+February   $ 111.20   $(13.03)   $   (19.54)   $         $   78.63
+March      $  98.85   $(12.46)   $   (11.76)   $   (19.30) $   55.33
+April      $ 165.76   $(19.90)   $   (41.52)   $   (41.11) $   63.23
+May        $ 238.42   $(28.32)   $   (36.37)   $   (37.42) $  136.31
+June       $ 186.42   $(22.62)   $   (62.19)   $   (20.89) $   80.72
+July       $ 167.22   $(21.37)   $   (40.16)   $    (3.34) $  102.35
+August     $ 160.46   $(19.84)   $   (32.38)   $   (13.36) $   94.88
+September  $  88.58   $(10.43)   $   (16.20)   $    (3.28) $   58.67
+October    $ 376.38   $(42.49)   $   (77.99)   $    (6.68) $  249.22
+November   $ 262.94   $(31.40)   $   (59.67)   $    (3.79) $  168.08
+December   $ 590.81   $(68.12)   $   (96.70)   $   (11.37) $  414.62
+
+Summary                                                  $  1,582.37
+Expenses                                                $    736.27
+Profit                                                  $    846.10",
+EXCEL,1,5,gpt-4o-mini,94.1,9.02,125,544,0.0,"```
+Month       Sales        Fees        Shipping   Marketing   Net Profit
+January     $ 129.05     $(16.73)    $(3.80)    $ 80.3      $  89.22
+February    $ 11.01      $(13.03)    $(19.94)   $ -         $(21.96)
+March       $ 98.86      $ (5.21)    $(41.13)   $ -         $ 52.52
+April       $ 59.94      $ -         $(26.23)   $ -         $ 33.71
+May         $ 238.46     $ (1.98)    $(47.57)   $ -         $ 188.91
+June        $ 167.24     $(21.37)    $(40.16)   $(3.34)     $ 102.35
+July        $ 167.22     $(21.37)    $(40.16)   $(3.34)     $ 102.35
+August      $ 160.46     $(19.84)    $(32.38)   $(13.36)    $ 94.88
+September   $ 8.58       $(1.68)     $(3.68)    $ -         $ 3.22
+October     $ 36.11      $(4.97)     $(7.63)    $ -         $ 23.51
+November    $ 262.94     $(9.67)     $(3.79)    $ -         $ 249.48
+December    $ 590.81     $(68.12)    $(96.70)   $ 14.62     $ 414.62
+Summary     $ 1,582.37
+Expenses    $ 736.27
+Profit      $ 846.10
+```",
+EXCEL,1,1,gemini-2.5-flash,81.7,4.56,233,1046,100.0,"AutoSave Off
+Etsy Statements 2024.xlsx Non-Public Last Modified March 21
+File Home Insert Draw Page Layout Formulas Data Review View Automate Help ChemOffice21 Analytic Solver
+Paste Callim Wrap Text
+Copy
+BIU A
+Conditional Format as
+Formatting Table
+Format Painter
+Clipboard
+Font Alignment
+F23
+A B C D E F G H I J K L M N O P Q R S T U V W
+1 Month Sales Fees Shipping Marketing Net Profit
+2 January $129.05 $(16.73) $ (31.99) $ 80.33
+3 February $111.20 $(13.03) $ (19.54) $ 78.63
+4 March $98.85 $(12.46) $ (11.76) $(19.30) $ 55.33
+5 April $165.76 $(19.90) $ (41.52) $(41.11) $ 63.23
+6 May $238.47 $(28.32) $ (36.37) $(37.42) $ 136.31
+7 June $186.47 $(22.62) $ (62.19) $(20.89) $ 80.72
+8 July $167.27 $(21.37) $ (40.16) $ (3.34) $ 102.35
+9 August $160.46 $(19.84) $ (32.38) $(13.36) $ 94.88
+10 September $ 88.58 $(10.43) $ (16.20) $(3.28) $ 58.67
+11 October $376.38 $(42.49) $ (77.99) $(6.68) $ 249.22
+12 November $262.94 $(31.40) $ (59.67) $(3.79) $ 168.08
+13 December $590.81 $(68.12) $ (96.70) $(11.37) $ 414.62
+14 Summary $1,582.37
+15 Expenses $ 736.27
+16 Profit $ 846.10
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+Summary Business Expenses January February March April May June July August September October November December
+Read Accessibility: Good to go 160%",
+EXCEL,1,1,claude-3.5-sonnet,81.7,11.81,132,585,0.0,"Month   Sales    Fees    Shipping   Marketing   Net Profit
+
+January   $ 129.05  $(16.73)  $   (31.99)              $    80.33
+February  $ 111.20  $(13.03)  $   (19.54)              $    78.63
+March     $  98.85  $(12.46)  $   (11.76)  $   (19.30) $    55.33
+April     $ 165.76  $(19.90)  $   (41.52)  $   (41.11) $    63.23
+May       $ 238.47  $(28.32)  $   (36.37)  $   (37.42) $   136.31
+June      $ 186.42  $(22.62)  $   (62.19)  $   (20.89) $    80.72
+July      $ 167.22  $(21.37)  $   (40.16)  $    (3.14) $   102.55
+August    $ 160.46  $(19.94)  $   (32.38)  $   (13.36) $    94.85
+September $  88.58  $(10.43)  $   (16.20)  $    (3.28) $    58.67
+October   $ 178.58  $(42.49)  $   (77.83)  $    (8.68) $   239.22
+November  $ 262.94  $(31.40)  $   (59.67)  $    (3.79) $   168.08
+December  $ 290.81  $(68.12)  $   (56.70)  $   (11.37) $   413.62
+
+Summary                                               $ 1,582.77
+Expenses                                             $   736.27
+Profit                                               $   846.10",
+EXCEL,1,1,gpt-4o-mini,81.7,7.4,135,485,0.0,"```
+Month         Sales       Fees       Shipping      Marketing      Net Profit
+January      $ 129.05   $ (16.73)   $              $               $  78.30
+February     $  1.21    $ (13.95)   $ (25.75)      $               $  78.63
+March        $  98.85   $            $ (1.54)       $               $  78.31
+April        $  75.38   $            $ (6.32)       $               $  63.76
+May          $ 238.41   $ (58.84)   $ (6.88)       $               $ 172.69
+June         $ 167.27   $ (21.37)   $ (40.16)      $               $  702.35
+July         $ 160.46   $ (5.18)    $ (23.32)      $ (13.36)      $  114.69
+August       $  88.58   $ (4.75)    $ (9.63)       $ 54.67         $  58.67
+September    $  74.20   $ (5.13)    $              $  4.77        $  62.01
+October      $  25.63   $           $ (2.73)       $  2.19         $  34.00
+November     $ 262.94   $            $ (15.37)      $              $  167.00
+December     $ 590.81   $ (56.82)   $              $               $  413.62
+Summary      $ 1,582.37
+Expenses     $ 736.27
+Profit       $ 846.10
+```",
+EXCEL,2,PNG,gemini-2.5-flash,203.45,5.55,482,2309,100.0,"AutoSave
+Off
+Etsy_Statements_2024.xlsx Non-Public Last Modified: March 21
+File
+Home
+Insert
+Draw
+Page Layout Formulas
+Data Review
+View
+Automate
+Help
+ChemOffice21
+Analytic Solver
+Cut
+Calibri
+11
+A A
+ab Wrap Text
+Copy
+Paste
+BIU
+Merge & Center
+Format Painter
+Clipboard
+Font
+Alignment
+Number
+E37
+x fx
+Search
+Conditional Format as
+Formatting Table
+Normal
+Bad
+Good
+Neutral
+Calculation
+Check cell
+Explanatory... Followed Hy... Hyperlink Input
+Styles
+Cells
+Σ AutoSum
+Fill
+Clear
+Sort & Find &
+Filter Select
+Editing
+Sensitivity
+Insert Delete Format
+Add-ins
+Copilot
+Show
+Risk
+ToolPak
+Solver
+Sensitivity Add-ins
+Commands Group Risk Solver
+Comments Share
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+AA
+AB
+AC
+1 Date
+Description
+Amount Category
+Business Expense
+2 Jan 31-Feb 02
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+3 Feb 02-Feb 03
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+4 Mar 02-Mar 04 OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+5 Apr 02-Apr 03 OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+6 May 02-May 03 OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+7 Jun 02-Jun 03
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+8 Jul 02-Jul 03
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+9 Aug 02-Aug 03
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+10 Sep 02-Sep 03 OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+11 Oct 02-Oct 03
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+12 Nov 02-Nov 04 OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+13 Dec 02-Dec 03 OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+14 Jan 08-Jan 10 Etsy.com*US
+$
+(1.00) Marketing Yes
+15 Mar 08-Mar 11 Etsy.com*US
+$
+(25.58) Marketing Yes
+16 Jun 01-Jun 03 Etsy.com*US
+$
+(1.00) Marketing Yes
+17 Nov 01-Nov 04 Etsy.com*US
+$
+(4.37) Marketing Yes
+18 Jan 12-Jan 15 CatPrint
+$
+(50.45) Printing Ser Yes
+19 Mar 14-Mar 14 CatPrint
+$
+(93.20) Printing Ser Yes
+20 May 08-May 08 CatPrint
+$
+(50.45) Printing Ser Yes
+21 Oct 14-Oct 15 CatPrint
+$
+(93.20) Printing Ser Yes
+22 Apr 15-Apr 16 Sticker Mule
+$
+(1.07) Marketing Yes
+23 Apr 25-Apr 26 Sticker Mule
+$
+(20.26) Marketing Yes
+24 Jul 18-Jul 19
+Sticker Mule
+$
+(9.60) Marketing Yes
+25 Oct 25-Oct 28 Sticker Mule
+$
+(20.26) Marketing Yes
+26 Oct 08-Oct 10 FedEx Office
+$
+(5.59) Shipping Yes
+27 Mar 29-Apr 01 Gasland East Rutherford NJ
+$
+(30.09) Transportat Yes
+28 Apr 12-Apr 15 Gasland East Rutherford NJ
+$
+(29.27) Transportat Yes
+29 Sep 27-Sep 30 Cloudflare
+$
+(10.44) Software Su Yes
+30 Oct 31-Nov 01 Cloudflare
+$
+(10.44) Software Su Yes
+31 Sep 29-Sep 30 Shopify*279416413
+$
+(1.00) E-Commerce Yes
+32 Oct 29-Oct 30 Shopify*290147912
+$
+(39.00) E-Commerce Yes
+33
+34 Summary
+$ (736.27)
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+Summary
+Business Expenses January February March April May June July August September October November December
++
+Ready Accessibility: Good to go
+115%",
+EXCEL,2,PNG,claude-3.5-sonnet,203.45,17.78,296,1574,0.0,"Date Description Amount Category Business Expense?
+
+Jan 31-Feb 02 OpenAI*ChatGPTSubcr $ (20.00) Software Sv Yes
+Feb 02-Feb 03 OpenAI*ChatGPTSubcr $ (20.00) Software Sv Yes
+Mar 02-Mar 04 OpenAI*ChatGPTSubcr $ (20.00) Software Sv Yes
+Apr 02-Apr 03 OpenAI*ChatGPTSubcr $ (20.00) Software Sv Yes
+May 02-May 03 OpenAI*ChatGPTSubcr $ (20.00) Software Sv Yes
+Jun 02-Jun 03 OpenAI*ChatGPTSubcr $ (20.00) Software Sv Yes
+Jul 02-Jul 03 OpenAI*ChatGPTSubcr $ (20.00) Software Sv Yes
+Aug 02-Aug 03 OpenAI*ChatGPTSubcr $ (20.00) Software Sv Yes
+Sep 02-Sep 03 OpenAI*ChatGPTSubcr $ (20.00) Software Sv Yes
+Oct 02-Oct 03 OpenAI*ChatGPTSubcr $ (20.00) Software Sv Yes
+Nov 02-Nov 04 OpenAI*ChatGPTSubcr $ (20.00) Software Sv Yes
+Dec 02-Dec 03 OpenAI*ChatGPTSubcr $ (20.00) Software Sv Yes
+
+Jan 08-Jan 10 Etsy.com*US $ (1.00) Marketing Yes
+Mar 08-Mar 11 Etsy.com*US $ (25.58) Marketing Yes
+Jun 01-Jun 03 Etsy.com*US $ (1.00) Marketing Yes
+Nov 01-Nov 04 Etsy.com*US $ (4.37) Marketing Yes
+
+Jan 12-Jan 15 CatPrint $ (50.45) Printing Ser Yes
+Mar 14-Mar 14 CatPrint $ (93.20) Printing Ser Yes
+May 08-May 08 CatPrint $ (50.45) Printing Ser Yes
+Oct 14-Oct 15 CatPrint $ (93.20) Printing Ser Yes
+
+Apr 15-Apr 16 Sticker Mule $ (1.07) Marketing Yes
+Apr 25-Apr 26 Sticker Mule $ (20.26) Marketing Yes
+Jul 19-Jul 19 Sticker Mule $ (0.65) Marketing Yes
+Oct 25-Oct 28 Sticker Mule $ (20.26) Marketing Yes
+
+Mar 29-Apr 01 Gasland East Rutherford NJ $ (30.09) Transport Yes
+Mar 12-Apr 15 Gasland East Rutherford NJ $ (29.72) Transport Yes
+
+Sep 27-Sep 30 Cloudflare $ (10.44) Software Sv Yes
+Oct 31-Nov 01 Cloudflare $ (10.44) Software Sv Yes
+
+Sep 29-Sep 30 Shopify*377416413 $ (1.00) E-Commerce Yes
+Oct 29-Oct 30 Shopify*390147912 $ (39.00) E-Commerce Yes
+
+Summary $ (736.27)
+
+[Menu items at bottom:]
+Summary Business Expenses January February March April May June July August September October November December",
+EXCEL,2,PNG,gpt-4o-mini,203.45,16.37,392,1500,0.0,"```
+|    |      A       |           B          |      C      |   D    |          E          |          F          |
+|----|--------------|---------------------|-------------|--------|---------------------|---------------------|
+| 1  | Date         | Description         | Amount      | Category | Business Expense    |
+| 2  | Jan 31-Feb 03| OpenAI ChatGPT Subscr| ($20.00)    | Software | Yes                 |
+| 3  | Feb 02-06    | OpenAI ChatGPT Subscr| ($20.00)    | Software | Yes                 |
+| 4  | Mar 02-Mar 04| OpenAI ChatGPT Subscr| ($20.00)    | Software | Yes                 |
+| 5  | Apr 05-Apr 30| OpenAI ChatGPT Subscr| ($20.00)    | Software | Yes                 |
+| 6  | May 01-May 02| OpenAI ChatGPT Subscr| ($20.00)    | Software | Yes                 |
+| 7  | Jun 01-Jun 03| OpenAI ChatGPT Subscr| ($20.00)    | Software | Yes                 |
+| 8  | Jul 01-Jul 03| OpenAI ChatGPT Subscr| ($20.00)    | Software | Yes                 |
+| 9  | Aug 01-Aug 30| OpenAI ChatGPT Subscr| ($20.00)    | Software | Yes                 |
+| 10 | Sep 01-Sep 30| Etsy.com*""US       | ($1.58)     | Marketing | Yes                 |
+| 11 | Oct 02-Oct 03| OpenAI ChatGPT Subscr| ($20.00)    | Software | Yes                 |
+| 12 | Dec 02-Dec 03| Etsy.com*""US       | ($1.58)     | Marketing | Yes                 |
+| 13 | Jan 16       | Etsy.com*""US       | ($0.01)     | Marketing | Yes                 |
+| 14 | Jan 10-Nov 01| Etsy.com*""US       | ($4.37)     | Marketing | Yes                 |
+| 15 | Nov 01-Nov 10| Etsy.com*""US       | ($3.95)     | Marketing | Yes                 |
+| 16 | Mar 14-Mar 14| CatPrint           | ($9.00)     | Printing Ser | Yes               |
+| 17 | Apr 11-Apr 15| CatPrint           | ($9.00)     | Printing Ser | Yes               |
+| 18 | Apr 12-Apr 16| Sticker Mule       | ($16.98)    | Marketing | Yes                 |
+| 19 | Apr 26-Oct 31| Sticker Mule       | ($16.98)    | Marketing | Yes                 |
+| 20 | Jul 06-Jul 30| Sticker Mule       | ($10.00)    | Marketing | Yes                 |
+| 21 | Sep 02-Oct 31| Sticker Mule       | ($10.00)    | Marketing | Yes                 |
+| 22 | Apr 29-Apr 30| Gasland East Rutherford NJ| ($30.09)| Transportation| Yes            |
+| 23 | Apr 31-Oct 31| Gasland East Rutherford NJ| ($30.09)| Software | Yes                 |
+| 24 | Oct 31       | Cloudflare         | ($10.44)    | Software | Yes                 |
+| 25 | Sep 29-Sep 30| Shopify*290149712| ($39.00)      | E-Commerce | Yes              |
+| 34 |              | Summary             | ($736.27)   |         |                     |
+```",
+EXCEL,2,25,gemini-2.5-flash,256.83,6.47,489,2313,100.0,"AutoSave
+Off
+Etsy_Statements_2024.xlsx Non-Public Last Modified: March 21
+File Home Insert Draw Page Layout Formulas Data Review View Automate Help ChemOffice21 Analytic Solver
+Cut
+Calibri
+11
+A A
+Copy
+Paste
+B I U
+A
+Format Painter
+Clipboard
+Font
+E37
+ƒx
+Search
+ab Wrap Text
+Merge & Center
+General
+∑ AutoSum
+$ % .0 .00
+Conditional Format as Check Cell
+Formatting Table
+Bad
+Good
+Neutral
+Explanatory
+Followed Hy... Hyperlink
+Calculation
+Input
+Fill
+Insert Delete Format
+Clear
+Sort & Find &
+Filter Select
+Sensitivity
+Add-ins
+Copilot
+Show
+Risk
+ToolPak
+Solver
+Alignment
+Number
+Styles
+Cells
+Editing
+Sensitivity Add-ins
+Commands Group Risk Solver
+X
+
+Comments Share
+
+A
+B
+C
+D
+E
+F
+G
+H
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+AA
+AB
+AC
+1 Date
+Description
+Amount
+Category
+Business Expense
+(20.00) Software Su Yes
+2 Jan 31-Feb 02
+OpenAI*ChatGPTSubscr
+$
+3 Feb 02-Feb 03
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+4 Mar 02-Mar 04
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+5 Apr 02-Apr 03
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+6 May 02-May 03
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+7 Jun 02-Jun 03
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+8 Jul 02-Jul 03
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+9 Aug 02-Aug 03
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+10 Sep 02-Sep 03
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+11 Oct 02-Oct 03
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+12 Nov 02-Nov 04
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+13 Dec 02-Dec 03
+OpenAI*ChatGPTSubscr
+$
+(20.00) Software Su Yes
+14 Jan 08-Jan 10
+Etsy.com*US
+$
+(1.00) Marketing Yes
+15 Mar 08-Mar 11
+Etsy.com*US
+$
+(25.58) Marketing Yes
+16 Jun 01-Jun 03
+Etsy.com*US
+$
+(1.00) Marketing Yes
+17 Nov 01-Nov 04
+Etsy.com*US
+$
+(4.37) Marketing Yes
+18 Jan 12-Jan 15
+CatPrint
+$
+(50.45) Printing Ser Yes
+19 Mar 14-Mar 14
+CatPrint
+$
+(93.20) Printing Ser Yes
+20 May 08-May 08
+CatPrint
+$
+(50.45) Printing Ser Yes
+21 Oct 14-Oct 15
+CatPrint
+$
+(93.20) Printing Ser Yes
+22 Apr 15-Apr 16
+Sticker Mule
+$
+(1.07) Marketing Yes
+23 Apr 25-Apr 26
+Sticker Mule
+$
+(20.26) Marketing Yes
+24 Jul 18-Jul 19
+Sticker Mule
+$
+(9.60) Marketing Yes
+25 Oct 25-Oct 28
+Sticker Mule
+$
+(20.26) Marketing Yes
+26 Oct 08-Oct 10
+FedEx Office
+$
+(5.59) Shipping
+Yes
+27 Mar 29-Apr 01
+Gasland East Rutherford NJ
+$
+(30.09) Transportat Yes
+28 Apr 12-Apr 15
+Gasland East Rutherford NJ
+$
+(29.27) Transportat Yes
+29 Sep 27-Sep 30
+Cloudflare
+$
+(10.44) Software Su Yes
+30 Oct 31-Nov 01
+Cloudflare
+$
+(10.44) Software Su Yes
+31 Sep 29-Sep 30
+Shopify*279416413
+$
+(1.00) E-Commerc Yes
+32 Oct 29-Oct 30
+Shopify*290147912
+$
+(39.00) E-Commerc Yes
+33
+34 Summary
+$
+(736.27)
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+Summary
+Business Expenses
+January
+February
+March
+April
+May
+Ready Accessibility: Good to go
+June
+July
+August
+September
+October
+November
+December
++
++
+115%",
+EXCEL,2,25,claude-3.5-sonnet,256.83,17.14,241,1566,0.0,"Date Description Amount Category Business Expense?
+
+Jan 31-Feb 02 OpenAtChatGPTSubsc $(20.00) Software SvcYes
+Feb 02-Feb 03 OpenAtChatGPTSubsc $(20.00) Software SvcYes
+Mar 02-Mar 04 OpenAtChatGPTSubsc $(20.00) Software SvcYes
+Apr 02-Apr 03 OpenAtChatGPTSubsc $(20.00) Software SvcYes
+May 02-May 03 OpenAtChatGPTSubsc $(20.00) Software SvcYes
+Jun 02-Jun 03 OpenAtChatGPTSubsc $(20.00) Software SvcYes
+Jul 02-Jul 03 OpenAtChatGPTSubsc $(20.00) Software SvcYes
+Aug 02-Aug 03 OpenAtChatGPTSubsc $(20.00) Software SvcYes
+Sep 02-Sep 03 OpenAtChatGPTSubsc $(20.00) Software SvcYes
+Oct 02-Oct 03 OpenAtChatGPTSubsc $(20.00) Software SvcYes
+Nov 02-Nov 04 OpenAtChatGPTSubsc $(20.00) Software SvcYes
+Dec 02-Dec 03 OpenAtChatGPTSubsc $(20.00) Software SvcYes
+
+Jan 08-Jan 10 Etsy.com*US $(1.00) Marketing Yes
+Mar 08-Mar 11 Etsy.com*US $(25.58) Marketing Yes
+Jun 01-Jun 03 Etsy.com*US $(1.00) Marketing Yes
+Nov 01-Nov 04 Etsy.com*US $(4.37) Marketing Yes
+
+Jan 12-Jan 15 CatPrint $(50.45) Printing SerYes
+Mar 14-Mar 14 CatPrint $(93.20) Printing SerYes
+May 08-May 08 CatPrint $(50.45) Printing SerYes
+Oct 14-Oct 15 CatPrint $(93.20) Printing SerYes
+
+Apr 15-Apr 16 Sticker Mule $(1.07) Marketing Yes
+Apr 25-Apr 26 Sticker Mule $(20.26) Marketing Yes
+Jul 18-Jul 19 Sticker Mule $(0.63) Marketing Yes
+Oct 25-Oct 28 Sticker Mule $(20.26) Marketing Yes
+
+Mar 29-Apr 01 Gasland East Rutherford NJ $(30.09) TransportYes
+Mar 17-Apr 15 Gasland East Rutherford NJ $(29.27) TransportYes
+
+Sep 27-Sep 30 Cloudflare $(10.44) Software SvcYes
+Oct 31-Nov 01 Cloudflare $(10.44) Software SvcYes
+
+Sep 29-Sep 30 Shopify*277416413 $(1.00) E-CommercYes
+Oct 29-Oct 30 Shopify*290147912 $(39.00) E-CommercYes
+
+Summary $(736.27)
+
+[Bottom tabs]
+Summary Business Expenses January February March April May June July August September October November December",
+EXCEL,2,25,gpt-4o-mini,256.83,13.94,208,1227,0.0,"```
+E37
+Date		Description		Amount		Category		Business Expense
+Jan 31-Feb 03	OpenAI ChatGPTSubscr	$	(20.00)		Software		Yes
+Feb 02-Feb 03	OpenAI ChatGPTSubscr	$	(20.00)		Software		Yes
+Mar 02-Apr 03	OpenAI ChatGPTSubscr	$	(20.00)		Software		Yes
+Apr 02-Apr 03	OpenAI ChatGPTSubscr	$	(20.00)		Software		Yes
+May 02-Jun 03	OpenAI ChatGPTSubscr	$	(20.00)		Software		Yes
+Jun 02-Jul 03	OpenAI ChatGPTSubscr	$	(20.00)		Software		Yes
+Jul 02-Aug 03	OpenAI ChatGPTSubscr	$	(20.00)		Software		Yes
+Aug 02-Sep 03	OpenAI ChatGPTSubscr	$	(20.00)		Software		Yes
+Sep 03-Oct 03	Cu	$	(8.50)		E-commerce		Yes
+Oct 02-Oct 03	Etsy.com	$	(2.00)		Marketing		Yes
+Oct 02-Oct 03	Etsy.com	$	(8.50)		Marketing		Yes
+Oct 11-Nov 03	Etsy.com	$	(4.37)		Marketing		Yes
+Nov 10-Nov 03	Etsy.com	$	(3.68)		Marketing		Yes
+Mar 14-Mar 14	CatPrint	$	(7.50)		Printing Service	Yes
+Mar 08-Mar 08	CatPrint	$	(8.00)		Marketing		Yes
+Apr 12-Apr 16	Sticker Mule	$	(20.00)		Marketing		Yes
+Jul 31-Aug 16	Sticker	$	(50.00)		Marketing		Yes
+Oct 26-Oct 28	Sticker Mule	$	(2.00)		Marketing		Yes
+Apr 29-Apr 30	Gasland East Rutherford NJ	$	(30.00)		Transport		Yes
+Oct 31-Oct 31	Gasland East Rutherford NJ	$	(10.00)		Transport		Yes
+Jan 02-Sep 30	Cloudflare	$	(10.44)		Software		Yes
+Sep 29-Sep 30	Shopify*29014947912	$	(39.00)		E-commerce		Yes
+Oct 29-Oct 30	Summary				$	(736.27)	
+```",
+EXCEL,2,5,gemini-2.5-flash,116.53,6.97,449,2207,100.0,"AutoSave
+Etsy_Statements_2024.xlsx Non-Public Last Modified: March 21
+File Home Insert Draw Page Layout Formulas Data Review View Automate Help ChemOffice21 Analytic Solver
+Cut
+Copy
+Paste
+Format Painter
+Clipboard
+X
+Search
+Comments
+Share
+Calibri
+AA
+Wrap Text
+Merge & Center
+General
+Conditional Format as
+Formatting Table
+I U
+B
+Font
+Alignment
+Number
+Styles
+Cells
+Editing
+Sensitivity
+Add-ins
+Commands Group Risk Server
+Styles
+Insert Delete Format
+AutoSum
+Fill
+Clear
+Sort & Find & Sensitivity Add-ins Copilot Show
+Filter Select ToolPak
+Risk
+Solver
+E37
+A
+Date
+Jan 31-Feb 02
+Feb 02-Feb 03
+B
+Description
+OpenAI*ChatGPTSubscr
+OpenAI*ChatGPTSubscr
+OpenAI*ChatGPTSubscr
+C
+Amount Category Business Expense
+$
+(20.00) Software Su Yes
+$
+(20.00) Software Su Yes
+$
+(20.00) Software Su Yes
+D
+E
+F
+G
+(20.00) Software Su Yes
+Mar 02-Mar 04
+Apr 02-Apr 03
+May 02-May 03
+Jun 02-Jun 03
+Jul 02-Jul 03
+Aug 02-Aug 03
+Sep 02-Sep 03
+Oct 02-Oct 03
+Nov 02-Nov 04
+Dec 02-Dec 03
+Jan 08-Jan 10
+OpenAI*ChatGPTSubscr $
+OpenAI*ChatGPTSubscr $
+OpenAI*ChatGPTSubscr $
+OpenAI*ChatGPTSubscr $
+OpenAI*ChatGPTSubscr $
+OpenAI*ChatGPTSubscr
+$
+OpenAI*ChatGPTSubscr S
+OpenAI*ChatGPTSubscr $
+OpenAI*ChatGPTSubscr $
+Etsy.com*US
+(20.00) Software Su Yes
+(20.00) Software Su Yes
+(20.00) Software Su Yes
+(20.00) Software Su Yes
+(20.00) Software Su Yes
+(20.00) Software Su Yes
+(20.00) Software Su Yes
+(20.00) Software Su Yes
+(1.00) Marketing T Yes
+(25.58) Marketing Yes
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+Mar 08-Mar 11
+$
+Etsy.com*US
+$
+16 Jun 01-Jun 03
+17 Nov 01-Nov 04
+Etsy.com*US
+Etsy.com*US
+S
+(1.00) Marketing Yes
+$
+(4.37) Marketing Yes
+18 Jan 12-Jan 15
+CatPrint
+$
+(50.45) Printing Ser Yes
+19 Mar 14-Mar 14
+CatPrint
+$
+(93.20) Printing Ser Yes
+20 May 08-May 08
+CatPrint
+$
+(50.45) Printing Ser Yes
+21 Oct 14-Oct 15
+CatPrint
+$
+(93.20) Printing Ser Yes
+22 Apr 15-Apr 16
+Sticker Mule
+$
+(1.07) Marketing Y Yes
+23 Apr 25-Apr 26
+Sticker Mule
+$
+(20.26) Marketing Yes
+24 Jul 18-Jul 19
+Sticker Mule
+$
+(9.60) Marketing Yes
+25 Oct 25-Oct 28
+Sticker Mule
+$
+(20.26) Marketing Yes
+26 Oct 08-Oct 10
+FedEx Office
+$
+(5.59) Shipping
+Yes
+27 Mar 29-Apr 01
+Gasland East Rutherford NJ
+$
+(30.09) Transportat Yes
+28 Apr 12-Apr 15
+Gasland East Rutherford NJ
+$
+(29.27) Transportat Yes
+29 Sep 27-Sep 30
+Cloudflare
+S
+(10.44) Software Su Yes
+30 Oct 31-Nov 01
+Cloudflare
+$
+(10.44) Software Su
+Yes
+31 Sep 29-Sep 30
+Shopify*279416413
+$
+(1.00) E-Commerc Yes
+32 Oct 29-Oct 30
+Shopify*290147912
+S
+(39.00) E-Commerc Yes
+33
+34 Summary
+$ (736.27)
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+Summary Business Expenses January February March April May June July August September October November December
+Ready Accessibility: Good to go
++
++
+115%",
+EXCEL,2,5,claude-3.5-sonnet,116.53,18.87,293,1545,0.0,"Date                Description                 Amount      Category     Business Expense
+Jan 31-Feb 02   OpenArt/ChatGPTSubscr         $ (20.00)   Software Su Yes
+Feb 02-Feb 03   OpenArt/ChatGPTSubscr         $ (20.00)   Software Su Yes
+Mar 02-Mar 04   OpenArt/ChatGPTSubscr         $ (20.00)   Software Su Yes
+Apr 02-Apr 03   OpenArt/ChatGPTSubscr         $ (20.00)   Software Su Yes
+May 02-May 03   OpenArt/ChatGPTSubscr         $ (20.00)   Software Su Yes
+Jun 02-Jun 03   OpenArt/ChatGPTSubscr         $ (20.00)   Software Su Yes
+Jul 02-Jul 03    OpenArt/ChatGPTSubscr         $ (20.00)   Software Su Yes
+Aug 02-Aug 03   OpenArt/ChatGPTSubscr         $ (20.00)   Software Su Yes
+Sep 02-Sep 03   OpenArt/ChatGPTSubscr         $ (20.00)   Software Su Yes
+Nov 02-Nov 04   OpenArt/ChatGPTSubscr         $ (20.00)   Software Su Yes
+Dec 02-Dec 03   OpenArt/ChatGPTSubscr         $ (20.00)   Software Su Yes
+
+Jan 08-Jan 10   Etsy.com*US                   $ (1.00)    Marketing f Yes
+Mar 08-Mar 11   Etsy.com*US                   $ (25.58)   Marketing f Yes
+Jun 01-Jun 03   Etsy.com*US                   $ (1.00)    Marketing f Yes
+Nov 01-Nov 04   Etsy.com*US                   $ (4.37)    Marketing f Yes
+
+Jan 12-Jan 15   CatPrint                      $ (50.45)   Printing Ser Yes
+Mar 14-Mar 14   CatPrint                      $ (92.20)   Printing Ser Yes
+May 08-May 08   CatPrint                      $ (50.45)   Printing Ser Yes
+Oct 14-Oct 15   CatPrint                      $ (92.20)   Printing Ser Yes
+
+Apr 15-Apr 16   Sticker Mule                  $ (1.07)    Marketing f Yes
+Apr 25-Apr 26   Sticker Mule                  $ (20.26)   Marketing f Yes
+Jul 18-Jul 19   Sticker Mule                  $ (0.85)    Marketing f Yes
+Oct 25-Oct 28   Sticker Mule                  $ (20.26)   Marketing f Yes
+
+Mar 19-Apr 01   Gasland East Rutherford NJ    $ (30.09)   Transportat Yes
+Apr 17-Apr 15   Gasland East Rutherford NJ    $ (29.71)   Transportat Yes
+
+Sep 27-Sep 30   Cloudflare                    $ (10.44)   Software Su Yes
+Oct 31-Nov 01   Cloudflare                    $ (10.44)   Software Su Yes
+
+Sep 29-Sep 30   Shopify*27941641             $ (1.00)    E-Commerc Yes
+Oct 29-Oct 30   Shopify*260147912            $ (30.09)   E-Commerc Yes
+
+Summary                                       $ (736.27)
+
+[Bottom tabs]
+Summary    Business Expenses    January    February    March    April    May    June    July    August    September    October    November    December",
+EXCEL,2,5,gpt-4o-mini,116.53,9.57,244,1109,0.0,"```
+| Date         | Description               | Amount   | Category      | Business Exp. |
+|--------------|---------------------------|----------|---------------|---------------|
+| Jan 31-Feb 03| OpenAI ChatGPT Subscr     | ($20.00) | Software Su.  | Yes           |
+| Feb 02-Mar 04| OpenAI ChatGPT Subscr     | ($20.00) | Software Su.  | Yes           |
+| Apr 02-Apr 04| OpenAI ChatGPT Subscr     | ($20.00) | Software Su.  | Yes           |
+| May 02-May 03| OpenAI ChatGPT Subscr     | ($20.00) | Software Su.  | Yes           |
+| Jun 01-Jun 03| Etsy.com *US              | ($1.66)  | Marketing Ser. | Yes           |
+| Jul 01-Jul 03| Etsy.com *US              | ($4.97)  | Marketing Ser. | Yes           |
+| Aug 12-Jan 15| EatPrint                  | ($1.00)  | Printing Ser.  | Yes           |
+| Mar 14-Mar 14| CatPrint                  | ($7.42)  | Printing Ser.  | Yes           |
+| Feb 20-Feb 20| CatPrint                  | ($3.90)  | Printing Ser.  | Yes           |
+| Apr 12-Apr 16| Sticker Mule              | ($6.00)  | Marketing Ser. | Yes           |
+| Apr 15-Apr 16| Sticker Mule              | ($2.66)  | Marketing Ser. | Yes           |
+| Sep 25-Oct 26| Sticker Mule              | ($22.00) | Marketing Ser. | Yes           |
+| Apr 29-Apr 30| Gasland East Rutherford NJ | ($15.00) | Transport Ser. | Yes           |
+| Apr 30-Apr 30| Gasland East Rutherford NJ | ($10.44) | Transport Ser. | Yes           |
+| Dec 28-Sep 30| Cloudflare                | ($14.04) | E-Commerce: Yes|
+| Sep 02-Sep 30| Shopify*290147912         | ($39.00) | E-Commerce: Yes|
+|--------------|---------------------------|----------|---------------|---------------|
+| Summary      |                           | ($736.27)|               |               |
+```
+",
+EXCEL,2,1,gemini-2.5-flash,102.7,8.04,437,2107,100.0,"AutoSave
+File
+Home
+Insert
+Draw
+Page Layout
+Formulas
+Data
+Review
+View
+Automate
+Help
+ChemOffice21
+Analytic Solver
+Paste
+Cut
+Copy
+Format Printer
+Clasom
+Calibri
+Fortt
+Wrap text
+Normal
+Formatting
+Table
+Merge & Center
+Number
+Conditional
+Formatting
+E37
+Alignment
+Styles
+Date
+Description
+Amount
+Category
+Business Expense
+Jan 31-Feti 02
+OpenAl ChatGPTSubscr
+$
+(20.00)
+Software Su
+Yes
+1
+Feb 02-Feb 03
+OpenAT Chat GPTSubscr
+$
+(20:00)
+Software Su Yes
+2
+Mar 02-Mar 04
+Open Al ChatGPTSubscr
+$
+(20.00)
+Software-Su Yes
+5
+Αστ 02-Αm.03
+OpenAl Chat GPTSubsc
+$
+(20.00)
+Software Su
+Yes
+6
+May 02-May 03
+OpenAl Chat GPTSubscr
+$
+20.00)
+Software Su
+Yes
+7
+Jun 02-Jun 03.
+OpenAl ChatGPTSubscr
+$
+(20.00)
+Software Su Yes
+8
+Jul 02-Jul 03
+OpenAt ChatGPTSubscr
+$
+(20.00)
+Software Su Yes
+9
+Aug 02-Aug 03
+OpenAl ChatGPTSubscr
+$
+(20.00)
+Software Su Yes
+10
+Sep 02-Sep 03
+Operial Chat GPTSubscr
+$
+(20.00)
+Software Su Yes
+11
+Oct 02-Oct 108
+OpenAT ChatGPTSubSel
+$
+(20:00)
+Software Silves
+12
+Nov 02-Nov 04
+Open Al ChatGPTSubscr
+$
+(20.00)
+Software-Su Yes
+13
+Dec-02-Dec 03
+OpenAl Chat GPTSubscr
+$
+(20.00)
+Software Su Yes
+14
+Jan 08-Jan 10
+Etsy.com US
+$
+(1.00)
+Marketing
+Yes
+15
+Mar 08-Mar 11
+Etsy.com US
+$
+(25.58)
+Marketing Yes
+16
+Jun 02-Jun 03
+Etsy.com US
+$
+(1.00)
+Marketing
+Yes
+17
+Nov 01-Nov 04
+Etsy.com US
+$
+(4.37)
+Marketing. Ves
+18
+Jan 12-lan 15
+Cat Print
+$
+(50.45)
+Printing Ser
+Yes
+19
+Mar 14-Mar 14
+CarPrint
+$
+(93:20)
+Printing Ser
+Ves
+20
+May 08-May 08
+CatPrint
+$
+(50.45)
+Printing Ser
+Yes
+21
+Oct 14-Oct 15
+CatPrint
+$
+(93.20)
+Printing Sar
+Yes
+22
+Apr15-Apr 16
+Sticker Mule
+$
+(1.07)
+Marketing
+Yes
+23
+Apr 25-A 26
+Sticker Mule
+$
+(20.26)
+Marketing Yes
+24
+Jul 18 Jul 19
+Sticker Mule
+$
+(9.600)
+Marketing
+Yes
+25
+Dot 25-Oct 28
+Sticker Miiis
+$
+(20.26)
+Marketing. Yes
+26
+Orl 08-Oct 10
+FedEx Office
+$
+(5.59)
+Shipping
+Yes
+27
+Mar 29-Api 01
+Gasland East Rutherford Ni
+$
+(30.09)
+Transportar Ves
+28
+Apr 12-Apr 15
+Gasland East Rutherford NI
+$
+(29:27)
+Transportar Yes
+29
+Sep 27-Sen 30
+Cloudflare
+$
+(10.44)
+Software Su
+Yes
+30
+Oct 31-Nov 01
+Cloudflare
+$
+(10.44)
+Software Su
+Yes
+31
+Sep 29-Sep 30
+Shopify 279416413
+$
+(1.00)
+E-Commerc Yes
+32
+Oct 29-0ct 30
+Shopify 290147912
+$
+(39.00)
+E-Camumero Yes
+33
+34
+Summary
+35
+$
+(736.27)
+Etsy Statements 2024iss Mom Publik Last Modifiezh March 21
+Comments
+AutoSum
+ Fill
+Clear
+Sort &
+Finer &
+Sensitivity
+Addins
+Show
+ToolPak
+Power
+Solver
+Find &
+Select
+Sensisitvity
+Addins
+Solver
+Comments from
+Rilk Sayver
+Editing
+AA
+AB
+AC
+Summary
+Business Expenses
+January
+February
+March
+April
+May
+me
+July
+August
+September
+October
+Novemizer
+December
++
+Ready
+Accessibility: Good logo
++
+115%",
+EXCEL,2,1,claude-3.5-sonnet,102.7,20.51,293,1575,0.0,"Date            Description                    Amount     Category   Business Expense
+Jan 02-Feb 02    OpenAI*ChatGPTSubsc          $    (20.00)  Software Su Yes
+Feb 02-Feb 03    OpenAI*ChatGPTSubsc          $    (20.00)  Software Su Yes  
+Mar 02-Mar 03    OpenAI*ChatGPTSubsc          $    (20.00)  Software Su Yes
+Apr 02-Apr 03    OpenAI*ChatGPTSubsc          $    (20.00)  Software Su Yes
+May 02-May 03    OpenAI*ChatGPTSubsc          $    (20.00)  Software Su Yes
+Jun 02-Jun 03    OpenAI*ChatGPTSubsc          $    (20.00)  Software Su Yes
+Jul 02-Jul 03    OpenAI*ChatGPTSubsc          $    (20.00)  Software Su Yes
+Aug 02-Aug 03    OpenAI*ChatGPTSubsc          $    (20.00)  Software Su Yes
+Sep 02-Sep 03    OpenAI*ChatGPTSubsc          $    (20.00)  Software Su Yes
+Oct 02-Oct 03    OpenAI*ChatGPTSubsc          $    (20.00)  Software Su Yes
+Nov 02-Nov 03    OpenAI*ChatGPTSubsc          $    (20.00)  Software Su Yes
+Dec 02-Dec 03    OpenAI*ChatGPTSubsc          $    (20.00)  Software Su Yes
+
+Jan 08-Jan 10    Etsy.com*US                  $     (1.00)  Marketing Yes
+Mar 08-Mar 11    Etsy.com*US                  $    (25.58)  Marketing Yes
+Jun 01-Jun 03    Etsy.com*US                  $     (1.00)  Marketing Yes
+Nov 03-Nov 04    Etsy.com*US                  $     (4.37)  Marketing Yes
+
+Jan 12-Jan 15    CatPrint                     $    (50.45)  Printing Ser Yes
+Mar 14-Mar 15    CatPrint                     $    (95.20)  Printing Ser Yes
+May 08-May 08    CatPrint                     $    (50.45)  Printing Ser Yes
+Oct 14-Oct 15    CatPrint                     $    (93.20)  Printing Ser Yes
+
+Apr 15-Apr 16    Sticker Mule                 $     (1.07)  Marketing Yes
+Apr 25-Apr 26    Sticker Mule                 $    (20.28)  Marketing Yes
+Jul 19-Jul 19    Sticker Mule                 $    (9.09)   Marketing Yes
+Oct 25-Oct 26    Sticker Mule                 $    (50.26)  Marketing Yes
+
+Mar 29-Apr 01    EveMarket East Rutherford NJ $    (20.03)  Transport/Yes
+Apr 27-Apr 15    EveMarket East Rutherford NJ $    (29.71)  Transport/Yes
+
+Sep 27-Sep 30    Cloudflare                   $    (10.44)  Software Su Yes
+Oct 31-Nov 01    Cloudflare                   $    (10.44)  Software Su Yes
+
+Sep 29-Sep 30    Shopify*27914E413            $     (1.00)  E-Commerce Yes
+Oct 29-Oct 30    Shopify*29014/912            $    (99.02)  E-Commerce Yes
+
+Summary                                       $   (736.27)
+
+[Bottom menu tabs]
+Summary  Business Expenses  January  February  March  April  May  June  July  August  September  October  November  December",
+EXCEL,2,1,gpt-4o-mini,102.7,11.05,199,1243,0.0,"```
+Date           Description                     Amount      Category       Business Expense?
+Jan 30-Feb 02  OpenAI-ChatGPTSubscrip...       ($20.00)    Software       Yes
+Feb 02-Feb 03  OpenAI-ChatGPTSubscrip...       ($20.00)    Software       Yes
+Mar 01-Apr 03  OpenAI-ChatGPTSubscrip...       ($20.00)    Software       Yes
+Apr 02-May 03  OpenAI-ChatGPTSubscrip...       ($20.00)    Software       Yes
+Jun 02-Jul 03  OpenAI-ChatGPTSubscrip...       ($20.00)    Software       Yes
+Jul 02-Aug 03  OpenAI-ChatGPTSubscrip...       ($20.00)    Software       Yes
+Aug 02-Sep 03  OpenAI-ChatGPTSubscrip...       ($20.00)    Software       Yes
+Sep 02-Oct 03  Etsy.com""US                    ($25.85)    Marketing      Yes
+Oct 02-Nov 03  Etsy.com""US                    ($25.85)    Marketing      Yes
+Nov 02-Dec 03  OpenAI-ChatGPTSubscrip...       ($20.00)    Software       Yes
+Dec 02-Dec 03  OpenAI-ChatGPTSubscrip...       ($20.00)    Software       Yes
+Jan 08-Jan 10  Etsy.com""US                    ($25.85)    Marketing      Yes
+Feb 02-Feb 03  Etsy.com""US                    ($25.85)    Marketing      Yes
+Jun 10-Jul 04  Etsy.com""US                    ($4.37)     Marketing      Yes
+Sep 10-Oct 04  CatPrint                        $          Printing Service Yes
+Nov 12-Jan 15  CatPrint                        $          Printing Service Yes
+May 04-Apr 16  CatPrint                        $          Printing Service Yes
+Apr 15-Apr 16  Sticker Mule                    $          Marketing      Yes
+Apr 15-Apr 16  Sticker Mule                    $          Marketing      Yes
+Jun 02-Jul 03  Sticker Mule                    $          Marketing      Yes
+Jan 23-Oct 28  Sticker Mule                    ($29.26)    Marketing      Yes
+Mar 29-Apr 30  Gauldands Cat Rutherf...        ($3.09)     Transportation  Yes
+Aug 15-Aug 15  Gauldands Cat Rutherf...        $          The Scholar of Yes
+Sep 01-Nov 30  Cloudflare                      ($10.44)    Software       Yes
+Sep 29-Sep 30  Shopify#794614913              ($39.00)    E-Commerce     Yes
+----------------
+Summary                                    ($736.27)
+```",
+EXCEL,3,PNG,gemini-2.5-flash,206.32,5.28,502,2356,100.0,"AutoSave Off
+Etsy_Statements_2024.xlsx Non-Public Saved
+File Home Insert Draw Page Layout Formulas Data Review View Automate Help ChemOffice21 Analytic Solver
+Cut Calibri 11 A A Merge & Center General $ % .0 .00
+Copy B I U A ab Wrap Text Conditional Format as
+Format Painter - Check Cell
+Formatting Table-
+Clipboard Font Alignment Number Styles Cells
+F36 X fx
+A B C D E
+1 Date Description Amount Category Business Expense
+2 Jan 31-Feb 02 OpenAI*ChatGPTSubscr $ (20.00) Software Su Yes
+3 Feb 02-Feb 03 OpenAI*ChatGPTSubscr $ (20.00) Software Su Yes
+4 Mar 02-Mar 04 OpenAI*ChatGPTSubscr $ (20.00) Software Su Yes
+5 Apr 02-Apr 03 OpenAI*ChatGPTSubscr $ (20.00) Software Su Yes
+6 May 02-May 03 OpenAI*ChatGPTSubscr $ (20.00) Software Su Yes
+7 Jun 02-Jun 03 OpenAI*ChatGPTSubscr $ (20.00) Software Su Yes
+8 Jul 02-Jul 03 OpenAI*ChatGPTSubscr $ (20.00) Software Su Yes
+9 Aug 02-Aug 03 OpenAI*ChatGPTSubscr $ (20.00) Software Su Yes
+10 Sep 02-Sep 03 OpenAI*ChatGPTSubscr $ (20.00) Software Su Yes
+11 Oct 02-Oct 03 OpenAI*ChatGPTSubscr $ (20.00) Software Su Yes
+12 Nov 02-Nov 04 OpenAI*ChatGPTSubscr $ (20.00) Software Su Yes
+13 Dec 02-Dec 03 OpenAI*ChatGPTSubscr $ (20.00) Software Su Yes
+14 Jan 08-Jan 10 Etsy.com*US $ (1.00) Marketing T Yes
+15 Mar 08-Mar 11 Etsy.com*US $ (25.58) Marketing T Yes
+16 Jun 01-Jun 03 Etsy.com*US $ (1.00) Marketing Yes
+17 Nov 01-Nov 04 Etsy.com*US $ (4.37) Marketing T Yes
+18 Jan 12-Jan 15 CatPrint $ (50.45) Printing Ser Yes
+19 Mar 14-Mar 14 CatPrint $ (93.20) Printing Ser Yes
+20 May 08-May 08 CatPrint $ (50.45) Printing Ser Yes
+21 Oct 14-Oct 15 CatPrint $ (93.20) Printing Ser Yes
+22 Apr 15-Apr 16 Sticker Mule $ (1.07) Marketing T Yes
+23 Apr 25-Apr 26 Sticker Mule $ (20.26) Marketing T Yes
+24 Jul 18-Jul 19 Sticker Mule $ (9.60) Marketing T Yes
+25 Oct 25-Oct 28 Sticker Mule $ (20.26) Marketing Yes
+26 Oct 08-Oct 10 FedEx Office $ (5.59) Shipping Yes
+27 Mar 29-Apr 01 Gasland East Rutherford NJ $ (30.09) Transportat Yes
+28 Apr 12-Apr 15 Gasland East Rutherford NJ $ (29.27) Transportat Yes
+29 Sep 27-Sep 30 Cloudflare $ (10.44) Software Su Yes
+30 Oct 31-Nov 01 Cloudflare $ (10.44) Software Su Yes
+31 Sep 29-Sep 30 Shopify*279416413 $ (1.00) E-Commerc Yes
+32 Oct 29-Oct 30 Shopify*290147912 $ (39.00) E-Commerc Yes
+33 Nov 1-Nov 2 Shopify*290112215 $ 100.00 E-Commerc Yes
+34 Summary $ (636.27)
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+Search
+
+Normal Bad Good Neutral Calculation
+Explanatory... Followed Hy... Hyperlink Input
+Styles
+
+∑ AutoSum
+Fill
+Clear
+Insert Delete Format
+Sort & Find &
+Filter Select
+Sensitivity Add-ins Copilot Show Risk
+ToolPak Solver
+Editing Sensitivity Add-ins Commands Group Risk Solver
+F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC
+
+MF
+Comments
+Share
+
+Ready Accessibility: Good to go Business Expenses January February March April May June July August September October November December
++
+115%",
+EXCEL,3,PNG,claude-3.5-sonnet,206.32,18.35,272,1619,0.0,"Date    Description    Amount    Category    Business Expense
+
+Jan 31-Feb 02    OpenAI*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Feb 02-Feb 03    OpenAI*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Mar 02-Mar 04    OpenAI*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Apr 02-Apr 03    OpenAI*ChatGPTSubcr    $(20.00)    Software Sv Yes
+May 02-May 03    OpenAI*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Jun 02-Jun 03    OpenAI*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Jul 02-Jul 03    OpenAI*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Aug 02-Aug 03    OpenAI*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Sep 02-Sep 03    OpenAI*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Oct 02-Nov 04    OpenAI*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Nov 02-Nov 04    OpenAI*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Dec 02-Dec 03    OpenAI*ChatGPTSubcr    $(20.00)    Software Sv Yes
+
+Jan 08-Jan 10    Etsy.com*US    $(1.00)    Marketing Yes
+Mar 08-Mar 11    Etsy.com*US    $(25.58)    Marketing Yes
+Jun 01-Jun 03    Etsy.com*US    $(1.00)    Marketing Yes
+Nov 01-Nov 04    Etsy.com*US    $(4.37)    Marketing Yes
+
+Jan 12-Jan 15    CatPrint    $(50.45)    Printing Ser Yes
+Mar 14-Mar 14    CatPrint    $(93.20)    Printing Ser Yes
+May 08-May 08    CatPrint    $(50.45)    Printing Ser Yes
+Oct 14-Oct 15    CatPrint    $(93.20)    Printing Ser Yes
+
+Apr 15-Apr 16    Sticker Mule    $(1.07)    Marketing Yes
+Apr 25-Apr 26    Sticker Mule    $(20.26)    Marketing Yes
+Jul 18-Jul 19    Sticker Mule    $(0.65)    Marketing Yes
+Oct 25-Oct 28    Sticker Mule    $(20.26)    Marketing Yes
+
+Mar 29-Apr 01    Gasland East Rutherford NJ    $(30.09)    Transport Yes
+Mar 12-Apr 15    Gasland East Rutherford NJ    $(29.27)    Transport Yes
+
+Sep 27-Sep 30    Cloudflare    $(10.44)    Software Sv Yes
+Oct 31-Nov 01    Cloudflare    $(10.44)    Software Sv Yes
+
+Sep 29-Sep 30    Shopify*277416413    $(1.00)    E-Commerce Yes
+Oct 29-Oct 30    Shopify*290147912    $(39.00)    E-Commerce Yes
+Nov 1-Nov 2    Shopify*290112215    $100.00    E-Commerce Yes
+
+Summary    $(636.27)
+
+[Menu items at bottom:]
+Summary    Business Expenses    January    February    March    April    May    June    July    August    September    October    November    December",
+EXCEL,3,PNG,gpt-4o-mini,206.32,9.78,352,1207,0.0,"```
+| Jan 31-Feb 03 | OpenAI ChatGPT Subscr | ($20.00) | Software Su Yes |
+| Feb 02-Feb 03 | OpenAI ChatGPT Subscr |  $ | Software Su Yes |
+| Mar 02-Mar 03 | OpenAI ChatGPT Subscr | ($20.00) | Software Su Yes |
+| Apr 02-Apr 03 | OpenAI ChatGPT Subscr |  $ | Software Su Yes |
+| May 02-May 03 | OpenAI ChatGPT Subscr |  $ | Software Su Yes |
+| Jun 02-Jun 03 | OpenAI ChatGPT Subscr | ($20.00) | Software Su Yes |
+| Jul 02-Jul 03 | OpenAI ChatGPT Subscr |  $ | Software Su Yes |
+| Aug 02-Aug 03 | OpenAI ChatGPT Subscr |  $ | Software Su Yes |
+| Sep 02-Sep 03 | OpenAI ChatGPT Subscr |  $ | Software Su Yes |
+| Oct 02-Oct 03 | OpenAI ChatGPT Subscr |  $ | Software Su Yes |
+| Nov 02-Nov 03 | OpenAI ChatGPT Subscr |  $ | Software Su Yes |
+| Dec 02-Dec 03 | Etsy.com*US | ($1.50) | Marketing S Yes |
+| Jan 01-Jan 03 | Etsy.com*US | ($1.50) | Marketing S Yes |
+| Feb 01-Feb 03 | CatPrint |  $ | Printing Ser Yes |
+| Mar 14-Mar 14 | CatPrint |  $ | Printing Ser Yes |
+| Apr 02-Apr 16 | Sticker Mule |  $ | Marketing S Yes |
+| Jul 14-Jul 14 | Sticker Mule |  $ | Marketing S Yes |
+| Aug 25-Aug 25 | Sticker Mule | ($2.00) | Marketing S Yes |
+| Oct 02-Oct 03 | Sticker Mule |  $ | Marketing S Yes |
+| Dec 02-Dec 03 | Gasland East Rutherford NJ | ($30.09) | Transporta Yes |
+| Dec 02-Dec 03 | Gasland East Rutherford NJ | ($14.40) | Transporta Yes |
+| Apr 29-Apr 29 | Cloudflare | ($10.04) | Software Su Yes |
+| Sep 20-Sep 20 | Shopify*279416413 |  $ | E-Commerce Yes |
+| Sep 20-Sep 20 | Shopify*2901147912 | ($39.00) | E-Commerce Yes |
+| Nov 1-Nov 2 | Summary | ($636.27) |  |
+```",
+EXCEL,3,25,gemini-2.5-flash,257.42,5.43,414,2231,100.0,"AutoSave
+Off
+Etsy_Statements_2024.xlsx Non-Public Saved
+File
+Home
+Insert
+Draw
+Page Layout
+Formulas
+Data
+Review
+View
+Automate
+Help
+ChemOffice21
+Analytic Solver
+Search
+Comments
+Share
+Cut
+Calibri
+11
+A A
+Copy
+B I U
+A
+Format Painter
+Clipboard
+Font
+Alignment
+Wrap Text
+Merge & Center
+General
+%
+.0 .00
+0 .00
+Number
+Conditional Formatting
+Format as Table
+Cell Styles
+Insert
+Delete
+Format
+Normal
+Bad
+Good
+Neutral
+Check Cell
+Explanatory...
+Followed Hy...
+Hyperlink
+Calculation
+Input
+Styles
+Cells
+∑ AutoSum
+Fill
+Clear
+Sort & Filter
+Find & Select
+Sensitivity
+Add-ins
+Copilot
+Show ToolPak
+Risk Solver
+Editing
+Sensitivity
+Add-ins
+Commands Group
+Risk Solver
+F36
+Date
+Description
+Amount
+Category
+Business Expense
+Jan 31-Feb 02
+OpenAI*ChatGPTSubscr
+$
+(20.00)
+Software Su Yes
+Feb 02-Feb 03
+OpenAI*ChatGPTSubscr
+$
+(20.00)
+Software Su Yes
+Mar 02-Mar 04
+OpenAI*ChatGPTSubscr
+$
+(20.00)
+Software Su Yes
+Apr 02-Apr 03
+OpenAI*ChatGPTSubscr
+$
+(20.00)
+Software Su Yes
+May 02-May 03
+OpenAI*ChatGPTSubscr
+$
+(20.00)
+Software Su Yes
+Jun 02-Jun 03
+OpenAI*ChatGPTSubscr
+$
+(20.00)
+Software Su Yes
+Jul 02-Jul 03
+OpenAI*ChatGPTSubscr
+$
+(20.00)
+Software Su Yes
+Aug 02-Aug 03
+OpenAI*ChatGPTSubscr
+$
+(20.00)
+Software Su Yes
+Sep 02-Sep 03
+OpenAI*ChatGPTSubscr
+$
+(20.00)
+Software Su Yes
+Oct 02-Oct 03
+OpenAI*ChatGPTSubscr
+$
+(20.00)
+Software Su Yes
+Nov 02-Nov 04
+OpenAI*ChatGPTSubscr
+$
+(20.00)
+Software Su Yes
+Dec 02-Dec 03
+OpenAI*ChatGPTSubscr
+$
+(20.00)
+Software Su Yes
+Jan 08-Jan 10
+Etsy.com*US
+$
+(1.00)
+Marketing
+Yes
+Mar 08-Mar 11
+Etsy.com*US
+$
+(25.58)
+Marketing
+Yes
+Jun 01-Jun 03
+Etsy.com*US
+$
+(1.00)
+Marketing
+Yes
+Nov 01-Nov 04
+Etsy.com*US
+$
+(4.37)
+Marketing
+Yes
+Jan 12-Jan 15
+CatPrint
+$
+(50.45)
+Printing Ser Yes
+Mar 14-Mar 14
+CatPrint
+$
+(93.20)
+Printing Ser Yes
+May 08-May 08
+CatPrint
+$
+(50.45)
+Printing Ser Yes
+Oct 14-Oct 15
+CatPrint
+$
+(93.20)
+Printing Ser Yes
+Apr 15-Apr 16
+Sticker Mule
+$
+(1.07)
+Marketing
+Yes
+Apr 25-Apr 26
+Sticker Mule
+$
+(20.26)
+Marketing
+Yes
+Jul 18-Jul 19
+Sticker Mule
+$
+(9.60)
+Marketing
+Yes
+Oct 25-Oct 28
+Sticker Mule
+$
+(20.26)
+Marketing
+Yes
+Oct 08-Oct 10
+FedEx Office
+$
+(5.59)
+Shipping
+Yes
+Mar 29-Apr 01
+Gasland East Rutherford NJ
+$
+(30.09)
+Transportat Yes
+Apr 12-Apr 15
+Gasland East Rutherford NJ
+$
+(29.27)
+Transportat Yes
+Sep 27-Sep 30
+Cloudflare
+$
+(10.44)
+Software Su Yes
+Oct 31-Nov 01
+Cloudflare
+$
+(10.44)
+Software Su Yes
+Sep 29-Sep 30
+Shopify*279416413
+$
+(1.00)
+E-Commerc Yes
+Oct 29-Oct 30
+Shopify*290147912
+$
+(39.00)
+E-Commerc Yes
+Nov 1-Nov 2
+Shopify*290112215
+$
+100.00
+E-Commerc Yes
+Summary
+$
+(636.27)
+Summary
+Business Expenses
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Ready
+Accessibility: Good to go
+115%",
+EXCEL,3,25,claude-3.5-sonnet,257.42,18.5,271,1615,0.0,"Date    Description    Amount    Category    Business Expense
+
+Jan 31-Feb 02    OpenAt*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Feb 02-Feb 03    OpenAt*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Mar 02-Mar 04    OpenAt*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Apr 02-Apr 03    OpenAt*ChatGPTSubcr    $(20.00)    Software Sv Yes
+May 02-May 03    OpenAt*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Jun 02-Jun 03    OpenAt*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Jul 02-Jul 03    OpenAt*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Aug 02-Aug 03    OpenAt*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Sep 02-Sep 03    OpenAt*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Oct 02-Nov 04    OpenAt*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Nov 02-Nov 04    OpenAt*ChatGPTSubcr    $(20.00)    Software Sv Yes
+Dec 02-Dec 03    OpenAt*ChatGPTSubcr    $(20.00)    Software Sv Yes
+
+Jan 08-Jan 10    Etsy.com*US    $(1.00)    Marketing Yes
+Mar 08-Mar 11    Etsy.com*US    $(25.58)    Marketing Yes
+Jun 01-Jun 03    Etsy.com*US    $(1.00)    Marketing Yes
+Nov 01-Nov 04    Etsy.com*US    $(4.37)    Marketing Yes
+
+Jan 12-Jan 15    CatPrint    $(50.45)    Printing Ser Yes
+Mar 14-Mar 14    CatPrint    $(93.20)    Printing Ser Yes
+May 08-May 08    CatPrint    $(50.45)    Printing Ser Yes
+Oct 14-Oct 15    CatPrint    $(93.20)    Printing Ser Yes
+
+Apr 15-Apr 16    Sticker Mule    $(1.07)    Marketing Yes
+Apr 25-Apr 26    Sticker Mule    $(20.26)    Marketing Yes
+Jul 16-Jul 19    Sticker Mule    $(0.65)    Marketing Yes
+Oct 25-Oct 28    Sticker Mule    $(20.26)    Marketing Yes
+
+Mar 29-Apr 01    Gasland East Rutherford NJ    $(30.09)    Transport Yes
+Mar 17-Apr 15    Gasland East Rutherford NJ    $(29.27)    Transport Yes
+
+Sep 27-Sep 30    Cloudflare    $(10.44)    Software Sv Yes
+Oct 31-Nov 01    Cloudflare    $(10.44)    Software Sv Yes
+
+Sep 29-Sep 30    Shopify*27941641    $(1.00)    E-Commerce Yes
+Oct 29-Oct 30    Shopify*290147912    $(39.00)    E-Commerce Yes
+Nov 1-Nov 2    Shopify*290112215    $100.00    E-Commerce Yes
+
+Summary    $(636.27)
+
+[Bottom tab labels]
+Summary    Business Expenses    January    February    March    April    May    June    July    August    September    October    November    December",
+EXCEL,3,25,gpt-4o-mini,257.42,14.26,403,1337,0.0,"```
+|   Date       | Description                | Amount      | Category          | Business Expense |
+|--------------|----------------------------|-------------|--------------------|------------------|
+| Jan 31-Feb 03| OpenAI ChatGPT Subscr      | $ (20.00)   | Software Su Yes     |                  |
+| Feb 02-Feb 03| OpenAI ChatGPT Subscr      | $ (20.00)   | Software Su Yes     |                  |
+| Mar 04-Apr 01| OpenAI ChatGPT Subscr      | $ (20.00)   | Software Su Yes     |                  |
+| Apr 02-Apr 04| OpenAI ChatGPT Subscr      | $ (20.00)   | Software Su Yes     |                  |
+| May 02-May 03| OpenAI ChatGPT Subscr      | $ (20.00)   | Software Su Yes     |                  |
+| Jun 06-Jun 04| CatlPint                   | $ (4.99)    | Miscellaneous       | Yes              |
+| Jul 11-Oct 03| OpenAI ChatGPT Subscr      | $ (20.00)   | Software Su Yes     |                  |
+| Dec 02-Dec 03| Etsy.com""*US               | $ (8.15)    | Marketing Su Yes    |                  |
+| Jan 01-Jan 13| Etsy.com""*US               | $ (4.37)    | Marketing Su Yes    |                  |
+| 06 Oct 31    | Etsy.com""*US               | $ (4.37)    | Marketing Su Yes    |                  |
+| May 14-Mar 11| CatlPint                   | $ (2.00)    | Printing Ser Yes     |                  |
+| Apr 14-Oct 31| CatlPint                   | $  ""30""     | Marketing Ser Yes    |                  |
+| Apr 02-Apr 16| Sticker Mule               | $ (7.00)    | Marketing Su Yes    |                  |
+| Apr 15-Apr 26| Sticker Mule               | $ (6.00)    | Marketing Su Yes    |                  |
+| Jul 11-Sep 26| Sticker Mule               | $ (6.00)    | Marketing Su Yes    |                  |
+| Sep 14-Oct 10| Gasland East Rutherford NJ  | $ (30.00)   | Transport Yes        |                  |
+| Aug 26-Oct 28| Cloudflare                 | $ (10.44)   | Software Su Yes      |                  |
+| Oct 31       | Shopify*297154416013923     | $ (39.00)   | E-Commerce Yes       |                  |
+| Nov 3        | Shopify*2901121215         | $ (39.00)   | E-Commerce Yes       |                  |
+|              |                            | $ (636.27)   |                    |                  |
+|              | Summary                    |              |                    |                  |
+|              | Business Expenses           |              |                    |                  |
+|              | January                    |              |                    |                  |
+|              | February                   |              |                    |                  |
+|              | March                      |              |                    |                  |
+|              | April                      |              |                    |                  |
+|              | May                        |              |                    |                  |
+|              | June                       |              |                    |                  |
+|              | July                       |              |                    |                  |
+|              | August                     |              |                    |                  |
+|              | September                  |              |                    |                  |
+|              | October                    |              |                    |                  |
+|              | November                   |              |                    |                  |
+|              | December                   |              |                    |                  |
+```",
+EXCEL,3,5,gemini-2.5-flash,116.53,6.91,401,2096,100.0,"AutoSave Off
+Search
+Total Bi
+Comments Share
+
+File Home Insert Draw Page Layout Formulas Data Review View AutomateHelp ChemOffice21 Analytic Solver
+Cut
+Copy
+Format Painter
+Clipboard
+Font
+Alignment
+Number
+General
+Conditional
+Format as
+Formatting
+Table
+Cells
+Insert Delete Format
+Editing
+Styles
+Add-ins
+Cells
+Sort & Find &
+Filter Select
+
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC
+1 Date Description Amount Category Business Expense
+2 Jan 31-Feb 02 OpenAI*ChatGPTSubscr $(20.00) Software SuYes
+3 Feb 02-Feb 03 OpenAI*ChatGPTSubscr $(20.00) Software SuYes
+4 Mar 02-Mar 04 OpenAI ChatGPTSubscr $(20.00) Software SuYes
+5 Apr 02-Apr 03 OpenAI ChatGPTSubscr $(20.00) Software SuYes
+6 May 02-May 03 OpenAl*ChatGPTSubscr $(20.00) Software SuYes
+7 Jun 02-Jun 03 OpenAI ChatGPTSubscr $(20.00) Software SuYes
+8 Jul 02-Jul 03 OpenAI*ChatGPTSubscr $(20.00) Software SuYes
+9 Aug 02-Aug 03 OpenAI*ChatGPTSubscr $(20.00) Software SuYes
+10 Sep 02-Sep 03 OpenAI ChatGPTSubscr $(20.00) Software SuYes
+11 Oct 02-Oct 03 OpenAI ChatGPTSubscr $(20.00) Software SuYes
+12 Nov 02-Nov 04 OpenAI*ChatGPTSubscr $(20.00) Software SuYes
+13 Dec 02-Dec 03 OpenAI ChatGPTSubscr $(20.00) Software SuYes
+14 Jan 08-Jan 10 Etsy.com*US $(1.00) Marketing F Yes
+15 Mar 08-Mar 11 Etsy.com*US $(25.58) Marketing F Yes
+16 Jun 01-Jun 03 Etsy.com*US $(1.00) Marketing T! Yes
+17 Nov 01-Nov 04 Etsy.com*US $(4.37) Marketing T Yes
+18 Jan 12-Jan 15 CatPrint $(50.45) Printing SerYes
+19 Mar 14-Mar 14 CatPrint $(93.20) Printing SerYes
+20 May 08-May 08 CatPrint $(50.45) Printing SerYes
+21 Oct 14-Oct 15 CatPrint $(93.20) Printing SerYes
+22 Apr 15-Apr 16 Sticker Mule $(1.07) Marketing FYes
+23 Apr 25-Apr 26 Sticker Mule $(20.26) Marketing FYes
+24 Jul 18-Jul 19 Sticker Mule $(9.60) Marketing FYes
+25 Oct 25-Oct 28 Sticker Mule $(20.26) Marketing FYes
+26 Oct 08-Oct 10 FedEx Office $(5.59) Shipping
+27 Mar 29-Apr 01 Gasland East Rutherford NJ$(30.09) TransportatYes
+28 Apr 12-Apr 15 Gasland East Rutherford NJ$(29.27) TransportatYes
+29 Sep 27-Sep 30 Cloudflare $(10.44) Software SuYes
+30 Oct 31-Nov 01 Cloudflare $(10.44) Software SuYes
+31 Sep 29-Sep 30 Shopify *279416413 $(1.00) E-Commerce Yes
+32 Oct 29-Oct 30 Shopify *290147912 $(39.00) E-Commerce Yes
+33 Nov 1-Nov 2 Shopify *290112215 $(100.00) E-Commerce Yes
+34 Summary $(636.27)
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+Ready Accessibility: Good to go Summary Business Expenses January February March April May June July August September October November December
++ 115%",
+EXCEL,3,5,claude-3.5-sonnet,116.53,19.19,279,1635,0.0,"Date    Description                    Amount    Category    Business Expense
+Jan 31-Feb 02   OpenAIAChatGPTSubscr           $(20.00)   Software Su Yes
+Feb 02-Feb 03   OpenAIAChatGPTSubscr           $(20.00)   Software Su Yes
+Mar 02-Mar 04   OpenAIAChatGPTSubscr           $(20.00)   Software Su Yes
+Apr 02-Apr 03   OpenAIAChatGPTSubscr           $(20.00)   Software Su Yes
+May 02-May 03   OpenAIAChatGPTSubscr           $(20.00)   Software Su Yes
+Jun 02-Jun 03   OpenAIAChatGPTSubscr           $(20.00)   Software Su Yes
+Jul 02-Jul 03   OpenAIAChatGPTSubscr           $(20.00)   Software Su Yes
+Aug 02-Aug 03   OpenAIAChatGPTSubscr           $(20.00)   Software Su Yes
+Sep 02-Sep 03   OpenAIAChatGPTSubscr           $(20.00)   Software Su Yes
+Oct 02-Oct 03   OpenAIAChatGPTSubscr           $(20.00)   Software Su Yes
+Nov 02-Nov 04   OpenAIAChatGPTSubscr           $(20.00)   Software Su Yes
+Dec 02-Dec 03   OpenAIAChatGPTSubscr           $(20.00)   Software Su Yes
+
+Jan 08-Jan 10   Etsy.com*US                    $(1.00)    Marketing f Yes
+Mar 08-Mar 11   Etsy.com*US                    $(25.58)   Marketing f Yes
+Jun 01-Jun 03   Etsy.com*US                    $(1.00)    Marketing f Yes
+Nov 01-Nov 04   Etsy.com*US                    $(4.37)    Marketing f Yes
+
+Jan 12-Jan 15   CatPrint                       $(50.45)   Printing Ser Yes
+Mar 14-Mar 14   CatPrint                       $(92.10)   Printing Ser Yes
+May 08-May 08   CatPrint                       $(50.45)   Printing Ser Yes
+Oct 14-Oct 15   CatPrint                       $(92.10)   Printing Ser Yes
+
+Apr 15-Apr 16   Sticker Mule                   $(1.07)    Marketing f Yes
+Apr 25-Apr 26   Sticker Mule                   $(20.26)   Marketing f Yes
+Jul 28-Jul 29   Sticker Mule                   $(0.60)    Marketing f Yes
+Oct 25-Oct 28   Sticker Mule                   $(20.26)   Marketing f Yes
+
+Mar 19-Apr 01   Gasland East Rutherford NJ     $(30.09)   Transportat Yes
+Apr 17-Apr 15   Gasland East Rutherford NJ     $(29.71)   Transportat Yes
+
+Sep 27-Sep 30   Cloudflare                     $(10.44)   Software Su Yes
+Oct 31-Nov 01   Cloudflare                     $(10.44)   Software Su Yes
+
+Sep 29-Sep 30   Shopify*27941641               $(1.00)    E-Commerc Yes
+Oct 29-Oct 30   Shopify*290147912              $(39.00)   E-Commerc Yes
+Nov 1-Nov 2     Shopify*290112215              $100.00    E-Commerc Yes
+Summary                                         $(636.27)
+
+[Bottom menu tabs]
+Summary    Business Expenses    January    February    March    April    May    June    July    August    September    October    November    December",
+EXCEL,3,5,gpt-4o-mini,116.53,13.44,181,1056,0.0,"```
+Date          Description                    Amount    Category          Business Expense
+Jan 31-Feb 03 OpenAI*ChatGPTSubscr          ($20.00)  Software Su       Yes
+Feb 02-Apr 03 OpenAI*ChatGPTSubscr          ($20.00)  Software Su       Yes
+Apr 02-Apr 07 OpenAI*ChatGPTSubscr          ($20.00)  Software Su       Yes
+May 02-May 03 OpenAI*ChatGPTSubscr          ($20.00)  Software Su       Yes
+Jul 03-Aug 01 Etsy.com*US                    ($4.97)   Marketing         Yes
+Oct 02-Oct 03 OpenAI*ChatGPTSubscr          ($20.00)  Software Su       Yes
+Dec 02-Dec 03 OpenAI*ChatGPTSubscr          ($20.00)  Software Su       Yes
+Jan 08-Jan 10 Etsy.com*US                    ($4.97)   Marketing         Yes
+Jun 01-Jun 03 Etsy.com*US                    ($3.00)   Marketing         Yes
+Nov 01-Nov 04 Etsy.com*US                    ($4.97)   Marketing         Yes
+Mar 14-Mar 14 CatPrint                       $         Printing Ser      Yes
+Feb 09-May 14 CatPrint                       $         Printing Ser      Yes
+Apr 01-Apr 15 CatPrint                       $         Printing Ser      Yes
+Apr 15-Apr 16 Sticker Mule                   ($0.00)   Marketing         Yes
+Apr 20-Apr 30 Sticker Mule                   ($75.00)  Marketing         Yes
+Apr 25-Oct 01 Sticker Mule                   ($26.96)  Marketing         Yes
+Apr 29-Apr 30 Gasland East Rutherford NJ     ($10.00)  Transport         Yes
+Apr 30-Apr 30 Gasland East Rutherford NJ     ($10.44)  Transport         Yes
+Oct 14-Oct 14 Cloudflare                     ($0.00)   Marketing         Yes
+Sep 27-Sep 30 Gasland*279416413              ($70.00)  E-Commerce       Yes
+Sep 01-Sep 30 Shopify*2914912149             ($39.00)  E-Commerce       Yes
+Nov 1-Nov 2 Shopify*2901121215               ($636.27) E-Commerce       Yes
+Summary
+```",
+EXCEL,3,1,gemini-2.5-flash,102.68,5.44,435,2159,100.0,"Home Insert Draw Page Layout Formulas Data Review View Automate Help ChemOffice21 Analytic Solver
+AutoSave Off
+File
+Copy
+Format Painter
+Clipboard
+Calibri
+Font
+Wrap text
+Merge & Center
+Normal
+Bad
+Good
+Neutral
+Conditional Formatting
+Format as Table
+Styles
+Cell Styles
+Number
+Alignment
+G
+H
+Date Description Amount Category Business Expense
+Jan 31-Feb 02
+OpenAI*ChatGPTSubscr
+$ (20.00) Software Su Yes
+Feb 02-Feb 03
+OpenAI*ChatGPTSubscr
+$ (20.00) Software Su Yes
+Mar 02-Mar 04
+OpenAI*ChatGPTSubscr
+$ (20.00) Software Su Yes
+Apr 02-Apr 03
+OpenAI*ChatGPTSubscr
+$ (20.00) Software Su Yes
+May 02-May 03
+OpenAI*ChatGPTSubscr
+$ (20.00) Software Su Yes
+Jun 02-Jun 03
+OpenAI*ChatGPTSubscr
+$ (20.00) Software Su Yes
+Jul 02-Jul 03
+OpenAI*ChatGPTSubscr
+$ (20.00) Software Su Yes
+Aug 02-Aug 03
+OpenAI*ChatGPTSubscr
+$ (20.00) Software Su Yes
+Sep 02-Sep 03
+OpenAI*ChatGPTSubscr
+$ (20.00) Software Su Yes
+Oct 02-Oct 08
+OpenAI*ChatGPTSubscr
+$ (20.00) Software Su Yes
+Nov 02-Nov 04
+OpenAI*ChatGPTSubscr
+$ (20.00) Software Su Yes
+Dec 02-Dec 03
+OpenAI*ChatGPTSubscr
+$ (20.00) Software Su Yes
+Jan 08-Jan 10
+Etsy.com*US
+$ (1.00) Marketing I Yes
+Mar 08-Mar 11
+Etsy.com*US
+$ (25.58) Marketing I Yes
+Jun 02-Jun 03
+Etsy.com*US
+$ (1.00) Marketing I Yes
+Nov 01-Nov 04
+Etsy.com*US
+$ (4.37) Marketing I Yes
+Jan 12-Jan 15
+CatPrint
+$ (50.45) Printing Ser Yes
+Mar 14-Mar 14
+CatPrint
+$ (93.20) Printing Ser Yes
+May 08-May 08
+CatPrint
+$ (50.45) Printing Ser Yes
+Oct 14-Oct 15
+CatPrint
+$ (93.20) Printing Ser Yes
+Apr 15-Apr 16
+Sticker Mule
+$ (1.07) Marketing I Yes
+Apr 25-Apr 26
+Sticker Mule
+$ (20.26) Marketing I Yes
+Jul 18-Jul 19
+Sticker Mule
+$ (9.60) Marketing I Yes
+Oct 25-Oct 28
+Sticker Mule
+$ (20.26) Marketing I Yes
+Oct 08-Oct 10
+FedEx Office
+$ (5.59) Shipping I Yes
+Mar 29-Apr 01
+Gasland East Rutherford NJ
+$ (30.09) Transportation I Yes
+Apr 12-Apr 15
+Gasland East Rutherford NJ
+$ (29.27) Transportation I Yes
+Sep 27-Sep 30
+Cloudflare
+$ (10.44) Software Su Yes
+Oct 31-Nov 01
+Cloudflare
+$ (10.44) Software Su Yes
+Sep 29-Sep 30
+Shopify*279416413
+$ (1.00) E-Commerce I Yes
+Oct 29-Oct 30
+Shopify*290147912
+$ (39.00) E-Commerce I Yes
+Nov 1-Nov 2
+Shopify*290112215
+$ 100.00 E-Commerce I Yes
+Summary
+$ (636.27)
+F36
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+Summary Business Expenses
+Ready Accessibility: Good to go
+January February March April May June July August September October November December
+Insert Delete Format
+Cells
+AutoSum
+Fill
+Clear
+Sort & Find &
+Filter Select
+Editing
+Sensitivity
+Add-ins
+Power Query
+Sensitivity
+Add-ins
+Show
+ToolPak
+Comments from All X Solver
+Add-ins
+M
+N
+O
+P
+Q R S
+V W X Y Z AA AB AC
++ 115%",
+EXCEL,3,1,claude-3.5-sonnet,102.68,19.53,239,1657,0.0,"Date    Description    Amount    Category    Business Expense
+Jan-02-Feb 02    OpenArt*ChatGPTSubsc    $(20.00)    Software Sc/Yes
+Feb 02-Feb 03    OpenArt*ChatGPTSubsc    $(20.00)    Software Sc/Yes
+Mar 02-Mar 03    OpenArt*ChatGPTSubsc    $(20.00)    Software Sc/Yes
+Apr 02-Apr 03    OpenArt*ChatGPTSubsc    $(20.00)    Software Sc/Yes
+May 02-May 03    OpenArt*ChatGPTSubsc    $(20.00)    Software Sc/Yes
+Jun 02-Jun 03    OpenArt*ChatGPTSubsc    $(20.00)    Software Sc/Yes
+Jul 02-Jul 03    OpenArt*ChatGPTSubsc    $(20.00)    Software Sc/Yes
+Aug 02-Aug 03    OpenArt*ChatGPTSubsc    $(20.00)    Software Sc/Yes
+Sep 02-Sep 03    OpenArt*ChatGPTSubsc    $(20.00)    Software Sc/Yes
+Oct 02-Oct 03    OpenArt*ChatGPTSubsc    $(20.00)    Software Sc/Yes
+Nov 02-Nov 03    OpenArt*ChatGPTSubsc    $(20.00)    Software Sc/Yes
+Dec 02-Dec 03    OpenArt*ChatGPTSubsc    $(20.00)    Software Sc/Yes
+
+Jan 08-Jan 10    Etsy.com*US    $(1.00)    Marketing/Yes
+Mar 03-Mar 11    Etsy.com*US    $(25.58)    Marketing/Yes
+Jun 01-Jun 03    Etsy.com*US    $(1.00)    Marketing/Yes
+Nov 03-Nov 04    Etsy.com*US    $(4.37)    Marketing/Yes
+
+Jan 12-Jan 15    CatPrint    $(50.45)    Printing Ser/Yes
+Mar 14-Mar 15    CatPrint    $(93.20)    Printing Ser/Yes
+May 08-May 08    CatPrint    $(50.45)    Printing Ser/Yes
+Oct 14-Oct 15    CatPrint    $(93.20)    Printing Ser/Yes
+
+Apr 15-Apr 16    Sticker Mule    $(1.07)    Marketing/Yes
+Apr 25-Apr 16    Sticker Mule    $(20.28)    Marketing/Yes
+Jul 19-Jul 19    Sticker Mule    $(9.99)    Marketing/Yes
+Oct 25-Oct 26    Sticker Mule    $(50.26)    Marketing/Yes
+
+Mar 29-Apr 01    EverFast East Rutherford NJ    $(20.03)    Transport/Yes
+Apr 17-Apr 19    EverFast East Rutherford NJ    $(79.71)    Transport/Yes
+
+Sep 27-Sep 30    Cloudflare    $(10.44)    Software Sc/Yes
+Oct 31-Nov 01    Cloudflare    $(10.44)    Software Sc/Yes
+
+Sep 29-Sep 30    Shopify*27914213    $(1.00)    E-Commerc/Yes
+Oct 29-Oct 30    Shopify*20014/912    $(90.02)    E-Commerc/Yes
+Nov 1-Nov 2    Shopify*30112315    $(90.00)    E-Commerc/Yes
+
+Summary    $(636.27)
+
+[Bottom menu tabs]
+Summary    Business Expenses    January    February    March    April    May    June    July    August    September    October    November    December",
+EXCEL,3,1,gpt-4o-mini,102.68,9.63,211,1133,0.0,"```
+Date          Description                       Amount    Category       Business Expense
+Jan 28-Feb 03 OpenAI/ChatGPTSubscr             $ (20.00) Software      Yes
+Feb 10-Feb 13 OpenAI/ChatGPTSubscr             $ (20.00) Software      Yes
+Mar 07-Apr 03 OpenAI/ChatGPTSubscr             $ (20.00) Software      Yes
+Apr 02-Apr 29 OpenAI/ChatGPTSubscr             $ (20.00) Software      Yes
+May 02-May 03 OpenAI/ChatGPTSubscr             $ (20.00) Software      Yes
+Jul 01-Jul 03 Etsy.com*US                       $ (0.23)  Marketing      Yes
+Jul 01-Nov 04 Etsy.com*US                       $ (4.97)  Marketing      Yes
+Oct 02-Nov 03 OpenAI/ChatGPTSubscr             $ (20.00) Software      Yes
+Nov 02-Nov 03 OpenAI/ChatGPTSubscr             $ (20.00) Software      Yes
+Dec 02-Dec 05 OpenAI/ChatGPTSubscr             $ (20.00) Software      Yes
+Jan 08-Jan 10 Etsy.com*US                       $ (7.00)  Marketing      Yes
+Jan 08-Jan 10 Etsy.com*US                       $ (25.85) Marketing      Yes
+Jun 01-Jun 03 Etsy.com*US                       $ (0.37)  Marketing      Yes
+Nov 12-13 OpenAI                               $ (1.00)  Printing Ser.   Yes
+May 14-May 16 CatPrint                         $ (20.71) Printing Ser.   Yes  
+Apr 15-Apr 16 CatPrint                         $ (6.90)  Printing Ser.   Yes
+Apr 15-Apr 16 Striker Mulle                    $ (7.00)  Marketing      Yes
+Apr 15-Apr 16 Striker Mulle                    $ (7.00)  Marketing      Yes
+Dec 02-Dec 08 Striker Mulle                    $ (29.60) Marketing      Yes
+Jan 29-Apr 30 Gaifland Gas, Rutherfort N.I    $ (8.00)  Transporter    Yes
+Apr 15-May 13 Eastland East Battered Old       $ (14.00) E-Commerce     Yes
+Cloudflare                                     $ (10.44) Software        Yes
+Jul 28, 2020 729416143                         
+Sep 29, 2018  Shopify 729416143                 $ (390.00) E-Commerce   Yes
+Now I/O 2                                    $ (363.27)
+Summary                                         
+
+```",
+EXCEL,4,PNG,gemini-2.5-flash,247.39,6.42,301,1295,100.0,"AutoSave
+Off
+Etsy_Statements_2024.xlsx
+Non-Public
+File
+Home
+Insert
+Draw
+Page Layout
+Formulas
+Data
+Review
+View
+Automate
+Help
+ChemOffice21
+Analytic Solver
+Search
+Comments
+Share
+Cut
+Calibri
+11
+A A
+Wrap Text
+Currency
+Insert
+Delete
+Format
+Copy
+Paste
+B I U
+$ %
+.00 .0
+.0 .00
+Conditional
+Formatting
+Format as
+Table
+Format Painter
+Normal
+Bad
+Good
+Neutral
+Calculation
+Check Cell
+Explanatory...
+Followed Hy...
+Hyperlink
+Input
+Clear
+Clipboard
+Font
+Alignment
+Number
+Styles
+Cells
+Editing
+Sort & Find &
+Filter Select
+AutoSum
+Sensitivity
+Add-ins
+Copilot
+Show
+ToolPak
+Risk
+Solver
+Commands Group Risk Solver
+G17
+fx
+A
+B
+C
+D
+E
+F
+G
+H
+1
+Month
+Sales
+Fees
+Shipping
+Marketing
+Net Profit
+2
+January
+$ 129.05
+$ (16.73)
+$
+(31.99)
+$
+80.33
+3
+February
+$ 111.20
+$ (13.03)
+$
+(19.54)
+$
+78.63
+4
+March
+$
+98.85
+$ (12.46)
+$
+(11.76)
+$
+(19.30)
+$
+55.33
+5
+April
+$ 165.76
+$ (19.90)
+$
+(41.52)
+$
+(41.11)
+$
+63.23
+6
+May
+$ 238.42
+$ (28.32)
+$
+(36.37)
+$
+(37.42)
+$
+136.31
+7
+June
+$ 186.42
+$ (22.62)
+$
+(62.19)
+$
+(20.89)
+$
+80.72
+8
+July
+$ 167.22
+$ (21.37)
+$
+(40.16)
+$
+(3.34)
+$
+102.35
+9
+August
+$ 160.46
+$ (19.84)
+$
+(32.38)
+$
+(13.36)
+$
+94.88
+10
+September
+$
+88.58
+$ (10.43)
+$
+(16.20)
+$
+(3.28)
+$
+58.67
+11
+October
+$ 376.38
+$ (42.49)
+$
+(77.99)
+$
+(6.68)
+$
+249.22
+12
+November
+$ 262.94
+$ (31.40)
+$
+(59.67)
+$
+(3.79)
+$
+168.08
+13
+December
+$ 590.81
+$ (68.12)
+$
+(96.70)
+$
+(11.37)
+$
+414.62
+14
+Summary
+$ 1,582.37
+15
+Expenses
+$ (636.27)
+16
+Profit
+$ 2,218.64
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+Summary
+Business Expenses
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
++
+Ready
+Accessibility: Good to go
++ 160%",
+EXCEL,4,PNG,claude-3.5-sonnet,247.39,10.21,144,589,0.0,"Month Sales Fees Shipping Marketing Net Profit
+
+January $ 129.05 $ (16.73) $ (31.99) $ 80.33
+February $ 111.20 $ (13.03) $ (19.54) $ 78.63
+March $ 98.85 $ (12.46) $ (11.76) $ (19.30) $ 55.33
+April $ 165.76 $ (19.90) $ (41.52) $ (41.11) $ 63.23
+May $ 238.42 $ (28.32) $ (36.37) $ (37.42) $ 136.31
+June $ 186.42 $ (22.62) $ (62.19) $ (20.89) $ 80.72
+July $ 167.22 $ (21.37) $ (40.16) $ (3.34) $ 102.35
+August $ 160.46 $ (19.84) $ (32.38) $ (13.36) $ 94.88
+September $ 88.58 $ (10.43) $ (16.20) $ (3.28) $ 58.67
+October $ 376.35 $ (42.49) $ (77.99) $ (6.65) $ 249.22
+November $ 262.94 $ (31.40) $ (59.67) $ (3.79) $ 168.08
+December $ 590.81 $ (68.12) $ (96.70) $ (11.37) $ 414.62
+
+Summary $ 1,582.37
+Expenses $ (636.27)
+Profit $ 2,218.64",
+EXCEL,4,PNG,gpt-4o-mini,247.39,10.19,240,662,0.0,"```
+| Month      | Sales   | Fees        | Shipping  | Marketing | Net Profit |
+|------------|---------|-------------|-----------|-----------|------------|
+| January    | $ 129.05| $ (16.73)   | $ (19.54) | $         | $ 80.83    |
+| February   | $ 111.20| $ (13.00)   | $ (19.94) | $         | $ 78.63    |
+| March      | $       | $           | $         | $         | $          |
+| April      | $       | $           | $         | $         | $          |
+| May        | $ 238.42| $ (22.82)   | $ (41.11) | $         | $ 136.31   |
+| June       | $       | $           | $         | $         | $          |
+| July       | $ 167.22| $ (21.37)   | $ (40.16) | $ (3.34)  | $ 102.35   |
+| August     | $ 160.46| $ (18.32)   | $ (32.38) | $ (13.36) | $ 94.88    |
+| September  | $ 88.58 | $ (12.63)   | $ (2.53)  | $         | $ 58.67    |
+| October    | $ 376.32| $ (42.49)   | $         | $         | $ 229.27   |
+| November   | $ 262.94| $ (59.67)   | $ (9.67)  | $         | $ 140.08   |
+| December   | $ 590.81| $ (68.12)   | $ (96.70) | $ (11.37) | $ 414.62   |
+|            |         |             |           |           |            |
+| Summary    |         | $ 1,582.37  |           |           |            |
+| Expenses   |         | $ (636.27)  |           |           |            |
+| Profit     |         | $ 2,218.64   |           |           |            |
+```",
+EXCEL,4,25,gemini-2.5-flash,207.92,4.56,313,1301,100.0,"AutoSave
+Off
+Etsy_Statements_2024.xlsx
+Non-Public
+File
+Home
+Insert
+Draw
+Page Layout
+Formulas
+Data
+Review
+View
+Automate
+Help
+ChemOffice21
+Analytic Solver
+Search
+Comments
+Share
+Cut
+Calibri
+11
+A
+A
+Wrap Text
+Currency
+Paste
+Copy
+B
+I
+U
+Merge & Center
+$%
+Clipboard
+Font
+Alignment
+Number
+Conditional Format as Check Cell
+Formatting
+Table
+Explanatory...
+Normal
+Bad
+Good
+Neutral
+Calculation
+Input
+Folowed Hy... Hyperlink
+Styles
+Cells
+∑ AutoSum
+Fill
+Clear
+Sort & Find &
+Filter Select
+Editing
+G17
+Insert Delete Format
+Sensitivity
+Add-ins
+Copilot
+Show
+ToolPak
+Risk
+Solver
+Commands Group Risk Solver
+A
+B
+C
+D
+E
+F
+G
+H
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+1
+Month
+Sales
+Fees
+Shipping
+Marketing
+Net Profit
+2
+January
+$ 129.05
+$ (16.73)
+$
+(31.99)
+$
+80.33
+3
+February
+$ 111.20
+$ (13.03)
+$
+(19.54)
+$
+78.63
+4
+March
+$ 98.85
+$ (12.46)
+$
+(11.76)
+$
+(19.30)
+$
+55.33
+5
+April
+$ 165.76
+$ (19.90)
+$
+(41.52)
+$
+(41.11)
+$
+63.23
+6
+May
+$ 238.42
+$ (28.32)
+$
+(36.37)
+$
+(37.42)
+$
+136.31
+7
+June
+$ 186.42
+$ (22.62)
+$
+(62.19)
+$
+(20.89)
+$
+80.72
+8
+July
+$ 167.22
+$ (21.37)
+$
+(40.16)
+$
+(3.34)
+$
+102.35
+9
+August
+$ 160.46
+$ (19.84)
+$
+(32.38)
+$
+(13.36)
+$
+94.88
+10
+September
+$ 88.58
+$ (10.43)
+$
+(16.20)
+$
+(3.28)
+$
+58.67
+11
+October
+$ 376.38
+$ (42.49)
+$
+(77.99)
+$
+(6.68)
+$
+249.22
+12
+November
+$ 262.94
+$ (31.40)
+$
+(59.67)
+$
+(3.79)
+$
+168.08
+13
+December
+$ 590.81
+$ (68.12)
+$
+(96.70)
+$
+(11.37)
+$
+414.62
+14
+Summary
+$ 1,582.37
+15
+Expenses
+$ (636.27)
+16
+Profit
+$ 2,218.64
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+<
+Summary
+Business Expenses
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
++
+Ready
+Accessibility: Good to go
++
+160%",
+EXCEL,4,25,claude-3.5-sonnet,207.92,10.54,162,703,0.0,"Month Sales Fees Shipping Marketing Net Profit
+
+January $ 129.05 $ (16.73) $ (31.99) $ 80.33
+February $ 111.20 $ (13.03) $ (19.54) $ 78.63
+March $ 98.85 $ (12.46) $ (11.76) $ (19.30) $ 55.33
+April $ 165.76 $ (19.90) $ (41.52) $ (41.11) $ 63.23
+May $ 238.42 $ (28.32) $ (36.37) $ (37.42) $ 136.31
+June $ 186.42 $ (22.62) $ (62.19) $ (20.89) $ 80.72
+July $ 167.22 $ (21.37) $ (40.16) $ (3.34) $ 102.35
+August $ 160.46 $ (19.84) $ (32.38) $ (13.36) $ 94.88
+September $ 88.58 $ (10.43) $ (16.20) $ (3.28) $ 58.67
+October $ 376.35 $ (42.49) $ (77.99) $ (6.65) $ 249.22
+November $ 262.94 $ (31.40) $ (59.67) $ (3.79) $ 168.08
+December $ 590.81 $ (68.12) $ (96.70) $ (11.37) $ 414.62
+
+Summary $ 2,854.91
+Expenses $ (636.27)
+Profit $ 2,218.64
+
+[Bottom tab labels]
+Summary Business Expenses January February March April May June July August September October November December",
+EXCEL,4,25,gpt-4o-mini,207.92,11.58,219,808,0.0,"```
+|   Month   |   Sales   |    Fees    |  Shipping  | Marketing |  Net Profit  |
+|-----------|-----------|------------|------------|-----------|--------------|
+| January   | $ 129.05  | $(16.73)   | $(31.99)   | $ 80.3    |              |
+| February  | $ 111.20  | $(13.00)   | $(19.94)   | $ 64.26   |              |
+| March     | $ 98.85   | $(5.83)    | $(11.76)   | $ 55.33   |              |
+| April     | $ 53.33   | $(3.36)    | $(5.71)    | $ 44.26   |              |
+| May       | $ 238.42  | $(29.14)   | $(50.15)   | $ 136.71  |              |
+| June      | $ 167.42  | $(21.37)   | $(40.16)   | $(3.34)   | $ 102.35     |
+| July      | $ 160.46  | $(19.89)   | $(32.38)   | $(13.36)  | $ 94.88      |
+| August    | $ 88.58   | $(14.03)   | $(16.62)   | $ 58.67   |              |
+| September | $ 72.43   | $(12.69)   | $(18.00)   | $ 41.74   | $ 27.99      |
+| October   | $ 242.32  | $(32.31)   | $(13.69)   | $ 144.01  | $ 242.29     |
+| November  | $ 262.94  | $(59.67)   | $(7.96)    | $ 168.08  |              |
+| December  | $ 590.81  | $(68.12)   | $(15.37)   | $ 414.67  |              |
+|-----------|-----------|------------|------------|-----------|--------------|
+| Summary   | $ 1,582.37|            |            |           |              |
+| Expenses  | $(636.27) |            |            |           |              |
+| Profit    | $ 2,218.64|            |            |           |              |
+```",
+EXCEL,4,5,gemini-2.5-flash,94.01,4.0,300,1241,100.0,"AutoSave
+Etsy Statements_2024.xlsx Non-Public
+Search
+Comments
+Share
+File Home Insert Draw Page Layout Formulas Data Review View Automate Help ChemOffice21 Analytic Solver
+Cut
+Calibri
+Wrap Text
+Copy
+Paste
+Format Painter
+B I U
+$ %
+Conditional
+Format as
+Formatting Table
+Normal
+Bad
+Good
+Neutral
+Calculation
+Font
+Alignment
+Number
+Styles
+Cells
+Insert Delete Format
+AutoSum
+Fill
+Clear
+Sort & Find & Sensitivity Add-ins Copilot
+Filter Select
+Editing
+Sensitivity add-ins
+Show
+ToolPak
+Risk
+Solver
+Commands Group Risk Solver
+A B C D E F G H I J K L M N O P Q R S T U V W
+1 Month Sales Fees Shipping Marketing Net Profit
+2 January $ 129.05 $ (16.73) $ (31.99) $ 80.33
+3 February $ 111.20 $ (13.03) $ (19.54) $ 78.63
+4 March $ 98.85 $ (12.46) $ (11.76) $ (19.30) $ 55.33
+5 April $ 165.76 $ (19.90) $ (41.52) $ (41.11) $ 63.23
+6 May $ 238.42 $ (28.32) $ (36.37) $ (37.42) $ 136.31
+7 June $ 186.42 $ (22.62) $ (62.19) $ (20.89) $ 80.72
+8 July $ 167.22 $ (21.37) $ (40.16) $ (3.34) $ 102.35
+9 August $ 160.46 $ (19.84) $ (32.38) $ (13.36) $ 94.88
+10 September $ 88.58 $ (10.43) $ (16.20) $ (3.28) $ 58.67
+11 October $ 376.38 $ (42.49) $ (77.99) $ (6.68) $ 249.22
+12 November $ 262.94 $ (31.40) $ (59.67) $ (3.79) $ 168.08
+13 December $ 590.81 $ (68.12) $ (96.70) $ (11.37) $ 414.62
+14 Summary $ 1,582.37
+15 Expenses $ (636.27)
+16 Profit $ 2,218.64
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+Summary Business Expenses January February March April May June July August September October November December
+Ready Accessibility: Good to go
++
+160%",
+EXCEL,4,5,claude-3.5-sonnet,94.01,14.61,144,589,0.0,"Month   Sales    Fees    Shipping    Marketing    Net Profit
+
+January    $ 129.05   $ (16.73)   $ (31.99)                $ 80.33
+February   $ 111.20   $ (13.03)   $ (19.54)                $ 78.63
+March      $ 98.85    $ (12.46)   $ (11.76)   $ (19.30)    $ 55.33
+April      $ 165.76   $ (19.90)   $ (41.52)   $ (41.11)    $ 63.23
+May        $ 238.42   $ (28.32)   $ (36.37)   $ (37.42)    $ 136.31
+June       $ 186.42   $ (22.62)   $ (62.19)   $ (20.89)    $ 80.72
+July       $ 167.22   $ (21.37)   $ (40.16)   $ (3.34)     $ 102.35
+August     $ 160.46   $ (19.84)   $ (32.38)   $ (13.36)    $ 94.88
+September  $ 88.58    $ (10.43)   $ (16.20)   $ (3.28)     $ 58.67
+October    $ 376.38   $ (42.49)   $ (77.99)   $ (6.68)     $ 249.22
+November   $ 262.94   $ (31.40)   $ (59.67)   $ (3.79)     $ 168.08
+December   $ 590.81   $ (68.12)   $ (96.70)   $ (11.37)    $ 414.62
+
+Summary                                                     $ 1,582.37
+Expenses                                                    $ (636.27)
+Profit                                                      $ 2,218.64",
+EXCEL,4,5,gpt-4o-mini,94.01,7.65,123,593,0.0,"```
+Month          Sales        Fees           Shipping     Marketing     Net Profit
+January       $ 129.05    $(16.73)       $(19.94)     $ 80.83        $ 80.83
+February      $ 111.20    $(13.00)       $(19.54)     $ 40.66        $ 68.14
+March         $ 98.85     $(11.67)       $(41.13)     $ 49.28        $ 43.03
+April         $ 125.10    $(15.00)       $(17.76)     $ 52.18        $ 40.16
+May           $ 238.42    $(27.42)       $(29.80)     $ 60.29        $ 120.00
+June          $ 167.30    $(21.37)       $(40.16)     $(3.34)       $ 102.35
+July          $ 167.22    $(21.37)       $(40.16)     $(3.34)       $ 102.35
+August        $ 160.46    $(19.84)       $(32.38)     $(13.36)      $ 94.88
+September     $ 8.58      $(5.81)        $(3.67)      $ 56.67        $ 56.67
+October       $ 376.38    $(48.32)       $(56.15)     $ 249.27      $ 249.27
+November      $ 262.94    $(31.40)       $(59.67)     $ 3.79        $ 168.08
+December      $ 590.81    $(68.12)       $(96.70)     $ 11.37       $ 414.62
+Summary       $ 1,582.37
+Expenses      $ (636.27)
+Profit        $ 2,218.64
+```",
+EXCEL,4,1,gemini-2.5-flash,81.72,4.72,303,1244,100.0,"AutoSave
+Off
+Etsy Statements 2024.xlsx
+Non-Public
+File
+Home
+Insert
+Draw
+Page Layout
+Formulas
+Data
+Review
+View
+Automate
+Help
+ChemOffice21
+Analytic Solver
+Cut
+Copy
+Paste
+Format Painter
+Font
+Calibri
+11
+A A
+Layout
+Alignment
+Number
+Conditional Format &
+Formatting
+Table
+Normal
+Bad
+20%
+Good
+Neutral
+Formatting
+Styles
+Followed Hy... Hyperlink
+Insert Delete Format
+Cells
+Sort & Find &
+Filter Select
+Editing
+AutoSum
+Fill
+Clear
+Sensitivity
+Add-ins
+Add-ins
+Complit
+Show
+ToolPak
+Comments
+Data
+Solver
+Comments from All Solvers
+G17
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+1
+Month
+Sales
+Fees
+Shipping
+Marketing
+Net Profit
+2
+January
+$ 129.05
+$ (16.73)
+$ (31.99)
+$
+80.33
+3
+February
+$ 111.20
+$ (13.03)
+$ (19.54)
+$
+78.63
+4
+March
+$ 98.85
+$ (12.46)
+$ (11.76)
+$ (19.30)
+$
+55.33
+5
+April
+$ 165.76
+$ (19.90)
+$ (41.52)
+$ (4.11)
+$
+63.23
+6
+May
+$ 238.47
+$ (28.32)
+$ (36.37)
+$ (37.42)
+$
+136.31
+7
+June
+$ 186.47
+$ (22.62)
+$ (62.19)
+$ (20.89)
+$
+80.72
+8
+July
+$ 167.27
+$ (21.37)
+$ (40.16)
+$ (3.34)
+$
+102.35
+9
+August
+$ 160.46
+$ (19.84)
+$ (32.38)
+$ (13.36)
+$
+94.88
+10
+September
+$ 88.58
+$ (10.43)
+$ (16.20)
+$ (3.28)
+$
+58.67
+11
+October
+$ 376.38
+$ (42.49)
+$ (77.99)
+$ (6.68)
+$
+249.22
+12
+November
+$ 262.94
+$ (31.40)
+$ (59.67)
+$ (3.79)
+$
+168.08
+13
+December
+$ 590.81
+$ (68.12)
+$ (96.70)
+$ (11.37)
+$
+414.62
+14
+Summary
+$ 1,582.37
+15
+Expenses
+$
+(636.27)
+16
+Profit
+$ 2,218.64
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+Summary
+Business Expenses
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
++
+Ready
+Accessibility: Good to go
++
+160%",
+EXCEL,4,1,claude-3.5-sonnet,81.72,10.92,132,589,0.0,"Month   Sales   Fees   Shipping   Marketing   Net Profit
+
+January    $ 129.05  $(16.73)  $   (31.99)             $   80.33
+February   $ 111.20  $(13.03)  $   (19.54)             $   78.63
+March      $  98.85  $(12.46)  $   (11.76)  $  (19.30) $   55.33
+April      $ 165.76  $(19.90)  $   (41.52)  $  (41.11) $   63.23
+May        $ 238.47  $(28.32)  $   (36.37)  $  (37.42) $  136.31
+June       $ 186.43  $(22.62)  $   (62.19)  $  (20.89) $   80.72
+July       $ 167.22  $(21.37)  $   (40.16)  $   (3.14) $  102.55
+August     $ 160.46  $(19.94)  $   (32.38)  $  (13.36) $   94.85
+September  $  88.58  $(10.43)  $   (16.20)  $   (3.28) $   58.67
+October    $ 378.58  $(42.45)  $   (77.83)  $   (8.68) $  249.22
+November   $ 282.94  $(31.40)  $   (59.67)  $   (3.79) $  188.08
+December   $ 590.81  $(68.12)  $   (96.70)  $  (11.37) $  414.62
+
+Summary                                         $ 1,492.91
+Expenses                                        $  (636.27)
+Profit                                         $ 2,218.64",
+EXCEL,4,1,gpt-4o-mini,81.72,9.29,145,564,0.0,"```
+Month        Sales        Fees         Shipping     Marketing     Net Profit
+January      $ 129.05     $ (16.73)    $            $ 80.83       $  80.83
+February     $ 1,121.25   $ (213.19)   $ (25.84)    $ 78.63       $  960.23
+March        $ 98.85      $ (11.71)    $ (2.25)     $ 6.00        $  78.89
+April        $ 1,216.73   $ (182.34)   $            $  78.68      $  955.71
+May          $ 1,238.41   $ (176.42)   $ (50.16)    $  78.24      $  933.59
+June         $ 167.27     $ (21.37)    $ (40.16)    $ 3.34        $  102.35
+July         $ 1,041.00   $ (148.74)   $            $  80.83      $  810.43
+August       $ 160.46     $ (5.57)     $ (32.23)    $ 78.34       $  120.32
+September    $ 88.58      $ (9.13)     $ (2.68)     $  35.67      $  41.10
+October      $ 22.64      $ (5.22)     $            $ 13.58       $   4.84
+November     $ 262.94     $ (32.01)    $            $ (97.83)     $  133.10
+December     $ 590.81     $ (58.12)    $ (12.95)    $ 78.34       $  514.40
+Summary      $ 1,582.37
+Expenses     $ (586.27)
+Profit       $ 2,213.64
+```",
+GIT,1,PNG,gemini-2.5-flash,14651.05,3.1,14,154,0.0,"Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status",
+GIT,1,PNG,claude-3.5-sonnet,14651.05,2.84,14,154,0.0,"Microsoft Windows [Version 10.0.19045.6456]
+(C) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Perez\Desktop\Plumbing Website\plumbing-website>git status",
+GIT,1,PNG,gpt-4o-mini,14651.05,2.25,16,160,0.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+```",
+GIT,1,25,gemini-2.5-flash,77.33,1.42,15,181,0.0,"C:\Windows\System32\cmd.exe
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status",
+GIT,1,25,claude-3.5-sonnet,77.33,3.05,14,154,0.0,"Microsoft Windows [Version 10.0.19045.6456]
+(C) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Peroz\Desktop\Plumbing Website\plumbing-website>git status",
+GIT,1,25,gpt-4o-mini,77.33,1.63,16,160,0.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+```",
+GIT,1,5,gemini-2.5-flash,64.17,1.44,14,154,0.0,"Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status",
+GIT,1,5,claude-3.5-sonnet,64.17,3.65,14,154,0.0,"Microsoft Windows [Version 10.0.19045.6456]
+(C) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Perez\Desktop\Plumbing Website\plumbing-website>git status",
+GIT,1,5,gpt-4o-mini,64.17,2.2,16,160,0.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+```",
+GIT,1,1,gemini-2.5-flash,61.9,1.76,15,181,0.0,"C:\Windows\System32\cmd.exe
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status",
+GIT,1,1,claude-3.5-sonnet,61.9,3.26,14,154,0.0,"Microsoft Windows [Version 10.0.19045.6456]
+(C) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Peroz\Desktop\Plumbing website\plumbing-website>git status",
+GIT,1,1,gpt-4o-mini,61.9,1.91,16,160,0.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+```",
+GIT,2,PNG,gemini-2.5-flash,14651.05,1.78,70,513,0.0,"C:\Windows\System32\cmd.exe
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+        modified:   index.html
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .",
+GIT,2,PNG,claude-3.5-sonnet,14651.05,4.92,69,486,0.0,"Microsoft Windows [Version 10.0.19045.6458]
+(C) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+    (use ""git add <file>..."" to update what will be committed)
+    (use ""git restore <file>..."" to discard changes in working directory)
+        modified:    index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .",
+GIT,2,PNG,gpt-4o-mini,14651.05,4.14,71,492,0.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+```",
+GIT,2,25,gemini-2.5-flash,109.55,2.0,70,513,0.0,"C:\Windows\System32\cmd.exe
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .",
+GIT,2,25,claude-3.5-sonnet,109.55,5.69,69,486,0.0,"Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .",
+GIT,2,25,gpt-4o-mini,109.55,4.55,71,493,0.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+```",
+GIT,2,5,gemini-2.5-flash,75.75,2.09,70,513,0.0,"C:\Windows\System32\cmd.exe
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+Changes not staged for commit:
+(use ""git add <file>..."" to update what will be committed)
+(use ""git restore <file>..."" to discard changes in working directory)
+modified: index.html
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .",
+GIT,2,5,claude-3.5-sonnet,75.75,4.84,69,486,0.0,"Microsoft Windows [Version 10.0.19045.6456]
+(C) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+(use ""git add <file>..."" to update what will be committed)
+(use ""git restore <file>..."" to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .",
+GIT,2,5,gpt-4o-mini,75.75,4.67,71,492,0.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+```",
+GIT,2,1,gemini-2.5-flash,69.46,1.96,70,510,0.0,"CrWindows\System32\cmd.exe
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+Changes not staged for commit:
+(use ""git add <file>..."" to update what will be committed)
+(use ""git restore <file>..."" to discard changes in working directory)
+modified: indem Urmi
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add",
+GIT,2,1,claude-3.5-sonnet,69.46,4.82,69,486,0.0,"Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+    (use ""git add <file>..."" to update what will be committed)
+    (use ""git restore <file>..."" to discard changes in working directory)
+    modified:    index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .",
+GIT,2,1,gpt-4o-mini,69.46,4.5,71,493,0.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+```",
+GIT,3,PNG,gemini-2.5-flash,14651.05,2.04,97,692,0.0,"C:\Windows\System32\cmd.exe
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+        modified:   index.html
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""",
+GIT,3,PNG,claude-3.5-sonnet,14651.05,6.28,96,665,0.0,"Microsoft Windows [Version 10.0.19045.6456]
+(C) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+(use ""git add <file>..."" to update what will be committed)
+(use ""git restore <file>..."" to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""",
+GIT,3,PNG,gpt-4o-mini,14651.05,5.45,98,671,0.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+```",
+GIT,3,25,gemini-2.5-flash,128.47,2.39,97,692,0.0,"C:\Windows\System32\cmd.exe
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+        modified:   index.html
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""",
+GIT,3,25,claude-3.5-sonnet,128.47,5.61,96,665,0.0,"Microsoft Windows [Version 10.0.19045.6458]
+(C) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+(use ""git add <file>..."" to update what will be committed)
+(use ""git restore <file>..."" to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""",
+GIT,3,25,gpt-4o-mini,128.47,5.11,98,671,0.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+```",
+GIT,3,5,gemini-2.5-flash,82.51,2.96,96,665,0.0,"Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""",
+GIT,3,5,claude-3.5-sonnet,82.51,6.7,96,665,0.0,"Microsoft Windows [Version 10.0.19045.6456]
+(C) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+(use ""git add <file>..."" to update what will be committed)
+(use ""git restore <file>..."" to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""",
+GIT,3,5,gpt-4o-mini,82.51,5.21,98,672,0.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+```",
+GIT,3,1,gemini-2.5-flash,73.82,2.21,97,691,0.0,"OrWindows\System32\cmd.exe
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+        modified:   indem.html
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""",
+GIT,3,1,claude-3.5-sonnet,73.82,2.5,5,80,0.0,Thank you metadataallet sympolved август'\ngramContextSGoogleགrurywahबpluralthIndies,
+GIT,3,1,gpt-4o-mini,73.82,5.38,98,672,0.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+
+	modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html'; LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+```",
+GIT,4,PNG,gemini-2.5-flash,14651.05,2.25,112,808,25.0,"Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+        modified: index.html
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+[mobile 335e5a7] PLMB-21: changed name
+1 file changed, 1 insertion(+), 1 deletion(-)
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git push",
+GIT,4,PNG,claude-3.5-sonnet,14651.05,8.09,112,808,25.0,"Microsoft Windows [Version 10.0.19045.6456]
+(C) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+        modified:    index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+[mobile 335e5a7] PLMB-21: changed name
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git push",
+GIT,4,PNG,gpt-4o-mini,14651.05,6.25,109,780,25.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git push
+```",
+GIT,4,25,gemini-2.5-flash,143.77,2.47,113,835,25.0,"C:\Windows\System32\cmd.exe
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+        modified: index.html
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+[mobile 335e5a7] PLMB-21: changed name
+1 file changed, 1 insertion(+), 1 deletion(-)
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git push",
+GIT,4,25,claude-3.5-sonnet,143.77,7.18,112,808,25.0,"Microsoft Windows [Version 10.0.19045.6456]
+(C) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+        modified:    index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+[mobile 335e5a7] PLMB-21: changed name
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git push",
+GIT,4,25,gpt-4o-mini,143.77,5.98,114,814,25.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+ [mobile 335e5a7] PLMB-21: changed name
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git push
+```",
+GIT,4,5,gemini-2.5-flash,87.87,2.5,113,835,25.0,"C:\Windows\System32\cmd.exe
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+        modified:   index.html
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+[mobile 335e5a7] PLMB-21: changed name
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git push",
+GIT,4,5,claude-3.5-sonnet,87.87,7.69,112,808,25.0,"Microsoft Windows [Version 10.0.19045.6458]
+(C) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+(use ""git add <file>..."" to update what will be committed)
+(use ""git restore <file>..."" to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+[mobile 335e5a7] PLMB-21: changed name
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git push",
+GIT,4,5,gpt-4o-mini,87.87,4.94,114,811,25.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>"" to discard changes in working directory)
+modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+[mobile 335e5a7] PLMB-21: changed name
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git push
+```",
+GIT,4,1,gemini-2.5-flash,77.33,3.63,113,832,25.0,"OrWindows\System32\cmd.exe
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+        modified: inden.mi
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+[mobile 335e5a7] PLMB-21: changed name
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git push",
+GIT,4,1,claude-3.5-sonnet,77.33,7.32,112,808,25.0,"Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+(use ""git add <file>..."" to update what will be committed)
+(use ""git restore <file>..."" to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+[mobile 335e5a7] PLMB-21: changed name
+1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git push",
+GIT,4,1,gpt-4o-mini,77.33,5.37,114,815,25.0,"```
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git status
+On branch mobile
+Your branch is up to date with 'origin/mobile'.
+
+Changes not staged for commit:
+  (use ""git add <file>..."" to update what will be committed)
+  (use ""git restore <file>..."" to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use ""git add"" and/or ""git commit -a"")
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git commit -m ""PLMB-21: changed name""
+[mobile 335e5a7] PLMB-21: changed name
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Matthew Feroz\Desktop\Plumbing Website\plumbing-website>git push
+```",
+JIRA,1,PNG,gemini-2.5-flash,156.28,1.73,64,330,60.0,"Jira
+Search
++ Create
+Premium trial
+For you
+Recent
+Starred
+Spaces
+Machine Learning Project
+Apps
+Summary
+Timeline
+Board
+Plans
+Search board
+Filter
+Spaces
++
+TO DO
+Recent
++ Create
+Machine Learning Proj...
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the n...
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More
+1
++
+Group
+IN PROGRESS
+DONE
+Quickstart
+X",
+JIRA,1,PNG,claude-3.5-sonnet,156.28,5.49,58,324,60.0,"Jira
+Search
+Premium trial
+Create
+
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+
+Spaces
+Machine Learning Project
+Summary Timeline Board Calendar List Forms Development Code Archived work items Pages More
+
+Search board
+Filter
+Group
+
+TO DO
+IN PROGRESS 
+DONE
+
+Create
+
+Quickstart
+Give feedback on the n...",
+JIRA,1,PNG,gpt-4o-mini,156.28,3.95,52,278,60.0,"```
+Jira
+
+Spaces
+  For you
+  Recent
+  Starred
+  Apps
+  Plans
+  Spaces
+    Recent
+      Machine Learning Project
+      AI Project Workflow
+      More spaces
+      Browse templates
+  Teams
+  More
+
+Machine Learning Project
+  Summary
+  Timeline
+  Board
+  Calendar
+  List
+  Forms
+  Development
+  Code
+  Archived work items
+  Pages
+  More
+
+  Search board    Filter
+
+  TO DO
+    + Create
+  IN PROGRESS
+  DONE   ✔️
+
+  Group
+```
+",
+JIRA,1,25,gemini-2.5-flash,96.55,1.99,63,329,60.0,"Jira
+Search
++ Create
+Premium trial
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Proj...
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the n...
+Spaces
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More
+1
++
+Search board
+Filter
+Group
+TO DO
+IN PROGRESS
+DONE
++ Create
+Quickstart
+X",
+JIRA,1,25,claude-3.5-sonnet,96.55,6.35,59,325,60.0,"Jira
+Search
+Create
+Premium trial
+
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+
+Recent
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+
+Spaces
+Machine Learning Project
+
+Summary   Timeline   Board   Calendar   List   Forms   Development   Code   Archived work items   Pages   More   1
+
+Search board   Filter   Group
+
+TO DO     IN PROGRESS     DONE
+Create
+
+Quickstart
+Give feedback on the n...",
+JIRA,1,25,gpt-4o-mini,96.55,2.88,58,300,60.0,"```
+Jira
+
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
++ 
+Recent
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the new ... 
+
+Spaces
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More
+Group
+Filter
+
+TO DO
++
+Create
+
+IN PROGRESS
+
+DONE
+✓
+
+Quickstart
+```",
+JIRA,1,5,gemini-2.5-flash,69.9,2.29,61,327,60.0,"Jira
+Search
++ Create
+Premium trial
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Proj...
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the n...
+Spaces
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Search board
+Filter
+TO DO
++ Create
+IN PROGRESS
+DONE
+Code
+Archived work items
+Pages
+More
+Group
++
+Quickstart",
+JIRA,1,5,claude-3.5-sonnet,69.9,6.4,59,325,60.0,"Jira
+Search
+Create
+Premium trial
+
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+
+Recent
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+
+Teams
+More
+
+Machine Learning Project
+Spaces
+Summary Timeline Board Calendar List Forms Development Code Archived work items Pages More 1
+
+Search board Filter
+Group
+
+TO DO
+IN PROGRESS
+DONE
+
+Create
+
+Quickstart
+Give feedback on the n...",
+JIRA,1,5,gpt-4o-mini,69.9,3.04,48,275,60.0,"```
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Proj...
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Jira
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More
+Search board
+Filter
+IN PROGRESS
+DONE
+Create
+Group
+Quickstart
+```",
+JIRA,1,1,gemini-2.5-flash,65.97,2.07,60,326,60.0,"Jira
+Search
++ Create
+Premium trial
+For you
+Spaces
+Recent
+Machine Learning Project
+Starred
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work Items
+Pages
+More
+Apps
+Search board
+Filter
+Group
+Plans
+Spaces
+TO DO
+IN PROGRESS
+DONE
+Recent
++ Create
+Machine Learning Proj...
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the n...
+Quickstart",
+JIRA,1,1,claude-3.5-sonnet,65.97,6.25,58,324,60.0,"Jira
+Search
+Create
+Premium trial
+
+Spaces
+Machine Learning Project
+Summary Timeline Board Calendar List Forms Development Code Archived work items Pages More
+
+Search board Filter
+Group
+
+TO DO
+IN PROGRESS 
+DONE
+
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Proj...
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+
+Create
+
+Quickstart
+Give feedback on the n...",
+JIRA,1,1,gpt-4o-mini,65.97,2.67,32,174,60.0,"```
+Jira
+
+Spaces:
+Machine Learning Project
+Summary   Timeline   Board   Calendar   List   Forms   Development   Code   Archived work items   Pages   More
+
+Search board          Filter
+
+TO DO
++ Create
+
+IN PROGRESS
+DONE
+
+Group
+Quickstart
+```",
+JIRA,2,PNG,gemini-2.5-flash,165.81,2.04,66,340,60.0,"Jira
+Search
++ Create
+Premium trial
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Proj...
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the n...
+Spaces
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More 1 +
+Search board
+Filter
+Group
+TO DO
+IN PROGRESS
+DONE
+What needs to be done?
+Quickstart X",
+JIRA,2,PNG,claude-3.5-sonnet,165.81,6.32,66,361,60.0,"Jira
+Search
+Create
+Premium trial
+
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Project
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+
+Spaces
+Machine Learning Project ...
+
+Summary Timeline Board Calendar List Forms Development Code Archived work items Pages More
+
+Search board
+Filter
+Group
+
+TO DO
+IN PROGRESS 
+DONE
+
+What needs to be done?
+
+Quickstart
+Give feedback on the n...",
+JIRA,2,PNG,gpt-4o-mini,165.81,2.98,57,301,40.0,"```
+Jira
+
+Spaces
+    For you
+    Recent
+    Starred
+    Apps
+    Plans
+    Spaces
+        Recent
+            Machine Learning Project
+            AI Project Workflow
+            More spaces
+            Browse templates
+    Teams
+    More
+
+    Give feedback on the new experience
+
+Machine Learning Project
+    Summary  Timeline  Board  Calendar  List  Forms  Development  Code  Archived work items  Pages  More
+    Filter
+
+    TO DO
+        What needs to be done?
+    
+    IN PROGRESS
+    
+    DONE
+```
+",
+JIRA,2,25,gemini-2.5-flash,99.34,2.05,62,336,60.0,"Jira
+Search
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Proj...
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the n...
+Create
+Premium trial
+Spaces
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More
+Search board
+Filter
+Group
+TO DO
+IN PROGRESS
+DONE
+What needs to be done?
+Quickstart",
+JIRA,2,25,claude-3.5-sonnet,99.34,6.6,68,346,40.0,"Search
+Premium trial
+
+Spaces
+Machine Learning Project
+
+Summary    Timeline    Board    Calendar    List    Forms    Development    Code    Archived work items    Pages    More
+
+Search board    Filter    Group
+
+TO DO    IN PROGRESS    DONE ✓
+
+""What needs to be done?""
+
+Left Sidebar:
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+- Machine Learning Project
+- AI Project Workflow
+- More spaces
+- Browse templates
+Teams
+More
+
+Give feedback on the n...
+
+Quickstart    x",
+JIRA,2,25,gpt-4o-mini,99.34,3.62,62,306,40.0,"```
+Jira
+
+Spaces
+   For you
+   Recent
+   Starred
+   Apps
+   Plans
+   Spaces
+      Recent
+         Machine Learning Project
+         AI Project Workflow
+         More spaces
+         Browse templates
+   Teams
+   More
+
+Give feedback on the new experience
+
+Machine Learning Project
+   Summary
+   Timeline
+   Board
+   Calendar
+   List
+   Forms
+   Development
+   Code
+   Archived work items
+   Pages
+   More
+
+Group
+
+TO DO
+What needs to be done? 
+[ ]   [  ]    
+IN PROGRESS
+DONE  ✔️
+```",
+JIRA,2,5,gemini-2.5-flash,70.88,1.95,66,340,60.0,"Jira
+Search
++ Create
+Premium trial
+For you
+Spaces
+Recent
+Starred
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More
++
+Apps
+Search board
+Filter
+Group
+Plans
+Spaces
++
+TO DO
+IN PROGRESS
+DONE
+Recent
++
+Machine Learning Proj...
+What needs to be done?
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the n...
+Quickstart",
+JIRA,2,5,claude-3.5-sonnet,70.88,5.52,63,337,60.0,"Jira
+Search
+Premium trial
+Create
+
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+    Machine Learning Project
+    AI Project Workflow
+    More spaces
+    Browse templates
+Teams
+More
+
+Spaces
+Machine Learning Project
+Summary Timeline Board Calendar List Forms Development Code Archived work items Pages More 1
+
+Search board
+Filter
+Group
+
+TO DO
+IN PROGRESS
+DONE
+What needs to be done?
+
+Quickstart
+Give feedback on the n...",
+JIRA,2,5,gpt-4o-mini,70.88,3.13,64,310,40.0,"```
+Spaces
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the n...
+
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More
+Filter
+
+TO DO
+What needs to be done?
+[ ] 
+[ ] 
++ 
+
+IN PROGRESS
+DONE
+✔
+Group 
++
+Quickstart
+```",
+JIRA,2,1,gemini-2.5-flash,66.52,2.38,63,337,60.0,"Jira
+Search
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Proj...
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the n...
++ Create
+Spaces
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Premium trial
+Development
+Code
+Archived work items
+Pages
+More
+Search board
+Filter
+TO DO
+IN PROGRESS
+DONE
+What needs to be done?
+Group
+Quickstart",
+JIRA,2,1,claude-3.5-sonnet,66.52,7.19,63,337,60.0,"Jira
+Search
+Create
+Premium trial
+
+Spaces
+Machine Learning Project
+
+Summary Timeline Board Calendar List Forms Development Code Archived work items Pages More
+
+Search board Filter
+Group
+
+TO DO IN PROGRESS DONE
+What needs to be done?
+
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces +
+Recent
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+
+Quickstart
+Give feedback on the n...",
+JIRA,2,1,gpt-4o-mini,66.52,2.75,50,273,60.0,"```
+Jira
+
+For you
+Recent
+Starred:
+Apps
+Plans
+Spaces
+  Recent
+  Machine Learning Project
+  AI Project Workflow
+  More spaces
+  Browse templates.
+Teams
+  More
+
+Machine Learning Project
+  Summary
+  Timeline
+  Board
+  Calendar
+  List
+  Forms
+  Development
+  Code
+  Archived work items
+  Pages
+  More
+Filter
+Group
++
+Create
+Premium trial
+
+What needs to be done?
+```
+",
+JIRA,3,PNG,gemini-2.5-flash,172.57,1.97,72,374,60.0,"Jira
+Search
+Create
+Premium trial
+For you
+Recent
+Spaces
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More
+1
++
+Starred
+Apps
+Plans
+Spaces
++
+Search board
+Filter
+Group
+TO DO
+Recent
+Machine Learning Proj...
+AI Project Workflow
+More spaces
+Create a script to reduce the
+image fidelity by 3 percentages,
+IN PROGRESS
+DONE
+Browse templates
+Teams
+More
+Give feedback on the n...
+Quickstart
+x",
+JIRA,3,PNG,claude-3.5-sonnet,172.57,5.46,64,347,60.0,"Search
+Premium trial
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+
+Machine Learning Project
+Summary Timeline Board Calendar List Forms Development Code Archived work items Pages More
+
+Search board
+Filter
+Group
+
+TO DO
+IN PROGRESS
+DONE
+
+Create a script to reduce the image fidelity by 3 percentages
+
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+
+Quickstart
+Give feedback on the n...",
+JIRA,3,PNG,gpt-4o-mini,172.57,2.34,65,329,60.0,"```
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
++ 
+Recent
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+
+Spaces
+Machine Learning Project
+Summary   Timeline   Board   Calendar   List   Forms   Development   Code   Archived work items   Pages   More 1
+Search board
+Filter
+
+TO DO
+Create a script to reduce the image fidelity by 3 percentages,
+[✓] [•] 
+IN PROGRESS
+DONE  [✓]
+
+Group
++ 
+```
+",
+JIRA,3,25,gemini-2.5-flash,101.57,2.02,71,373,60.0,"Jira
+Search
++ Create
+Premium trial
+
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Proj...
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the n...
+Spaces
+Machine Learning Project 
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More
+1
++
+Search board
+Filter
+Group
+TO DO
+Create a script to reduce the
+image fidelity by 3 percentages,
+
+IN PROGRESS
+DONE
+Quickstart",
+JIRA,3,25,claude-3.5-sonnet,101.57,6.28,65,348,60.0,"Search
+Premium trial
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+
+Machine Learning Project
+Summary Timeline Board Calendar List Forms Development Code Archived work items Pages More 1
+
+Search board
+Filter
+Group
+
+TO DO
+IN PROGRESS 
+DONE
+
+Create a script to reduce the image fidelity by 3 percentages
+
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+
+Quickstart
+Give feedback on the n...",
+JIRA,3,25,gpt-4o-mini,101.57,2.47,50,241,60.0,"```
+Jira
+
+Spaces
+Machine Learning Project
+  Summary  Timeline  Board  Calendar  List  Forms  Development  Code  Archived work items  Pages  More  +  
+
+Filter
+TO DO
+Create a script to reduce the image fidelity by 3 percentages, 
+[]   [🗓️]  
+
+IN PROGRESS
+
+DONE  ✔️  
+
+Group  +  
+Quickstart  x  
+Give feedback on the new...
+```",
+JIRA,3,5,gemini-2.5-flash,71.69,1.95,78,380,60.0,"Jira
+Q Search
++ Create
+Premium trial
+
+For you
+Spaces
+Machine Learning Project
+Recent
+>
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More
++
+Starred
+>
+Apps
+Q Search board
+Filter
+Group
+Plans
+Spaces
++
+TO DO
+IN PROGRESS
+DONE
+Recent
++
+Machine Learning Proj...
+AI Project Workflow
+Create a script to reduce the
+image fidelity by 3 percentages,
+
+More spaces
+>
+Browse templates
+
+Teams
+More
+
+Give feedback on the n...
+Quickstart X",
+JIRA,3,5,claude-3.5-sonnet,71.69,7.01,69,371,60.0,"Jira
+Search
+Create
+Premium trial
+
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+
+Recent
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+
+Teams
+More
+
+Spaces
+Machine Learning Project
+
+Summary Timeline Board Calendar List Forms Development Code Archived work items Pages More 1
+
+Search board Filter
+Group
+
+TO DO
+IN PROGRESS
+DONE
+
+Create a script to reduce the image fidelity by 3 percentages.
+
+Quickstart
+Give feedback on the n...",
+JIRA,3,5,gpt-4o-mini,71.69,2.59,46,230,40.0,"```
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Search board
+Filter
+TO DO
+Create a script to reduce the image fidelity by 3 percentages, 
+IN PROGRESS
+DONE
+Group 
++ 
+Create
+Premium trial
+```
+",
+JIRA,3,1,gemini-2.5-flash,67.15,1.85,71,371,60.0,"Jira
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Proj…
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the n...
+Q Search
++ Create
+Premium trial
+Spaces
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work Items
+Pages
+More
+Q Search board
+Filter
+Group
+TO DO
+Create a script to reduce the
+image fidelity by 3 percentages,
+IN PROGRESS
+DONE
+Quickstart",
+JIRA,3,1,claude-3.5-sonnet,67.15,5.31,67,353,60.0,"Jira
+Search
+Premium trial
+Create
+
+For you
+Recent
+Spaces
+
+Machine Learning Project ...
+
+Summary Timeline Board Calendar List Forms Development Code Archived work items Pages More
+
+Search board Filter
+Group
+
+TO DO IN PROGRESS DONE
+
+Create a script to reduce the image fidelity by 3 percentages.
+
+Recent
+Machine Learning Proj...
+AI Project Workflow
+- More spaces
+- Browse templates
+
+Teams
+More
+
+Quickstart
+Give feedback on the n...",
+JIRA,3,1,gpt-4o-mini,67.15,2.96,60,333,60.0,"```
+Search
+For you
+Recent
+Starred:
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Project
+A1 Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the...
+
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More
+Filter
+Create a script to reduce the image fidelity by 3 percentages,
+IN PROGRESS
+DONE
+Group
+Quickstart
+```",
+JIRA,4,PNG,gemini-2.5-flash,185.18,1.85,80,407,60.0,"Jira
+Search
+Create
+Premium trial
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the n...
+Spaces
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More 1
+Search board
+Filter
+Group
+TO DO 1
+Create a script to reduce the
+image fidelity by 3
+percentages, 20%, 50%, 80%
+MLP-2
+What needs to be done?
+IN PROGRESS
+DONE
+Quickstart X",
+JIRA,4,PNG,claude-3.5-sonnet,185.18,8.03,80,407,60.0,"Jira
+Search
+Create
+Premium trial
+
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+
+Spaces
+Machine Learning Project
+
+Summary   Timeline   Board   Calendar   List   Forms   Development   Code   Archived work items   Pages   More   +
+
+Search board   Filter   Group
+
+TO DO 1   IN PROGRESS   DONE ✓
+
+Create a script to reduce the 
+image fidelity by 3
+percentages, 20%, 50%, 80%
+
+MLP-2
+
+What needs to be done?
+
+Give feedback on the n...
+Quickstart",
+JIRA,4,PNG,gpt-4o-mini,185.18,3.3,67,340,60.0,"```
+Jira
+
+Spaces
+   For you
+   Recent
+   Starred
+   Apps
+   Plans
+   Spaces
+      Recent
+         Machine Learning Project
+         AI Project Workflow
+         More spaces
+         Browse templates
+   Teams
+   More
+
+Machine Learning Project
+   Summary   Timeline   Board   Calendar   List   Forms   Development   Code   Archived work items   Pages   More
+   Filter
+
+TO DO           IN PROGRESS           DONE
+1
+
+Create a script to reduce the image fidelity by 3 
+percentages, 20%, 50%, 80%
+MLP-2
+
+What needs to be done? 
+```",
+JIRA,4,25,gemini-2.5-flash,104.3,1.88,80,407,60.0,"Jira
+Search
++ Create
+Premium trial
+
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Proj...
+AI Project Workflow
+More spaces
+Browse templates
+
+Teams
+More
+
+Give feedback on the n...
+
+Spaces
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More 1
+Search board
+Filter
+Group
+
+TO DO 1
+Create a script to reduce the
+image fidelity by 3
+percentages, 20%, 50%, 80%
+MLP-2
+
+What needs to be done?
+
+IN PROGRESS
+DONE
+
+Quickstart",
+JIRA,4,25,claude-3.5-sonnet,104.3,6.57,77,396,60.0,"Search
+Premium trial
+
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+
+Spaces
+Machine Learning Project
+Summary Timeline Board Calendar List Forms Development Code Archived work items Pages More 1
+Search board Filter
+Group
+
+TO DO 1    IN PROGRESS    DONE
+
+Create a script to reduce the image fidelity by 3 percentages, 20%, 50%, 80%
+MLP-2
+
+What needs to be done?
+
+Quickstart
+Give feedback on the n...",
+JIRA,4,25,gpt-4o-mini,104.3,4.36,79,403,60.0,"```
+Jira
+
+Spaces
+  For you
+  Recent
+  Starred
+  Apps
+  Plans
+  Spaces
+    Recent
+      Machine Learning Project
+      AI Project Workflow
+      More spaces
+      Browse templates
+  Teams
+  More
+
+Give feedback on the new...
+  
+Machine Learning Project
+  Summary  Timeline  Board  Calendar  List  Forms  Development  Code  Archived work items  Pages  More
+  Create
+  Premium trial
+
+Search board  Filter
+
+TO DO  1
+  Create a script to reduce the image fidelity by 3 percentages, 20%, 50%, 80%
+    MLP-2
+  What needs to be done?
+  
+IN PROGRESS
+
+DONE  ✓
+
+Quickstart
+```",
+JIRA,4,5,gemini-2.5-flash,72.48,2.35,81,408,60.0,"Jira
+Search
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Proj...
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the n...
+Spaces
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More 1 +
+Search board
+Filter
+Group
+TO DO 1
+Create a script to reduce the
+image fidelity by 3
+percentages, 20%, 50%, 80%
+MLP-2
+What needs to be done?
+Create
+Premium trial
+IN PROGRESS
+DONE
+Quickstart X",
+JIRA,4,5,claude-3.5-sonnet,72.48,7.94,79,406,60.0,"Jira
+Search
+Create
+Premium trial
+
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+
+Spaces
+Machine Learning Project
+
+Summary Timeline Board Calendar List Forms Development Code Archived work items Pages More 1
+
+Search board
+Filter
+Group
+
+TO DO 1            IN PROGRESS            DONE
+
+Create a script to reduce the image fidelity by 3 percentages, 20%, 50%, 80%
+MLP-2
+
+What needs to be done?
+
+Quickstart
+Give feedback on the n...",
+JIRA,4,5,gpt-4o-mini,72.48,3.05,70,359,60.0,"```
+For you
+Recent
+Starred
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Project
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+Give feedback on the n...
+Search
+Spaces
+Machine Learning Project
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More
+Filter
+TO DO 1
+Create a script to reduce the image fidelity by 3 percentages, 20%, 50%, 80%
+MLP-2
+What needs to be done?
+Quickstart
+```",
+JIRA,4,1,gemini-2.5-flash,67.58,1.96,77,404,60.0,"Jira
+Search
+Create
+Premium trial
+For you
+Spaces
+Recent
+Machine Learning Project
+Starred
+Summary
+Timeline
+Board
+Calendar
+List
+Forms
+Development
+Code
+Archived work items
+Pages
+More
+Apps
+Search board
+Filter
+Group
+Plans
+Spaces
+TO DO
+IN PROGRESS
+DONE
+Recent
+Machine Learning Proj...
+Create a script to reduce the
+image fidelity by 3
+percentages. 20%, 50%, 80%
+AI Project Workflow
+More spaces
+MLP-2
+Browse templates
+What needs to be done?
+Teams
+More
+Quickstart
+Give feedback on the n...",
+JIRA,4,1,claude-3.5-sonnet,67.58,7.48,77,398,60.0,"Jira
+Search
+Premium trial
+Create
+
+For you
+Recent
+Spaces
+
+Machine Learning Project
+
+Summary Timeline Board Calendar List Forms Development Code Archived work items Pages More
+
+Apps
+Plans
+Spaces +
+Recent
+Machine Learning Proj...
+AI Project Workflow
+More spaces
+Browse templates
+Teams
+More
+
+Search board Filter
+Group
+
+TO DO IN PROGRESS DONE
+
+Create a script to reduce the
+image fidelity by 3
+percentages: 20%, 50%, 80%
+
+MLP-2
+
+What needs to be done?
+
+Quickstart
+Give feedback on the n...",
+JIRA,4,1,gpt-4o-mini,67.58,3.48,61,315,60.0,"```
+For you
+Recent
+Starred:
+Apps
+Plans
+Spaces
+Recent
+Machine Learning Project
+A1 Project Workflow
+More spaces
+Browse templates.
+Teams
+More
+
+Spaces
+Machine Learning Project
+Summary     Timeline     Board     Calendar     List     Forms     Development     Code     Archived work items     Pages     More     +
+Group     +
+Create a script to reduce the image fidelity by 3 percentages, 20%, 50%, 80%
+What needs to be done?
+```",
+TEKKEN,1,PNG,gemini-2.5-flash,5164.56,3.16,58,314,50.0,"59 fps
+TEKKEN PROWESS 189,780
+TEKKEN PROWESS
+KING
+KAZUYA
+TTVAlvei
+Bushin
+Streaming
+999
+1
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+Clean Counter Punish Wall
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+0
+0
+0 (0%)
+0 (0%)
+--- (0-0)
+--- (---)
+Standing
+1.87
+Ranked Match
+Searching for opponent...
+Open Menu
+Restart
+Remember",
+TEKKEN,1,PNG,claude-3.5-sonnet,5164.56,2.67,2,16,0.0,নporta lingulayer,
+TEKKEN,1,PNG,gpt-4o-mini,5164.56,3.43,50,270,50.0,"```
+KING
+TTVALvei
+TEKKEN PROWESS   189,780
+                0
+          999
+           1
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+Clean Counter Punish Wall
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+Open Menu
+Restart
+Remember
+--- [0 - 0]
+--- [---]
+Ranked Match
+Searching for opponent...
+Standing
+1.87
+```",
+TEKKEN,1,25,gemini-2.5-flash,204.17,2.12,59,316,50.0,"59 fps
+TEKKEN PROWESS 189,780
+KING
+TTVAlvei
+Bushin
+Streaming
+999
+1
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+Clean Counter Punish Wall
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+Open Menu
+Restart
+R3 Remember
+0
+0
+0 (0%)
+0 (0%)
+--- (0-0)
+--- (---)
+Standing
+1.87
+Ranked Match
+Searching for opponent...
+TEKKEN PROWESS
+KAZUYA",
+TEKKEN,1,25,claude-3.5-sonnet,204.17,7.94,58,322,50.0,"TEKKEN PROWESS: 189,780
+TEKKEN PROWESS: 0
+
+KING
+KAZUYA
+
+TTVAlvei
+
+Streaming
+
+999
+1
+--- [---]
+
+Total Damage: 0
+Max Combo Damage: 0
+
+Hit Properties
+Damage: 0 (0%)
+Recoverable Damage: 0 (0%)
+
+Clean Counter Punish Wall
+
+Attack Startup Frames: --- (0-0)
+Frame Advantage: --- [---]
+Status: Standing
+Distance from Opponent: 1.87
+
+Ranked Match
+Searching for opponent...
+
+Open Menu   Restart   Remember",
+TEKKEN,1,25,gpt-4o-mini,204.17,3.88,52,259,50.0,"```
+KING
+TEKKEN PROWESS: 189,780
+TTVAlvei
+Streaming
+999
+1
+
+Total Damage                 0
+Max Combo Damage            0
+Hit Properties               0
+Damage                      0 (0%)
+Recoverable Damage           0 (0%)
+Clean Counter Punish Wall
+
+Attack Startup Frames    --- [0 - 0]
+Frame Advantage          --- [----]
+Status                   Standing
+Distance from Opponent   1.87
+
+Open Menu
+Restart
+Remember
+```
+",
+TEKKEN,1,5,gemini-2.5-flash,88.6,2.29,54,295,50.0,"TEKKEN PROWESS 189,780
+KING
+TTVAlvei
+Bushin
+Streaming
+999
+1
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+Ranked Match
+Searching for opponent...
+--- (...)
+TEKKEN PROWESS
+KAZUYA
+Open Menu
+Restart
+Remember
+0
+0
+0 (0%)
+0 (0%)
+--- (0-0)
+--- (---)
+Standing
+1.87",
+TEKKEN,1,5,claude-3.5-sonnet,88.6,6.44,52,268,50.0,"TEKKEN PROWESS: 189,780
+TTVAlvei
+KING         KAZUYA
+999
+1
+--- [---]
+
+Total Damage                     0
+Max Combo Damage                 0
+Hit Properties
+Damage                          0 (0%)
+Recoverable Damage              0 (0%)
+
+Attack Startup Frames           --- [0 - 0]
+Frame Advantage                 --- [---]
+Status                          Standing
+Distance from Opponent          1.87
+
+Ranked Match
+Searching for opponent...
+
+Open Menu    Restart    Remember",
+TEKKEN,1,5,gpt-4o-mini,88.6,4.12,49,250,25.0,"```
+KING
+TEKKEN PROWESS   189,780
+TYYALvei
+Bushtin
+Streaming
+  999
+   1
+
+Total Damage                           0
+Max Combo Damage                   0
+Hit Properties                       ---
+Damage                               0 (0%)
+Recoverable Damage              0 (0%)
+Attack Startup Frames           ---  [0 - 0]
+Frame Advantage                   ---
+Status                                 Standing
+Distance from Opponent      1.87
+
+Ranked Match
+Searching for opponent...
+```",
+TEKKEN,1,1,gemini-2.5-flash,71.87,2.94,48,267,50.0,"TEKKEN PROWESS 189,780
+KING
+TTVAlvei
+Bushin
+Streaming
+999
+1
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+KAZUYA
+0
+0
+0 (0%)
+0 (0%)
+
+(0-0)
+(--)
+Standing
+1.87
+Ranked Match
+Searching for opponent...
+Open Menu
+Restart
+Remember",
+TEKKEN,1,1,claude-3.5-sonnet,71.87,7.39,49,269,50.0,"TEKKEN PROWESS: 189,780
+KING          KAZUYA
+TTVAlvei      Streaming
+999
+1
+
+Total Damage                   0
+Max Combo Damage              0
+Hit Properties
+Damage                        0 (0%)
+Recoverable Damage            0 (0%)
+
+Attack Startup Frames         -- (0-0)
+Frame Advantage              --(--)
+Status
+Distance from Opponent       1.87
+
+Ranked Match
+Searching for opponent...
+
+Standing
+
+Open menu      Restart      Not Remember",
+TEKKEN,1,1,gpt-4o-mini,71.87,2.85,49,251,50.0,"```
+KING
+TEKKEN PROWESS: 189,730
+Streaming
+999
+1
+
+Total Damage          0
+Max Combo Damage      0
+Hit Properties        
+Damage                0 (0%)
+Recoverable Damage    0 (0%)
+Attack Startup Frames  [0 - 0]
+Frame Advantage       :
+Status               Standing
+Distance from Opponent  1.87
+
+Open Menu 
+Restart 
+Remember
+
+Ranked Match
+Searching for opponent...
+```",
+TEKKEN,2,PNG,gemini-2.5-flash,4754.76,2.06,64,297,50.0,"59 fps
+TEKKEN PROWESS
+189,780
+KING
+TTVAlvei
+Bushin
+Streaming
+1
+3
+1
+6
+7
+12
+47
+999
+1
+Open Menu
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+Clean Counter Punish Wall
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+0
+0
+0 (0%)
+0 (0%)
+--- (0 - 0)
+--- (---)
+Standing
+0.93
+--- (---)
+TEKKEN PROWESS
+KAZUYA
+Restart
+Remember",
+TEKKEN,2,PNG,claude-3.5-sonnet,4754.76,7.27,55,274,50.0,"TEKKEN PROWESS  189,780
+TEKKEN PROWESS 0
+
+KING
+KAZUYA
+
+TTVAlvei
+
+Streaming
+
+3
+1
+6
+7
+12
+47
+999
+
+Total Damage                    0
+Max Combo Damage               0
+Hit Properties
+Damage                         0 (0%)
+Recoverable Damage             0 (0%)
+Clean Counter Punish Wall
+
+Attack Startup Frames          --- (0~0)
+Frame Advantage               [---]
+
+Status                         Standing
+Distance from Opponent         0.93
+
+Open Menu    Restart    Remember",
+TEKKEN,2,PNG,gpt-4o-mini,4754.76,3.77,58,270,50.0,"```
+KING
+TEKKEN PROWESS  189,780
+TTVAlei
+Bushtin
+Streaming
+
+1
+3
+6
+7
+12
+47
+999
+1
+
+Total Damage                0
+Max Combo Damage     0
+Hit Properties
+Damage                     0 (0%)
+Recoverable Damage    0 (0%)
+Clean     Counter     Punish     Wall
+
+Attack Startup Frames  --- (0 - 0)
+Frame Advantage             --- (---)
+Status                          Standing
+Distance from Opponent  0.93
+
+Open Menu       Restart       Remember
+```",
+TEKKEN,2,25,gemini-2.5-flash,189.35,2.34,66,300,50.0,"59 fps
+TEKKEN PROWESS 189,780
+KING
+TTVAlvei
+Bushin
+Streaming
+1
+3
+1
+6
+7
+12
+47
+999
+1
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+Clean Counter Punish Wall
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+0
+0
+0 (0%)
+0 (0%)
+--- (0 - 0)
+--- (---)
+Standing
+0.93
+--- (---)
+TEKKEN PROWESS 0
+KAZUYA
+Open Menu
+Restart
+R3 Remember",
+TEKKEN,2,25,claude-3.5-sonnet,189.35,6.83,55,280,50.0,"TEKKEN PROWESS: 189,780
+TEKKEN PROWESS: 70
+
+KING
+KAZUYA
+
+TTVAlvei
+
+3
+1
+6
+7
+12
+47
+999
+
+Total Damage: 0
+Max Combo Damage: 0
+
+Hit Properties:
+Damage: 0 (0%)
+Recoverable Damage: 0 (0%)
+
+Clean Counter Punish Wall
+
+Attack Startup Frames: --- (0-0)
+Frame Advantage: --- (---)
+
+Status: Standing
+Distance from Opponent: 0.93
+
+Open Menu    Restart    Remember",
+TEKKEN,2,25,gpt-4o-mini,189.35,3.97,65,276,50.0,"```
+KING
+TTVAlvei
+Tekken Prowess: 189,780
+Streaming
+
+1
+3
+6
+7
+12
+47
+999
+1
+
+Total Damage                   0
+Max Combo Damage       0
+Hit Properties                   0 (0%)
+Damage                          0 (0%)
+Recoverable Damage     0 (0%)
+Clean    Counter    Punish    Wall
+
+Attack Startup Frames  --- (0 - 0)
+Frame Advantage           --- (---)
+Status                                Standing
+Distance from Opponent        0.93
+
+[ Open Menu ]   [ Restart ]   [ Remember ]
+```",
+TEKKEN,2,5,gemini-2.5-flash,86.45,2.32,57,255,50.0,"69 fps
+TEKKEN PROWESS 189,780
+KING
+TTVAlvei
+Bushin
+Streaming
+1
+3
+1
+6
+7
+12
+47
+999
+1
+8
+KAZUYA
+Total Damage                        0
+Max Combo Damage                    0
+Hit Properties
+Damage                            0 (0%)
+Recoverable Damage                0 (0%)
+Attack Startup Frames          --- (0 - 0)
+Frame Advantage                --- (---)
+Status                           Standing
+Distance from Opponent              0.93
+Open Menu
+Restart
+Remember",
+TEKKEN,2,5,claude-3.5-sonnet,86.45,7.6,56,318,50.0,"TEKKEN PROWESS: 189,780
+TTVAlvci
+KING
+KAZUYA
+
+Total Damage: 0
+Max Combo Damage: 0
+
+Hit Properties:
+Damage: 0 (0%)
+Recoverable Damage: 0 (0%)
+
+Attack Startup Frames: ---(0~0)
+Frame Advantage:
+
+Status: Standing
+Distance from Opponent: 0.93
+
+[Numbers visible in sequence]
+1
+3
+1
+6
+7
+12
+47
+999
+
+[Bottom menu indicators]
+Open Menu    Restart    Remember
+
+[Stream/interface elements]
+Streaming",
+TEKKEN,2,5,gpt-4o-mini,86.45,3.24,51,244,50.0,"```
+KING
+TEKKEN PROWESS: 189,780
+TTVAlei
+BUSSHIN
+Streaming
+
+1
+3
+6
+7
+12
+47
+999
+1
+
+Total Damage                0
+Max Combo Damage         0
+Hit Properties
+Damage                      0 (0%)
+Recoverable Damage    0 (0%)
+
+Attack Startup Frames  [0 - 0]
+Frame Advantage
+Status                        Standing
+Distance from Opponent  0.93
+
+[Open Menu] [Restart] [Remember]
+```",
+TEKKEN,2,1,gemini-2.5-flash,71.21,2.2,52,268,50.0,"TEKKEN PROWESS 189,780
+KING
+08
+TTVAlvei
+Bushin
+Streaming
+1
+1
+12
+47
+999
+--- (...)
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+0 (0%)
+O (0%)
+--- (0-0)
+--- (---)
+Standing
+0.93
+Open Menu
+Restart
+Remember
+TEKKEN PROWESS 10
+KAZUYA",
+TEKKEN,2,1,claude-3.5-sonnet,71.21,6.63,50,243,50.0,"TEKKEN PROWESS: 189,700
+
+KING
+KAZUYA
+
+TTVAlvei
+Streaming
+
+Total Damage: 0
+Max Combo Damage: 0
+
+Hit Properties:
+Damage: 0 (0%)
+Recoverable Damage: 0 (0%)
+
+Attack Startup Frames: -- (0 - 0)
+Frame Advantage: 
+
+Status: Standing
+Distance from Opponent: 0.93
+
+Open Menu     Restart     Remember
+
+1
+3
+1
+6
+7
+12
+47
+999",
+TEKKEN,2,1,gpt-4o-mini,71.21,2.71,48,236,50.0,"```
+KING
+TEKKEN PROWESS: 189,730
+TIVALvej
+Streaming
+
+1
+3
+6
+7
+12
+- 999
+
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage     0 (0%)
+Recoverable Damage  0 (0%)
+
+Attack Startup Frames  (0 - 0)
+Frame Advantage:  (....)
+Status: Standing
+Distance from Opponent  0.93
+
+Open Menu  Restart  Remember
+```",
+TEKKEN,3,PNG,gemini-2.5-flash,5380.42,1.94,69,330,50.0,"59 fps
+TEKKEN PROWESS 189,780
+KING
+TTVAlvei
+Bushin
+Streaming
+20
+3
+1
+6
+7
+12
+47
+999
+1
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+Clean Counter Punish Wall
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+21
+0
+Mid
+21 (100%)
+0 (0%)
+15 (15 - 15)
+--- (---)
+Standing
+1.04
+Open Menu
++ Restart
+(---)
+MIDDLE
+Ranked Match
+Communicating...
+TEKKEN PROWESS 0
+KAZUYA",
+TEKKEN,3,PNG,claude-3.5-sonnet,5380.42,10.48,64,323,50.0,"TEKKEN PROWESS? 189,780           TEKKEN PROWESS? 0
+
+KING                                      KAZUYA
+TTVAlvei
+
+[Dushin]    [Streaming]
+
+20
+3
+1
+6
+7
+12
+47
+999
+
+MIDDLE
+
+Total Damage                             21
+Max Combo Damage                         0
+Hit Properties                          Mid
+Damage                            21 (100%)
+Recoverable Damage                     0 (%)
+Clean Counter Punish Wall
+
+Attack Startup Frames              15 (15 - 15)
+Frame Advantage                       --- [---]
+Status                               Standing
+Distance from Opponent                   1.04
+
+Ranked Match
+Communicating...
+
+Open Menu      Restart",
+TEKKEN,3,PNG,gpt-4o-mini,5380.42,3.79,53,286,50.0,"```
+KING
+TEKKEN PROWESS  189,780
+TTVALvei
+Bustlin
+Streaming
+
+Total Damage
+21
+Max Combo Damage
+0
+Hit Properties
+Mid
+Damage
+21 (100%)
+Recoverable Damage
+0 (0%)
+Clean Counter Punish Wall
+
+Attack Startup Frames
+15 (15 - 15)
+Frame Advantage
+--- (---)
+Status
+Standing
+Distance from Opponent
+1.04
+
+Open Menu
+Restart
+
+Ranked Match
+Communicating...
+```
+",
+TEKKEN,3,25,gemini-2.5-flash,198.35,1.89,64,328,50.0,"59 fps
+TEKKEN PROWESS 189,780
+KING
+TTVAlvei
+Bushin
+Streaming
+20
+3
+1
+6
+7
+12
+47
+999
+1
+TEKKENPROWESS
+KAZUYA
+MIDDLE
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+Clean Counter Punish Wall
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+21
+0
+Mid
+21 (100%)
+0 (0%)
+15 (15-15)
+--- (---)
+Standing
+1.04
+Ranked Match
+Communicating...
+[---]
+Open Menu
+Restart",
+TEKKEN,3,25,claude-3.5-sonnet,198.35,7.73,62,306,50.0,"TEKKEN PROWESS? 189,780
+TEKKEN PROWESS 0
+
+TTVAlvei
+
+KING
+KAZUYA
+
+20
+3
+[---]
+1
+6
+7
+12
+47
+999
+
+MIDDLE
+
+Total Damage                    21
+Max Combo Damage               0
+Hit Properties                 MID
+Damage                         21 (100%)
+Recoverable Damage            0 (0%)
+
+Clean Counter Punish Wall
+
+Attack Startup Frames          15 (15 - 15)
+Frame Advantage               [---]
+Status                        Standing
+Distance from Opponent        1.04
+
+Ranked Match
+Communicating...
+
+Open Menu       Restart",
+TEKKEN,3,25,gpt-4o-mini,198.35,3.73,57,273,50.0,"```
+KING
+   TTVAlvei
+   TEKKEN PROWESS: 189,780
+         Bustlin
+        Streaming
+
+20
+3
+6
+7
+12
+47
+999
+1
+
+Total Damage
+21
+Max Combo Damage
+0
+Hit Properties
+Mid
+Damage
+21 (100%)
+Recoverable Damage
+0 (0%)
+Clean Counter Punish Wall
+
+Attack Startup Frames
+15 (15 - 15)
+Frame Advantage
+--- [---]
+Status
+Standing
+Distance from Opponent
+1.04
+
+    OpenMenu
+    Restart
+```
+",
+TEKKEN,3,5,gemini-2.5-flash,90.58,2.63,61,305,50.0,"69 fps
+TEKKEN PROWESS 189,780
+KING
+TTVAlvei
+Bushin
+Streaming
+20
+3
+1
+6
+7
+12
+47
+999
+1
+Open Menu
+Restart
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+21
+0
+Mid
+21 (100%)
+0 (0%)
+15 (15-15)
+--(--)
+Standing
+1.04
+Ranked Match
+Communicating...
+[---]
+MIDDLE
+TEKKEN PROWESS 0
+KAZUYA",
+TEKKEN,3,5,claude-3.5-sonnet,90.58,8.37,55,274,50.0,"TEKKEN PROWESS: 189,780
+TTVAlvei
+
+KING                 KAZUYA
+
+Streaming
+
+20
+3
+1
+6
+7
+12
+47
+999
+
+MIDDLE
+
+Total Damage                   21
+Max Combo Damage               0
+Hit Properties
+Damage                        21 (100%)
+Recoverable Damage            0 (0%)
+
+Attack Startup Frames         15 (15 - 15)
+Frame Advantage              --- (---)
+Status                       Standing
+Distance from Opponent       1.04
+
+Ranked Match
+Communicating...
+
+Open Menu        Restart",
+TEKKEN,3,5,gpt-4o-mini,90.58,4.11,55,282,50.0,"```
+KING
+TEKKEN PROWESS  1899780
+TTIVAlevi
+BustHin
+Streaming
+20
+3
+6
+12
+47
+999
+
+Total Damage
+21
+Max Combo Damage
+0
+Hit Properties
+Mid
+Damage
+21 (100%)
+Recoverable Damage
+0 (0%)
+
+Attack Startup Frames
+15 (15 - 15)
+Frame Advantage
+---- [---]
+Status
+Standing
+Distance from Opponent
+1.04
+
+OpenMenu
+Restart
+Ranked Match
+Communicating...
+MIDOL
+```",
+TEKKEN,3,1,gemini-2.5-flash,73.06,3.15,59,302,50.0,"TEKKEN PROWESS 189,780
+KING
+TTVAlvei
+Bushin
+Streaming
+20
+3
+1
+6
+7
+12
+47
+999
+---/---
+MIDOLE
+P TEKKEN PROWESS
+KAZUYA
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+21
+0
+Mid
+21 (100%)
+0 (0%)
+15 (15-15)
+--- (---)
+Standing
+1.04
+Training Match
+Communicating
+Open Menu
+Restart",
+TEKKEN,3,1,claude-3.5-sonnet,73.06,7.01,52,269,75.0,"TEKKEN PROWESS: 189,780
+
+KING                                                  KAZUYA
+TTVALvei            Streaming
+
+20
+3
+1
+6
+7
+12
+47
+999
+
+MIDDLE
+
+Total Damage                       21
+Max Combo Damage                   0
+Hit Properties                   Mid
+Damage                     21 (100%)
+Recoverable Damage          0 (0%)
+
+Attack Startup Frames        15 (15-15)
+Frame Advantage              --- [---]
+Status                      Standing
+Distance from Opponent          1.04
+
+Options Menu    Restart    Communicating...",
+TEKKEN,3,1,gpt-4o-mini,73.06,3.11,50,242,25.0,"```
+KING
+TEKKEN PROWESS   189,730
+                  KAZUYA
+                  TIYAlvej
+
+Base Info
+Streaming
+
+    20
+    3
+    6
+    7
+    12
+    47
+    999
+
+Total Damage        21
+Max Combo Damage    0
+Hit Properties      Mid
+Damage             21 [100%]
+Recoverable Damage   0 [0%]
+
+Attack Startup Frames  15 (15 - 15)
+Status                Standing
+Distance from Opponent 1.04
+
+Restart
+Communicating...
+```",
+TEKKEN,4,PNG,gemini-2.5-flash,4827.57,2.46,68,341,50.0,"59 fps
+TEKKEN PROWESS 189,780
+KING
+TTVAlvei
+Bushin
+Streaming
+43
+3
+1
+6
+7
+12
+47
+999
+1
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+Clean Counter Punish Wall
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+21
+0
+Mid
+21 (100%)
+0 (0%)
+15 (15-15)
++56 (---)
+Standing
+1.87
+Open Menu
+Restart
+R3 Remember
+-56 (---)
+MIDDLE
+Ranked Match
+Communicating...
+TEKKEN PROWESS
+KAZUYA",
+TEKKEN,4,PNG,claude-3.5-sonnet,4827.57,9.34,64,322,50.0,"TEKKEN PROWESS: 189,780
+TEKKEN PROWESS: 0
+
+KING
+KAZUYA
+
+TTVAlvei
+Streaming
+
+43
+3
+1
+6
+7
+12
+47
+999
+
+MIDDLE
+
+Total Damage                    21
+Max Combo Damage               0
+Hit Properties                  Mid
+Damage                         21 (100%)
+Recoverable Damage             0 (0%)
+Clean Counter Punish Wall
+
+Attack Startup Frames          15 (15 - 15)
+Frame Advantage               -56 (---)
+Status                         Standing
+Distance from Opponent         1.87
+
+Ranked Match
+Communicating...
+
+Open Menu     Restart     Remember",
+TEKKEN,4,PNG,gpt-4o-mini,4827.57,3.73,61,292,50.0,"```
+KING
+TEKKEN PROWESS  189,780
+TTValvei
+ 43    
+ 3    
+ 1    
+ 6    
+ 7    
+ 12   
+ 47   
+ 999  
+ 1    
+
+Total Damage              21
+Max Combo Damage          0
+Hit Properties            Mid
+Damage                   21 (100%)
+Recoverable Damage        0 (0%)
+Clean Counter Punish Wall  
+
+Attack Startup Frames      15 (15 - 15)
+Frame Advantage          +56 [---]
+Status                   Standing
+Distance from Opponent    1.87
+
+Open Menu      Restart      Remember
+
+Ranked Match
+Communicating...
+```",
+TEKKEN,4,25,gemini-2.5-flash,191.56,2.07,69,344,50.0,"59 fps
+TEKKEN PROWESS 189,780
+KING
+TTVAlvei
+Bushin
+Streaming
+
+43
+3
+1
+6
+7
+12
+47
+999
+1
+ING
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+Clean Counter Punish Wall
+
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+Open Menu
+Restart
+R3 Remember
+
+-56 (---)
+MIDDLE
+
+21
+0
+Mid
+21 (100%)
+0 (0%)
+
+15 (15-15)
++56 (---)
+Standing
+1.87
+Ranked Match
+Communicating...
+TEKKEN PROWESS
+KAZUYA",
+TEKKEN,4,25,claude-3.5-sonnet,191.56,9.87,66,330,50.0,"TEKKEN PROWESS 189,780                     TEKKEN PROWESS 0
+KING                                                TTVAlvei
+KAZUYA
+
+-56 (---)
+
+43
+3
+1
+6
+7
+12
+47
+999
+
+MIDDLE
+
+Total Damage                                        21
+Max Combo Damage                                    0
+Hit Properties                                      MID
+Damage                                             21 (100%)
+Recoverable Damage                                  0 (0%)
+Clean Counter Punish Wall
+
+Attack Startup Frames                              15 (15 - 15)
+Frame Advantage                                    -56 (---)
+Status                                            Standing
+Distance from Opponent                            1.87
+
+Ranked Match
+Communicating...
+
+Open Menu    Restart    Remember
+
+[Streaming]",
+TEKKEN,4,25,gpt-4o-mini,191.56,3.39,58,283,25.0,"```
+KING
+TEKKEN PROWESS 189,780
+TTVALvei
+Bustin
+Streaming
+43
+3
+6
+7
+12
+47
+999
+1
+
+Total Damage          21
+Max Combo Damage       0
+Hit Properties        Mid
+Damage               21 (100%)
+Recoverable Damage    0 (0%)
+Clean Counter Punish Wall
+
+Attack Startup Frames  15 (15 - 15)
+Frame Advantage       +56 [---]
+Status                Standing
+Distance from Opponent 1.87
+
+Ranked Match
+Communicating...
+```",
+TEKKEN,4,5,gemini-2.5-flash,87.3,2.7,65,330,50.0,"59 fps
+TEKKEN PROWESS 189,780
+KING
+TEKKEN PROWESS
+KAZUYA
+TTVAlvei
+Bushin
+Streaming
+43
+3
+1
+6
+7
+12
+47
+999
+1
+MIDDLE
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+Min Counter Pormalt Wall
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+21
+0
+Mid
+21 (100%)
+0 (0%)
+15 (15-15)
++56 (---)
+Standing
+1.87
+Ranked Match
+Communicating...
+Open Menu
+Restart
+Remember",
+TEKKEN,4,5,claude-3.5-sonnet,87.3,9.87,60,299,50.0,"TEKKEN PROWESS 189,780          TEKKEN PROWESS 70
+
+KING                                     KAZUYA
+
+TTVAlvci
+Streaming
+
+43
+3
+1
+6
+7
+12
+47
+999
+
+MIDDLE
+
+Total Damage                      21
+Max Combo Damage                  0
+Hit Properties                    Mid
+Damage                           21 (100%)
+Recoverable Damage                0 (0%)
+Attack Startup Frames            15 (15 - 15)
+Frame Advantage                  +56 (---)
+Status                          Standing
+Distance from Opponent           1.87
+
+Ranked Match
+Communicating...
+
+Open Menu    Restart    Remember",
+TEKKEN,4,5,gpt-4o-mini,87.3,3.26,57,320,25.0,"```
+KING
+TEKKEN PROWESS: 189,780
+TITVALei
+BushiHito            Streaming
+         43
+         3
+     ▼   6
+         7
+         12
+         47
+         999
+-------------------
+Total Damage          21
+Max Combo Damage      0
+Hit Properties         Mid
+Damage               21 (100%)
+Recoverable Damage    0 (0%)
+-------------------
+Attack Startup Frames  15 (15 - 15)
+Frame Advantage        +56 [-]
+Status                Standing
+Distance from Opponent 1.87
+-------------------
+               Ranked Match
+          Communicating...
+```
+",
+TEKKEN,4,1,gemini-2.5-flash,71.75,2.06,57,295,50.0,"TEKKEN PROWESS 189,780
+KING
+TTVAlvei
+Streaming
+43
+3
+1
+6
+7
+12
+47
+999
+MIDDLE
+Total Damage
+Max Combo Damage
+Hit Properties
+Damage
+Recoverable Damage
+21
+0
+Mid
+21 (100%)
+0 (0%)
+Ranked Match
+Attack Startup Frames
+Frame Advantage
+Status
+Distance from Opponent
+15 (15-15)
++56 (—)
+Standing
+1.87
+Communicating...
+open Menu
+Restart
+Remember
+TEKKEN PROWESS
+KAZUYA",
+TEKKEN,4,1,claude-3.5-sonnet,71.75,7.05,46,270,50.0,"TEKKEN PROWESS: 189,700
+KING
+KAZUYA
+MIDDLE
+
+TTVAlve!
+Streaming
+
+Total Damage: 21
+Max Combo Damage: 0
+Hit Properties
+Damage: mid
+Recoverable Damage: 0 (0%)
+
+Attack Startup Frames: 15 (16 - 15)
+Frame Advantage: -66
+Status
+Distance from Opponent: 1.87
+
+Ranked Match
+Communicating...
+
+Standing
+
+Quick Menu    Restart    Return/High",
+TEKKEN,4,1,gpt-4o-mini,71.75,2.71,52,255,25.0,"```
+KING
+TEKKEN PROWESS: 189,730
+TIVAlvej
+
+.43
+3
+6
+7
+12
+47
+999
+
+Total Damage
+21
+Max Combo Damage
+0
+Hit Properties
+Mid
+Damage
+21 (100%)
+Recoverable Damage
+0 (0%)
+
+Attack Startup Frames
+15 (15 - 15)
+Frame Advantage
+-56 [___]
+Status
+Standing
+Distance from Opponent
+1.87
+
+[MIDDLE]
+
+Ranked Match
+Communicating...
+```",

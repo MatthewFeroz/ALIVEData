@@ -91,6 +91,8 @@ INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cf
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\EE628.aux
@@ -137,6 +139,11 @@ INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\um
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb7t.vf
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmrc7t.tfm
@@ -152,13 +159,20 @@ INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsf
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT ..\data\TEKKEN\TEKKEN1.png
-INPUT ..\data\TEKKEN\TEKKEN1.png
-INPUT ..\data\TEKKEN\TEKKEN1.png
-INPUT ..\data\TEKKEN\TEKKEN1.png
-INPUT ..\data\TEKKEN\TEKKEN1.png
-INPUT ..\data\TEKKEN\TEKKEN1.png
-INPUT ..\data\TEKKEN\TEKKEN1.png
+INPUT ..\data\GIT\GIT1_q25.jpg
+INPUT ..\data\GIT\GIT1_q25.jpg
+INPUT ..\data\GIT\GIT1_q25.jpg
+INPUT ..\data\GIT\GIT1_q25.jpg
+INPUT ..\data\GIT\GIT1_q25.jpg
+INPUT ..\data\GIT\GIT1_q25.jpg
+INPUT ..\data\GIT\GIT1_q25.jpg
+INPUT ..\data\GIT\GIT1_q1.jpg
+INPUT ..\data\GIT\GIT1_q1.jpg
+INPUT ..\data\GIT\GIT1_q1.jpg
+INPUT ..\data\GIT\GIT1_q1.jpg
+INPUT ..\data\GIT\GIT1_q1.jpg
+INPUT ..\data\GIT\GIT1_q1.jpg
+INPUT ..\data\GIT\GIT1_q1.jpg
 INPUT ..\data\TEKKEN\TEKKEN1_q25.jpg
 INPUT ..\data\TEKKEN\TEKKEN1_q25.jpg
 INPUT ..\data\TEKKEN\TEKKEN1_q25.jpg
@@ -166,13 +180,6 @@ INPUT ..\data\TEKKEN\TEKKEN1_q25.jpg
 INPUT ..\data\TEKKEN\TEKKEN1_q25.jpg
 INPUT ..\data\TEKKEN\TEKKEN1_q25.jpg
 INPUT ..\data\TEKKEN\TEKKEN1_q25.jpg
-INPUT ..\data\TEKKEN\TEKKEN1_q5.jpg
-INPUT ..\data\TEKKEN\TEKKEN1_q5.jpg
-INPUT ..\data\TEKKEN\TEKKEN1_q5.jpg
-INPUT ..\data\TEKKEN\TEKKEN1_q5.jpg
-INPUT ..\data\TEKKEN\TEKKEN1_q5.jpg
-INPUT ..\data\TEKKEN\TEKKEN1_q5.jpg
-INPUT ..\data\TEKKEN\TEKKEN1_q5.jpg
 INPUT ..\data\TEKKEN\TEKKEN1_q1.jpg
 INPUT ..\data\TEKKEN\TEKKEN1_q1.jpg
 INPUT ..\data\TEKKEN\TEKKEN1_q1.jpg
@@ -180,6 +187,20 @@ INPUT ..\data\TEKKEN\TEKKEN1_q1.jpg
 INPUT ..\data\TEKKEN\TEKKEN1_q1.jpg
 INPUT ..\data\TEKKEN\TEKKEN1_q1.jpg
 INPUT ..\data\TEKKEN\TEKKEN1_q1.jpg
+INPUT ..\data\EXCEL\EXCEL1_q25.jpg
+INPUT ..\data\EXCEL\EXCEL1_q25.jpg
+INPUT ..\data\EXCEL\EXCEL1_q25.jpg
+INPUT ..\data\EXCEL\EXCEL1_q25.jpg
+INPUT ..\data\EXCEL\EXCEL1_q25.jpg
+INPUT ..\data\EXCEL\EXCEL1_q25.jpg
+INPUT ..\data\EXCEL\EXCEL1_q25.jpg
+INPUT ..\data\EXCEL\EXCEL1_q1.jpg
+INPUT ..\data\EXCEL\EXCEL1_q1.jpg
+INPUT ..\data\EXCEL\EXCEL1_q1.jpg
+INPUT ..\data\EXCEL\EXCEL1_q1.jpg
+INPUT ..\data\EXCEL\EXCEL1_q1.jpg
+INPUT ..\data\EXCEL\EXCEL1_q1.jpg
+INPUT ..\data\EXCEL\EXCEL1_q1.jpg
 INPUT .\compression_by_quality.pdf
 INPUT .\compression_by_quality.pdf
 INPUT .\compression_by_quality.pdf
@@ -205,15 +226,33 @@ INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\courie
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri7t.vf
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT ..\ocr_comparison_charts.png
+INPUT ..\ocr_comparison_charts.png
+INPUT ..\ocr_comparison_charts.png
+INPUT ..\ocr_comparison_charts.png
+INPUT ..\ocr_comparison_charts.png
+INPUT ..\ocr_comparison_charts.png
+INPUT ..\ocr_comparison_charts.png
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrr7t.tfm
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\omspcr.fd
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\omspcr.fd
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\omspcr.fd
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\courier\pcrr7t.vf
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrrc7t.tfm
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\courier\pcrrc7t.vf
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
 INPUT EE628.aux
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
 INPUT C:\Users\Matthew Feroz\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
