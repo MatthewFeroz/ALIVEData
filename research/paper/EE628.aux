@@ -1,0 +1,38 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {II}Related Work}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {III}Methodology}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Tasks and Data Collection}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}OCR Pipeline and Legibility Criterion}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Feature Engineering and Labeling}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}Classifier and Training Protocol}{2}{}\protected@file@percent }
+\citation{b6}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Compression Quality Level Selection}{3}{}\protected@file@percent }
+\newlabel{sec:compression-selection}{{IV}{3}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Human Readability Testing}{3}{}\protected@file@percent }
+\newlabel{subsec:human-readability}{{\mbox  {IV-A}}{3}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Compression Results and Analysis}{3}{}\protected@file@percent }
+\newlabel{sec:compression-results}{{V}{3}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Compression Methodology}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Workflow-Specific Compression Patterns}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Repetitive Data Patterns and Compression Efficiency}{4}{}\protected@file@percent }
+\newlabel{subsec:repetitive-patterns}{{\mbox  {V-C}}{4}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Quality Level Impact on Compression}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-E}}Visual Degradation Analysis}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion and Future Work}{5}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Compression Statistics by Workflow and Quality Level}}{5}{}\protected@file@percent }
+\newlabel{tab:compression-summary}{{I}{5}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Visual degradation progression for TEKKEN1 screenshot: (top-left) original PNG, (top-right) quality 25, (bottom-left) quality 5, (bottom-right) quality 1. Compression artifacts become increasingly severe, with quality 1 showing extreme blockiness and color distortion.}}{5}{}\protected@file@percent }
+\newlabel{fig:visual-degradation}{{1}{5}{}{}{}}
+\bibcite{b1}{1}
+\bibcite{b2}{2}
+\bibcite{b3}{3}
+\bibcite{b4}{4}
+\bibcite{b5}{5}
+\bibcite{b6}{6}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Compression ratio distribution across quality levels for each workflow (generated from \texttt  {compress\_images.ipynb}). The figure reveals a clear hierarchy: workflows with highly repetitive content (GIT, TEKKEN) achieve near-maximal compression (96--99\%) even at quality 25, while workflows with varied content (JIRA, EXCEL) require aggressive compression to achieve comparable ratios. GIT maintains consistently high compression across all quality levels, demonstrating that its repetitive patterns (uniform fonts, consistent indentation, repeated UI elements) are so pronounced that moderate quantization suffices. Error bars indicate standard deviation across images within each workflow.}}{6}{}\protected@file@percent }
+\newlabel{fig:compression-by-quality}{{2}{6}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Average compression efficiency across workflows (generated from \texttt  {compress\_images.ipynb}). The dramatic differences in compression ratios directly reflect the degree of repetitive, structured content: GIT (99.5\%) and TEKKEN (98.2\%) exhibit exceptional compression due to highly repetitive interface elements (code syntax patterns, uniform HUD elements), while JIRA (57.5\%) and EXCEL (44.7\%) show moderate compression due to varied layouts and embedded graphics. This relationship demonstrates that \emph  {repetitive data patterns create natural compression opportunities} in screenshot-based workflows (see Section~\ref {subsec:repetitive-patterns}). Error bars indicate standard deviation.}}{6}{}\protected@file@percent }
+\newlabel{fig:compression-comparison}{{3}{6}{}{}{}}
+\@writefile{toc}{\contentsline {section}{References}{6}{}\protected@file@percent }
+\gdef \@abspage@last{6}

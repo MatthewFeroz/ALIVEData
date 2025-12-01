@@ -49,11 +49,25 @@ export default function SessionDetail() {
         throw new Error(`Upload failed: ${result.statusText} - ${errorText}`)
       }
       
-      // Convex storage returns the storageId as a string
-      const storageId = await result.text()
+      // Convex storage returns the storageId in JSON format: {"storageId":"k17..."}
+      const responseText = await result.text()
       
-      if (!storageId || storageId.trim() === '') {
+      if (!responseText || responseText.trim() === '') {
         throw new Error(`Invalid storage ID received: empty response`)
+      }
+
+      // Parse the storage ID from JSON response
+      let storageId
+      try {
+        const parsed = JSON.parse(responseText)
+        storageId = parsed.storageId
+      } catch {
+        // If it's not JSON, it might be a plain string ID
+        storageId = responseText.trim()
+      }
+
+      if (!storageId) {
+        throw new Error(`Invalid storage ID format: ${responseText}`)
       }
 
       // Create screenshot record
